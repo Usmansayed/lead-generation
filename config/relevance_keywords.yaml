@@ -1,0 +1,353 @@
+# Relevance & Keyword Matching — Single source of truth for "best posts" = highest potential customers
+# Strategy: MAJORITY = announcements (new business, just opened, launched); SECONDARY = explicit "need developer"
+# Version 1.1 — Announcement-first lead gen
+
+version: "1.0"
+description: "Announcement-first intent tiers. Launch/new-business posts score highest; hire-intent secondary."
+
+# ---------------------------------------------------------------------------
+# INTENT TIERS (checked in order; higher weight = more points)
+# ---------------------------------------------------------------------------
+
+# Tier 0: ANNOUNCEMENT INTENT — New business / launch / opening (MAIN source of leads)
+# These posts don't say "we need a developer"; we pitch software/website after they qualify.
+announcement_intent:
+  weight: 6
+  phrases:
+    - "just launched"
+    - "we just launched"
+    - "officially launched"
+    - "soft launch"
+    - "grand opening"
+    - "we opened"
+    - "opened our"
+    - "just opened"
+    - "now open"
+    - "open for business"
+    - "new business"
+    - "started my business"
+    - "starting my business"
+    - "we started"
+    - "just started"
+    - "new venture"
+    - "new cafe"
+    - "new restaurant"
+    - "new shop"
+    - "new store"
+    - "launched our"
+    - "launched my"
+    - "starting a company"
+    - "we're live"
+    - "we are live"
+    - "went live"
+    - "opening our"
+    - "our grand opening"
+    - "new journey"
+    - "starting my journey"
+    - "announcing"
+    - "proud to announce"
+    - "excited to announce"
+    - "grand opening weekend"
+    - "soft opening"
+    - "opening day"
+    - "first day open"
+    - "now serving"
+    - "now accepting"
+    - "officially open"
+    - "open our doors"
+    - "we will open our doors"
+    - "newly opened"
+    - "opening fall"
+    - "opening spring"
+    - "opening summer"
+    - "opening winter"
+    - "opening 2025"
+    - "opening fall 2025"
+    - "opening in northern"
+    - "opening in virginia"
+    - "opened up"
+    - "opened up in"
+    - "is officially open"
+    - "opened a second location"
+    - "opened a new location"
+    - "newly opened"
+    - "opened the "
+    - "doors for the very first time"
+    - "open our doors again"
+    - "open house"
+    - "open house celebration"
+    - "opened the doors to"
+    - "opening soon"
+    - "now open at"
+    - "just opened in"
+    - "celebrate the grand opening"
+
+# Tier 1: HIGH INTENT — Explicit "need developer / build / hire" (secondary source)
+high_intent:
+  weight: 5
+  phrases:
+    - "looking for developer"
+    - "looking for a developer"
+    - "need a developer"
+    - "needs a developer"
+    - "need developer"
+    - "need to hire"
+    - "hire developer"
+    - "hire a developer"
+    - "hiring developer"
+    - "looking for someone to build"
+    - "need someone to build"
+    - "need help building"
+    - "looking for help building"
+    - "need technical cofounder"
+    - "looking for technical cofounder"
+    - "technical cofounder wanted"
+    - "cofounder wanted"
+    - "hire engineer"
+    - "need engineer"
+    - "looking for engineer"
+    - "seeking developer"
+    - "seeking engineer"
+    - "MVP development"
+    - "need MVP built"
+    - "build an MVP"
+    - "custom software"
+    - "need custom software"
+    - "looking for agency"
+    - "looking for an agency"
+    - "hire agency"
+    - "looking for contractor"
+    - "hire contractor"
+    - "need a team"
+    - "looking for team"
+    - "hire team"
+    - "development team"
+    - "tech team needed"
+    - "recommend a developer"
+    - "recommend a good developer"
+    - "recommend developer"
+    - "recommendations for an agency"
+    - "suggest a developer"
+    - "know any developers"
+    - "who can build"
+    - "who can develop"
+    - "need built"
+    - "get built"
+    - "have it built"
+    - "outsourcing development"
+    - "outsource development"
+    - "freelance developer"
+    - "contract developer"
+    - "project developer"
+    - "fixed budget"
+    - "fixed price project"
+    - "request for proposal"
+    - "RFP"
+    - "send proposal"
+    - "get a quote"
+    - "looking for quote"
+
+# Tier 2: MEDIUM INTENT — Clear need, less explicit (points: 3 per phrase)
+medium_intent:
+  weight: 3
+  phrases:
+    - "looking for"
+    - "need help with"
+    - "need help"
+    - "looking for help"
+    - "recommendations for"
+    - "recommend a"
+    - "suggest a"
+    - "anyone know"
+    - "who can help"
+    - "can someone help"
+    - "we need"
+    - "our company needs"
+    - "our business needs"
+    - "building an app"
+    - "creating an app"
+    - "developing an app"
+    - "build an app"
+    - "create an app"
+    - "want to build"
+    - "planning to build"
+    - "ready to build"
+    - "contract work"
+    - "contract position"
+    - "freelance"
+    - "contractor"
+    - "consultant"
+    - "remote position"
+    - "remote developer"
+    - "part time"
+    - "full time hire"
+    - "budget for"
+    - "have a budget"
+    - "pay for"
+    - "rate for"
+    - "launching soon"
+    - "launch soon"
+    - "pre-launch"
+    - "post-launch"
+    - "startup looking"
+    - "startup need"
+    - "early stage"
+    - "early stage startup"
+
+# Tier 3: SOFT INTENT — Context signals (points: 1 per phrase)
+# Alone not enough; combine with medium/high or quality signals.
+soft_intent:
+  weight: 1
+  phrases:
+    - "startup"
+    - "founder"
+    - "building"
+    - "creating"
+    - "developing"
+    - "launching"
+    - "our company"
+    - "our business"
+    - "we are"
+    - "small business"
+    - "entrepreneur"
+    - "indie hacker"
+    - "build in public"
+    - "saas"
+    - "mvp"
+    - "prototype"
+    - "web app"
+    - "mobile app"
+    - "software"
+    - "application"
+    - "platform"
+    - "project"
+    - "team"
+    - "developer"
+    - "engineer"
+    - "dev"
+    - "technical"
+    - "code"
+    - "development"
+
+# ---------------------------------------------------------------------------
+# SYNONYMS — Expand match without listing every variant (used in phrase matching)
+# Key: canonical word in phrases; Value: alternatives that count as match
+# ---------------------------------------------------------------------------
+synonyms:
+  developer: [dev, engineer, programmer, coder, software developer, devs]
+  hire: [hiring, hired, recruit, recruiting, looking for, seeking, need, want]
+  build: [built, building, create, creating, develop, developing, make, making]
+  team: [developer team, dev team, tech team, engineering team, development team]
+  help: [assist, support, guidance, advice, help with]
+  project: [app, application, product, mvp, platform, tool, software]
+  freelance: [freelancer, contract, contractor, consultant, gig]
+  cofounder: [co-founder, co founder, technical founder, founding team]
+  recommend: [recommendation, recommend a, suggestions, suggest]
+  budget: [pay, rate, compensation, salary, $, budget for]
+  urgent: [asap, immediately, soon, quick, fast, deadline]
+  startup: [start-up, early stage, early-stage, founded, launching]
+
+# ---------------------------------------------------------------------------
+# QUALITY SIGNALS — Bonus points (applied on top of intent score)
+# ---------------------------------------------------------------------------
+quality_signals:
+  # Contact = likely reachable (big boost)
+  contact:
+    patterns:
+      - "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}"  # email regex applied separately
+      - "dm me"
+      - "message me"
+      - "reach out"
+      - "contact me"
+      - "email me"
+      - "apply at"
+      - "reply to"
+      - "send me"
+    points: 4
+
+  # Budget = serious buyer
+  budget:
+    patterns:
+      - "budget"
+      - "pay"
+      - "rate"
+      - "salary"
+      - "compensation"
+      - "\\$[0-9]"
+      - "k per"
+      - "per hour"
+      - "hourly"
+      - "fixed price"
+      - "equity"
+    points: 3
+
+  # Urgency = ready to act soon
+  urgency:
+    patterns:
+      - "asap"
+      - "urgent"
+      - "immediately"
+      - "soon"
+      - "deadline"
+      - "need by"
+      - "time sensitive"
+      - "right away"
+      - "quick"
+      - "fast turnaround"
+    points: 2
+
+  # Decision-maker language
+  decision_maker:
+    patterns:
+      - "our company"
+      - "our business"
+      - "we need"
+      - "we're looking"
+      - "we are hiring"
+      - "my startup"
+      - "i'm building"
+      - "i need"
+    points: 2
+
+  # Launch / new thing = good lead to pitch software or website (announcement-style)
+  launch_signal:
+    patterns:
+      - "just launched"
+      - "just opened"
+      - "grand opening"
+      - "new business"
+      - "started my"
+      - "we started"
+      - "new venture"
+      - "now open"
+      - "open for business"
+      - "new cafe"
+      - "new restaurant"
+      - "new shop"
+      - "we're live"
+      - "proud to announce"
+      - "new journey"
+    points: 4
+
+# ---------------------------------------------------------------------------
+# MINIMUM GATE — Relaxed: more borderline posts pass; AI will filter further.
+# ---------------------------------------------------------------------------
+minimum_gate:
+  require_high_or_medium: true
+  require_announcement_or_high: true
+  # Allow soft combo (e.g. "startup" + "building") so more leads reach static filter / AI
+  allow_soft_combo: true
+  # Lower = more posts pass (3 = one medium phrase or soft combo can pass)
+  min_intent_points: 3
+  # If set (e.g. 6), medium-only posts with intent_points >= this can pass (reduces false negatives)
+  allow_medium_with_min_points: 0
+
+# ---------------------------------------------------------------------------
+# NEGATIVE PATTERNS — Reject if any match (reference filters.yaml or inline)
+# ---------------------------------------------------------------------------
+negative_categories:
+  - learning
+  - hobby
+  - job_seeking
+  - open_source
+  - low_quality

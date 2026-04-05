@@ -1,0 +1,319 @@
+# Signal Filtering Configuration
+# Goal: Zero off-topic or useless posts. Every stored/qualified post should be a real lead.
+
+# Positive patterns - must match at least one to pass filter
+positive_patterns:
+  # Primary: new business / launch announcements (no explicit "need dev" required)
+  announcement_launch:
+    - "just launched"
+    - "we launched"
+    - "grand opening"
+    - "we opened"
+    - "now open"
+    - "open for business"
+    - "new business"
+    - "started my business"
+    - "new venture"
+    - "new cafe"
+    - "new restaurant"
+    - "new shop"
+    - "new store"
+    - "we're live"
+    - "soft launch"
+    - "proud to announce"
+    - "new journey"
+    - "opening our"
+
+  buying_intent:
+    - "looking for"
+    - "need to hire"
+    - "seeking"
+    - "recommendations for"
+    - "recommend a"
+    - "who can"
+    - "vendor"
+    - "agency"
+    - "contractor"
+    - "freelancer"
+    - "developer"
+    - "quote"
+    - "proposal"
+    - "estimate"
+    - "budget"
+  
+  action_verbs:
+    - "build"
+    - "develop"
+    - "create"
+    - "integrate"
+    - "automate"
+    - "migrate"
+    - "fix"
+    - "improve"
+    - "optimize"
+    - "scale"
+    - "implement"
+    - "deploy"
+  
+  urgency:
+    - "asap"
+    - "urgent"
+    - "immediately"
+    - "deadline"
+    - "launching"
+    - "need by"
+    - "time sensitive"
+  
+  business_context:
+    - "our company"
+    - "our business"
+    - "we need"
+    - "clients"
+    - "customers"
+    - "revenue"
+    - "sales"
+    - "operations"
+    - "workflow"
+    - "team"
+
+# Negative patterns - reject if matched
+negative_patterns:
+  learning:
+    - "learning to"
+    - "beginner tutorial"
+    - "how to learn"
+    - "course recommendation"
+    - "bootcamp"
+    - "certification"
+    - "just learning"
+    - "newbie question"
+  
+  hobby:
+    - "side project"
+    - "for fun"
+    - "weekend project"
+    - "weekend warrior"
+    - "hobby"
+    - "personal portfolio"
+    - "practicing coding"
+    - "practicing python"
+    - "experimenting with"
+    - "playing around"
+  
+  job_seeking:
+    - "i am available"
+    - "hire me"
+    - "my portfolio"
+    - "my resume"
+    - "looking for work"
+    - "seeking opportunities"
+    - "check out my work"
+  
+  open_source:
+    - "open source"
+    - "oss"
+    - "volunteer"
+    - "contributors wanted"
+    - "non-profit"
+    - "community project"
+    - "free project"
+    - "no budget"
+  
+  low_quality:
+    - "test post"
+    - "please ignore"
+    - "[deleted]"
+    - "[removed]"
+    - "asdf"
+    - "test test"
+    - "ignore this"
+
+  # Off-topic: viral, meme, discussion not about a business/launch
+  off_topic:
+    - "unpopular opinion"
+    - "change my view"
+    - "cmv"
+    - "does anyone else"
+    - "dae "
+    - "thoughts?"
+    - "discuss"
+    - "hot take"
+    - "am i the only one"
+    - "petition to"
+    - "can we all agree"
+    - "why is no one talking"
+    - "viral"
+    - "meme"
+    - "shitpost"
+    - "not related but"
+    - "off topic but"
+    - "random question"
+    - "anyone else think"
+    - "just me or"
+
+  # News / article style (not someone announcing their own business)
+  news_style:
+    - "according to"
+    - "study shows"
+    - "report:"
+    - "breaking:"
+    - "research shows"
+    - "survey found"
+    - "experts say"
+    - "the company said"
+    - "reuters"
+    - "bloomberg"
+    - "cnn"
+    - "bbc"
+
+  # Rant / vent (not a lead)
+  rant_vent:
+    - "rant"
+    - "venting"
+    - "so frustrated"
+    - "i hate"
+    - "worst experience"
+    - "never again"
+    - "complaint"
+    - "terrible service"
+
+  # Pure promo / spam (no real business announcement)
+  promo_spam:
+    - "link in bio"
+    - "swipe up to"
+    - "use my code"
+    - "use code "
+    - "use code!"
+    - "discount code only"
+    - "affiliate link"
+    - "click here to buy"
+    - "limited time offer"
+    - "dm for price"
+    - "message for details"
+    - "follow for more"
+
+  # Clearly not a business lead
+  not_business:
+    - "my cat"
+    - "my dog"
+    - "video game"
+    - "movie review"
+    - "book review"
+    - "recipe"
+    - "cooking"
+    - "fitness"
+    - "gym"
+    - "sports"
+    - "fantasy league"
+    - "tv show"
+    - "netflix"
+    - "gaming setup"
+    - "pc build"
+
+  # Generic job-board / marketing posts (prioritize launch & personal posts instead)
+  generic_job_listing:
+    - "submit your resume"
+    - "apply at careers"
+    - "apply at jobs@"
+    - "applications to"
+    - "send resume to"
+    - "submit application to"
+
+  # Already has website — not a lead for "build me a site" (they already have one)
+  # "our website" has exceptions in code for "create our website" / "build our website" (client intent)
+  already_has_website:
+    - "brand-new website"
+    - "brand new website"
+    - "new website"
+    - "our website"
+    - "our new website"
+    - "launched our website"
+    - "just launched our new website"
+    - "check out our website"
+    - "visit our website"
+    - "on our website"
+    - "now on our website"
+    - "available on our website"
+    - "launched on our website"
+    - "just launched on our website"
+    - "from their website"
+    - "from our website"
+    - "according to their website"
+    - "per their website"
+    - "website is now live"
+    - "website is live"
+    - "launched the official"
+    - "official website"
+    - "official site"
+
+  # Software/product company or SaaS — they build software; not a client for dev agency
+  # "our platform" / "our api" have exceptions in code for "develop our platform", "integrate with our api"
+  is_software_or_product:
+    - "software solutions"
+    - "software company"
+    - "we build software"
+    - "our platform"
+    - "launched our platform"
+    - "our platform launched"
+    - "our api"
+    - "launched our app"
+    - "launched our product"
+    - "fleet tracking"
+    - "field service products"
+    - "saas"
+    - "our software"
+    - "our application"
+    - "our product launch"
+    - "built right into your"
+    - "dispatch and work order"
+    - "integrations"
+    - "powered by"
+
+  # Product/collection launch (e-commerce, not "opening a business")
+  product_launch:
+    - "just launched our new product"
+    - "just launched our new collection"
+    - "just launched our new line"
+    - "our new product launch"
+    - "just launched our new spray"
+    - "just launched our new range"
+
+  # Entertainment / viral content (not a business opening)
+  entertainment_content:
+    - "beta squad"
+    - "betasquad"
+    - " out now!"
+    - "out now!\""
+    - "out now! "
+
+  # Gaming / server (not a physical business)
+  gaming_server:
+    - "join the server"
+    - "java ip:"
+    - "bedrock ip:"
+    - "log into the server"
+    - "minecraft"
+
+# Minimum requirements — only reject very short/gibberish posts. Keep low to avoid losing real leads.
+minimum_word_count: 8
+minimum_meaningful_words: 5
+
+# Author credibility (platform-specific)
+author_requirements:
+  reddit:
+    min_account_age_days: 30
+    min_karma: 10
+  
+  twitter:
+    min_followers: 50
+  
+  hn:
+    min_karma: 1
+
+# Engagement thresholds
+engagement_minimum:
+  reddit:
+    upvotes: 0  # Allow 0 or positive
+  
+  twitter:
+    retweets: 0

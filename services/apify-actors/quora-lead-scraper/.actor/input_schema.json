@@ -1,0 +1,49 @@
+{
+    "title": "Quora Lead Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keywords": {
+            "title": "Keywords to Search For",
+            "type": "array",
+            "description": "Lead generation keywords to search Quora for",
+            "editor": "stringList",
+            "placeholderKey": "keyword",
+            "placeholderValue": "e.g., hiring developer"
+        },
+        "maxQuestions": {
+            "title": "Maximum Questions",
+            "type": "integer",
+            "description": "Maximum number of questions to scrape",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 500
+        },
+        "minDelayMs": {
+            "title": "Minimum Delay (ms)",
+            "type": "integer",
+            "description": "Minimum delay between requests in milliseconds",
+            "default": 3000,
+            "minimum": 1000,
+            "maximum": 10000
+        },
+        "maxDelayMs": {
+            "title": "Maximum Delay (ms)",
+            "type": "integer",
+            "description": "Maximum delay between requests in milliseconds",
+            "default": 6000,
+            "minimum": 2000,
+            "maximum": 20000
+        },
+        "sessionCookies": {
+            "title": "Session Cookies (REQUIRED)",
+            "type": "array",
+            "description": "Quora session cookies for authenticated access (REQUIRED for functionality)",
+            "editor": "json",
+            "items": {
+                "type": "object"
+            }
+        }
+    },
+    "required": ["keywords"]
+}

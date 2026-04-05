@@ -1,0 +1,17 @@
+{
+	"actorSpecification": 1,
+	"name": "craigslist-lead-scraper",
+	"title": "Craigslist Lead Scraper",
+	"description": "Scrapes job and gig leads from Craigslist across multiple cities.",
+	"version": "0.0",
+	"buildTag": "latest",
+	"meta": {
+		"templateId": "python-beautifulsoup"
+	},
+	"input": "./input_schema.json",
+	"output": "./output_schema.json",
+	"storages": {
+		"dataset": "./dataset_schema.json"
+	},
+	"dockerfile": "../Dockerfile"
+}

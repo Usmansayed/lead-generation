@@ -1,0 +1,18 @@
+# Lead Generation Pipeline - Phase 1 (5 platforms)
+apify-client>=1.6.0
+pymongo>=4.6.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# AI scoring and email personalization (use one or both)
+openai>=1.12.0
+google-genai>=1.0.0
+
+# Direct SES sending (optional; for --send-email)
+boto3>=1.34.0
+
+# Free web search (no API key) for after-filter context
+duckduckgo-search>=6.0.0
+
+# Optional: Redis for Apify response caching (set REDIS_URL)
+redis>=5.0.0

@@ -1,0 +1,50 @@
+{
+    "title": "Indie Hackers Lead Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "sections": {
+            "title": "Sections to Scrape",
+            "type": "array",
+            "description": "Which Indie Hackers sections to scrape",
+            "default": ["discussions"],
+            "editor": "json",
+            "items": {
+                "type": "string"
+            }
+        },
+        "keywords": {
+            "title": "Keywords to Search For",
+            "type": "array",
+            "description": "Lead generation keywords to filter posts",
+            "editor": "stringList",
+            "placeholderKey": "keyword",
+            "placeholderValue": "e.g., looking for developer"
+        },
+        "maxPosts": {
+            "title": "Maximum Posts",
+            "type": "integer",
+            "description": "Maximum number of posts to scrape",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 500
+        },
+        "minDelayMs": {
+            "title": "Minimum Delay (ms)",
+            "type": "integer",
+            "description": "Minimum delay between requests in milliseconds",
+            "default": 2000,
+            "minimum": 500,
+            "maximum": 10000
+        },
+        "maxDelayMs": {
+            "title": "Maximum Delay (ms)",
+            "type": "integer",
+            "description": "Maximum delay between requests in milliseconds",
+            "default": 5000,
+            "minimum": 1000,
+            "maximum": 20000
+        }
+    },
+    "required": ["keywords"]
+}

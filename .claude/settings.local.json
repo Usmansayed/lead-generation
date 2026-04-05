@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd /c \"del /F \"\"C:\\\\Users\\\\usman\\\\Music\\\\lead-generation\\\\nul\"\"\")",
+      "Bash(powershell -Command \"Remove-Item -Path ''C:\\\\Users\\\\usman\\\\Music\\\\lead-generation\\\\nul'' -Force\")",
+      "Bash(powershell -Command \"Get-Item -LiteralPath ''C:\\\\Users\\\\usman\\\\Music\\\\lead-generation\\\\nul'' -ErrorAction SilentlyContinue | Remove-Item -Force\")"
+    ]
+  }
+}

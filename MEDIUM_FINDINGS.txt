@@ -1,0 +1,121 @@
+MEDIUM.COM HTML STRUCTURE INVESTIGATION - FINDINGS REPORT
+================================================================================
+
+Date: 2026-02-09
+URL: https://medium.com/search?q=startup+hiring
+
+================================================================================
+1. KEY FINDINGS
+================================================================================
+
+CLOUDFLARE PROTECTION:
+- Medium uses Cloudflare bot protection
+- Standard requests get 403 Forbidden
+- Selenium/Playwright REQUIRED
+- Wait 15+ seconds for JavaScript challenge
+
+ARTICLE STRUCTURE:
+- 10 articles per search results page
+- Each article wrapped in <article> tag
+- h2 tags contain titles
+- h3 tags contain preview text
+
+================================================================================
+2. WORKING CSS SELECTORS
+================================================================================
+
+ARTICLES:
+  Selector: article
+  Element: <article data-testid="post-preview">
+  Count: 10 per page
+
+TITLES:
+  Selector: h2
+  Inside: <article> tags
+  Contains: Article title text
+
+LINKS:
+  Selector: h2 a
+  Pattern: href contains "/@username/article-slug"
+  Example: /publication/article-title-slug
+
+PREVIEW:
+  Selector: h3
+  Inside: <article> tags
+  Contains: First paragraph preview
+
+AUTHORS:
+  Selector: a[href*="/@"]
+  Pattern: /@username?source=...
+
+================================================================================
+3. DATA EXTRACTION CODE
+================================================================================
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from bs4 import BeautifulSoup
+import time
+
+# Setup
+options = Options()
+options.add_argument("--headless=new")
+driver = webdriver.Chrome(options=options)
+
+# Load page
+url = "https://medium.com/search?q=startup+hiring"
+driver.get(url)
+time.sleep(15)  # Wait for Cloudflare
+
+# Parse HTML
+soup = BeautifulSoup(driver.page_source, "html.parser")
+articles = soup.find_all("article")
+
+# Extract data
+for article in articles:
+    title_elem = article.find("h2")
+    if title_elem:
+        title = title_elem.get_text(strip=True)
+        link_elem = title_elem.find("a")
+        url = link_elem["href"] if link_elem else None
+        if url and not url.startswith("http"):
+            url = f"https://medium.com{url}"
+
+        preview_elem = article.find("h3")
+        preview = preview_elem.get_text(strip=True) if preview_elem else None
+
+        author_link = article.find("a", href=lambda x: x and "/@" in x)
+        author = author_link.get_text(strip=True) if author_link else None
+
+        print(f"Title: {title}")
+        print(f"URL: {url}")
+        print(f"Author: {author}")
+
+driver.quit()
+
+================================================================================
+4. ALTERNATIVES
+================================================================================
+
+1. RapidAPI Medium API - Direct API access, no scraping
+2. Medium GraphQL API - https://medium.com/_/graphql
+3. RSS Feeds - For specific publications/authors
+4. ScrapingBee/ScrapeOps - Managed scraping services
+
+================================================================================
+5. RECOMMENDATIONS
+================================================================================
+
+- Use Selenium for reliable scraping
+- Wait 15+ seconds for Cloudflare
+- Add delays between requests (10-20 sec)
+- Cache results to minimize requests
+- Monitor for HTML structure changes
+- Consider rotating proxies for scale
+- Respect rate limits and ToS
+
+FILES GENERATED:
+- medium_raw.html (Cloudflare page, 7.7KB)
+- medium_selenium_raw.html (Full page, 240KB)
+- investigate_medium_selenium.py (Working script)
+- MEDIUM_FINDINGS.txt (This file)

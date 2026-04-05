@@ -1,0 +1,112 @@
+﻿--- linkedin-lead-scraper | SUCCEEDED | N/AMB ---
+  Total log lines: 55
+  Error lines: 1
+  ERR: 2026-02-09T10:35:51.899Z [apify] INFO     Errors encountered: 0
+  LAST 8:
+  > 2026-02-09T10:35:51.897Z [apify] INFO     High-quality leads: 0 (0.0%)
+  > 2026-02-09T10:35:51.899Z [apify] INFO     Errors encountered: 0
+  > 2026-02-09T10:35:51.901Z [apify] INFO  ================================================================================
+  > 2026-02-09T10:35:51.902Z [apify] WARN  ??  No leads found! Consider:
+  > 2026-02-09T10:35:51.905Z [apify] WARN     - Providing LinkedIn session cookies for authentication
+  > 2026-02-09T10:35:51.906Z [apify] WARN     - Broadening your keywords
+  > 2026-02-09T10:35:51.908Z [apify] WARN     - LinkedIn may require login for content access
+  > 2026-02-09T10:35:51.910Z [apify] INFO  Exiting Actor ({"exit_code": 0})
+
+--- twitter-lead-scraper | SUCCEEDED | N/AMB ---
+  Total log lines: 48
+  Error lines: 3
+  ERR: 2026-02-09T10:36:41.022Z [apify] ERROR    ? No session cookies provided!
+  ERR: 2026-02-09T10:36:41.023Z [apify] ERROR    ? Twitter/X REQUIRES authentication - actor may fail
+  ERR: 2026-02-09T10:36:55.894Z [apify] INFO     Errors encountered: 0
+  LAST 8:
+  > 2026-02-09T10:36:55.894Z [apify] INFO     High-quality leads: 0 (0.0%)
+  > 2026-02-09T10:36:55.894Z [apify] INFO     Errors encountered: 0
+  > 2026-02-09T10:36:55.895Z [apify] INFO  ================================================================================
+  > 2026-02-09T10:36:55.895Z [apify] WARN  ??  No leads found! Consider:
+  > 2026-02-09T10:36:55.896Z [apify] WARN     - MUST provide Twitter session cookies for authentication
+  > 2026-02-09T10:36:55.896Z [apify] WARN     - Broadening your keywords
+  > 2026-02-09T10:36:55.897Z [apify] WARN     - Twitter/X requires login for almost all content
+  > 2026-02-09T10:36:55.897Z [apify] INFO  Exiting Actor ({"exit_code": 0})
+
+--- quora-lead-scraper | SUCCEEDED | N/AMB ---
+  Total log lines: 17
+  Error lines: 9
+  ERR: 2026-02-09T10:44:45.859Z [apify] ERROR    3. Copy all cookies for quora.com
+  ERR: 2026-02-09T10:44:45.861Z [apify] ERROR    4. Pass them in the sessionCookies input parameter
+  ERR: 2026-02-09T10:44:45.863Z [apify] ERROR
+  ERR: 2026-02-09T10:44:45.869Z [apify] ERROR Example format:
+  ERR: 2026-02-09T10:44:45.871Z [apify] ERROR [{"name": "m-b", "value": "...", "domain": ".quora.com", "path": "/"}]
+  LAST 8:
+  > 2026-02-09T10:44:45.856Z [apify] ERROR    1. Log into quora.com in your browser
+  > 2026-02-09T10:44:45.857Z [apify] ERROR    2. Open DevTools (F12) -> Application -> Cookies
+  > 2026-02-09T10:44:45.859Z [apify] ERROR    3. Copy all cookies for quora.com
+  > 2026-02-09T10:44:45.861Z [apify] ERROR    4. Pass them in the sessionCookies input parameter
+  > 2026-02-09T10:44:45.863Z [apify] ERROR
+  > 2026-02-09T10:44:45.869Z [apify] ERROR Example format:
+  > 2026-02-09T10:44:45.871Z [apify] ERROR [{"name": "m-b", "value": "...", "domain": ".quora.com", "path": "/"}]
+  > 2026-02-09T10:44:45.874Z [apify] INFO  Exiting Actor ({"exit_code": 0})
+
+--- upwork-lead-scraper | SUCCEEDED | N/AMB ---
+  Total log lines: 102
+  Error lines: 9
+  ERR: 2026-02-09T10:31:50.724Z [apify] ERROR Error scraping search results: Page.goto: Timeout 60000ms exceeded.
+  ERR: 2026-02-09T10:31:50.727Z [apify] ERROR Stack trace: Traceback (most recent call last):
+  ERR: 2026-02-09T10:31:50.743Z     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+  ERR: 2026-02-09T10:31:50.744Z playwright._impl._errors.TimeoutError: Page.goto: Timeout 60000ms exceeded.
+  ERR: 2026-02-09T10:31:50.790Z [apify] INFO     Errors encountered: 0
+  LAST 8:
+  > 2026-02-09T10:31:50.789Z [apify] INFO     High-quality leads: 0 (0.0%)
+  > 2026-02-09T10:31:50.790Z [apify] INFO     Errors encountered: 0
+  > 2026-02-09T10:31:50.791Z [apify] INFO  ================================================================================
+  > 2026-02-09T10:31:50.792Z [apify] WARN  ??  No leads found! Consider:
+  > 2026-02-09T10:31:50.792Z [apify] WARN     - Broadening your keywords
+  > 2026-02-09T10:31:50.793Z [apify] WARN     - Upwork may require login for full access
+  > 2026-02-09T10:31:50.794Z [apify] WARN     - Try different search terms
+  > 2026-02-09T10:31:50.796Z [apify] INFO  Exiting Actor ({"exit_code": 0})
+
+--- medium-lead-scraper | SUCCEEDED | N/AMB ---
+  Total log lines: 26
+  Error lines: 0
+  LAST 8:
+  > 2026-02-09T10:42:43.717Z [apify] INFO  ? Lead #9: 6 Personal Branding Mistakes Most Startu... (35/100)
+  > 2026-02-09T10:42:43.745Z [apify] INFO  ? Lead #10: The 3 Emotional Modes That Kill Good Sta... (35/100)
+  > 2026-02-09T10:42:55.857Z [apify] INFO  ? Searching Medium for: hiring
+  > 2026-02-09T10:43:11.005Z [apify] INFO  Found 0 articles for "hiring"
+  > 2026-02-09T10:43:21.987Z [apify] INFO  ? Searching Medium for: freelance
+  > 2026-02-09T10:43:37.026Z [apify] INFO  Found 0 articles for "freelance"
+  > 2026-02-09T10:43:50.107Z [apify] INFO  ? Complete! Leads: 10, High-quality: 0
+  > 2026-02-09T10:43:50.109Z [apify] INFO  Exiting Actor ({"exit_code": 0})
+
+--- indiehackers-lead-scraper | SUCCEEDED | N/AMB ---
+  Total log lines: 63
+  Error lines: 8
+  ERR: 2026-02-09T10:28:44.959Z [BeautifulSoupCrawler] INFO  Crawled 0/1 pages, 0 failed requests, desired concurrency 10.
+  ERR: 2026-02-09T10:28:47.871Z ? requests_failed               ? 0     ?
+  ERR: 2026-02-09T10:28:47.875Z ? request_avg_failed_duration   ? None  ?
+  ERR: 2026-02-09T10:28:47.880Z ? requests_failed_per_minute    ? 0     ?
+  ERR: 2026-02-09T10:28:47.901Z [apify] INFO     Errors encountered: 0
+  LAST 8:
+  > 2026-02-09T10:28:47.899Z [apify] INFO     High-quality leads: 0 (0.0%)
+  > 2026-02-09T10:28:47.901Z [apify] INFO     Errors encountered: 0
+  > 2026-02-09T10:28:47.902Z [apify] INFO  ================================================================================
+  > 2026-02-09T10:28:47.904Z [apify] WARN  ??  No leads found! Consider:
+  > 2026-02-09T10:28:47.906Z [apify] WARN     - Broadening your keywords
+  > 2026-02-09T10:28:47.908Z [apify] WARN     - Trying different sections
+  > 2026-02-09T10:28:47.909Z [apify] WARN     - Note: Indie Hackers may have changed their HTML structure
+  > 2026-02-09T10:28:47.911Z [apify] INFO  Exiting Actor ({"exit_code": 0})
+
+--- craigslist-lead-scraper | SUCCEEDED | N/AMB ---
+  Total log lines: 17
+  Error lines: 2
+  ERR: 2026-02-09T10:41:01.492Z [apify] WARN  Failed to fetch RSS feed for newyork: Client error '403 Forbidden' for url 'https://newyork.craigslist.org/search/jjj?query=web%20developer+a
+  ERR: 2026-02-09T10:41:05.417Z [apify] WARN  Failed to fetch RSS feed for sfbay: Client error '403 Forbidden' for url 'https://sfbay.craigslist.org/search/jjj?query=web%20developer+app%2
+  LAST 8:
+  > 2026-02-09T10:41:01.493Z For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+  > 2026-02-09T10:41:01.494Z [apify] INFO  Found 0 listings in newyork
+  > 2026-02-09T10:41:05.332Z [apify] INFO  ? Fetching jobs from sfbay...
+  > 2026-02-09T10:41:05.417Z [apify] WARN  Failed to fetch RSS feed for sfbay: Client error '403 Forbidden' for url 'https://sfbay.craigslist.org/search/jjj?query=web%20developer+app%2
+  > 2026-02-09T10:41:05.418Z For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+  > 2026-02-09T10:41:05.419Z [apify] INFO  Found 0 listings in sfbay
+  > 2026-02-09T10:41:09.058Z [apify] INFO  ? Complete! Leads: 0, High-quality: 0
+  > 2026-02-09T10:41:09.059Z [apify] INFO  Exiting Actor ({"exit_code": 0})
+

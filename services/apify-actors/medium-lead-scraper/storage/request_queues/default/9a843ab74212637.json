@@ -1,0 +1,19 @@
+{
+  "unique_key": "https://medium.com/search?q=startup",
+  "url": "https://medium.com/search?q=startup",
+  "method": "GET",
+  "payload": null,
+  "headers": {
+    "accept": "text/html",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  },
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": null,
+  "handled_at": "2026-02-08 12:18:11.159013+00:00"
+}

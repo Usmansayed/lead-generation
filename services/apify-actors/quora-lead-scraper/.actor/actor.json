@@ -1,0 +1,17 @@
+{
+	"actorSpecification": 1,
+	"name": "quora-lead-scraper",
+	"title": "Quora Lead Scraper",
+	"description": "Scrapes business leads from Quora questions and answers.",
+	"version": "0.0",
+	"buildTag": "latest",
+	"meta": {
+		"templateId": "python-playwright"
+	},
+	"input": "./input_schema.json",
+	"output": "./output_schema.json",
+	"storages": {
+		"dataset": "./dataset_schema.json"
+	},
+	"dockerfile": "../Dockerfile"
+}

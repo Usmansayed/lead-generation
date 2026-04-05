@@ -1,0 +1,50 @@
+{
+    "title": "AngelList Lead Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keywords": {
+            "title": "Keywords to Search For",
+            "type": "array",
+            "description": "Lead generation keywords to filter job postings",
+            "editor": "stringList",
+            "placeholderKey": "keyword",
+            "placeholderValue": "e.g., python developer"
+        },
+        "jobTypes": {
+            "title": "Job Types",
+            "type": "array",
+            "description": "Job role types to search (e.g., software-engineer, designer, product-manager)",
+            "default": ["software-engineer"],
+            "editor": "json",
+            "items": {
+                "type": "string"
+            }
+        },
+        "maxJobs": {
+            "title": "Maximum Jobs",
+            "type": "integer",
+            "description": "Maximum number of jobs to scrape",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 500
+        },
+        "minDelayMs": {
+            "title": "Minimum Delay (ms)",
+            "type": "integer",
+            "description": "Minimum delay between requests in milliseconds",
+            "default": 2000,
+            "minimum": 500,
+            "maximum": 10000
+        },
+        "maxDelayMs": {
+            "title": "Maximum Delay (ms)",
+            "type": "integer",
+            "description": "Maximum delay between requests in milliseconds",
+            "default": 5000,
+            "minimum": 1000,
+            "maximum": 20000
+        }
+    },
+    "required": ["keywords"]
+}

@@ -1,0 +1,17 @@
+{
+	"actorSpecification": 1,
+	"name": "medium-lead-scraper",
+	"title": "Medium Lead Scraper",
+	"description": "Scrapes business leads from Medium articles and posts.",
+	"version": "0.0",
+	"buildTag": "latest",
+	"meta": {
+		"templateId": "python-beautifulsoup"
+	},
+	"input": "./input_schema.json",
+	"output": "./output_schema.json",
+	"storages": {
+		"dataset": "./dataset_schema.json"
+	},
+	"dockerfile": "../Dockerfile"
+}

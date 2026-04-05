@@ -1,0 +1,42 @@
+{
+  "lead": {
+    "id": "60db0466dd3464d19bf496e30fc45b9c0407180bbf6f3dcf78bb4eed8e95a057",
+    "platform": "reddit",
+    "post_url": "https://www.reddit.com/r/SideProject/comments/1r3psn4/i_built_a_free_triangle_of_talent_assessment/",
+    "post_text_preview": "I built a free \"Triangle of Talent\" assessment based on Shaan Puri's framework\n\nShaan Puri shared this framework on My First Million - your talent level depends on two things: how good you are at finding the right problems and how good you are at solving them. Your overall level is capped by whichever is weaker.\n\nI turned it into a quick 12-question quiz that scores you on both axes and places you",
+    "author_handle": "usamaejazch",
+    "author_profile_url": "https://www.reddit.com/user/usamaejazch"
+  },
+  "full_post_fetch": {
+    "from_cache": true,
+    "full_post_text_length": 1184,
+    "full_post_text": "Skip to main content Go to SideProject r/SideProject \u2022 usamaejazch I built a free \"Triangle of Talent\" assessment based on Shaan Puri's framework Shaan Puri shared this framework on My First Million - your talent level depends on two things: how good you are at finding the right problems and how good you are at solving them. Your overall level is capped by whichever is weaker. I turned it into a quick 12-question quiz that scores you on both axes and places you at one of 5 levels (from \"Useless\" to \"Superstar\"). https://nuraworks.com/tools/triangle-of-talent No signup, no email, just take it and see where you land. Would love feedback on the questions - I tried to make them scenario-based rather than generic \"rate yourself\" stuff. Read more Share New to Reddit? Create your account and connect with a world of communities. Continue with Email Continue With Phone Number By continuing, you agree to our User Agreement and acknowledge that you understand the Privacy Policy . Public Anyone can view, post, and comment to this community 0 0 Reddit Rules Privacy Policy User Agreement Accessibility Reddit, Inc. \u00a9 2026. All rights reserved. Expand Navigation Collapse Navigation"
+  },
+  "research": {
+    "business_type": "default",
+    "business_size": "small",
+    "has_website": false,
+    "suggested_offers": [
+      "website",
+      "booking or scheduling",
+      "CRM or operations"
+    ],
+    "should_skip_email": false
+  },
+  "profile_fetch": {
+    "from_cache": true,
+    "profile_url": "https://www.reddit.com/user/usamaejazch",
+    "profile_text_length": 77,
+    "profile_text": "{'text': '', 'content': '', 'url': 'https://www.reddit.com/user/usamaejazch'}"
+  },
+  "contact": {
+    "method": "profile",
+    "value": "https://www.reddit.com/user/usamaejazch",
+    "description": "reach via profile/post (no email found)"
+  },
+  "email": {
+    "subject": "Loved your Triangle of Talent assessment!",
+    "bodyText": "Hey Usama,\n\nJust saw your post on r/SideProject about the 'Triangle of Talent' assessment \u2013 really cool how you turned Shaan Puri's framework into a practical, scenario-based quiz. That's super smart, and I appreciate the no-signup approach.\n\nAs fellow builders at Scubiee, I'm always impressed by folks creating useful tools like this. I often help founders build out the full website around their ideas or streamline their operations with custom software.\n\nNo pressure at all, but if you ever think about expanding Nuraworks or need a hand with other business tools, my team and I at Scubiee are here. You can find us at scubiee.com if it's ever useful.",
+    "bodyHtml": "<p>Hey Usama,</p>\n<p>Just saw your post on r/SideProject about the 'Triangle of Talent' assessment \u2013 really cool how you turned Shaan Puri's framework into a practical, scenario-based quiz. That's super smart, and I appreciate the no-signup approach.</p>\n<p>As fellow builders at Scubiee, I'm always impressed by folks creating useful tools like this. I often help founders build out the full website around their ideas or streamline their operations with custom software.</p>\n<p>No pressure at all, but if you ever think about expanding Nuraworks or need a hand with other business tools, my team and I at Scubiee are here. You can find us at scubiee.com if it's ever useful.</p>"
+  }
+}

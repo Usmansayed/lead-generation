@@ -1,0 +1,37 @@
+{
+    "title": "Freelancer Lead Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keywords": {
+            "title": "Search Keywords",
+            "type": "array",
+            "description": "Keywords to search for on Freelancer.com",
+            "prefill": ["website", "app development", "mobile app", "wordpress"],
+            "editor": "stringList"
+        },
+        "maxJobsPerKeyword": {
+            "title": "Maximum Jobs Per Keyword",
+            "type": "integer",
+            "description": "Maximum number of jobs to scrape per keyword",
+            "default": 20,
+            "minimum": 1,
+            "maximum": 100
+        },
+        "minDelayMs": {
+            "title": "Minimum Delay (ms)",
+            "type": "integer",
+            "description": "Minimum delay between requests in milliseconds",
+            "default": 3000,
+            "minimum": 1000
+        },
+        "maxDelayMs": {
+            "title": "Maximum Delay (ms)",
+            "type": "integer",
+            "description": "Maximum delay between requests in milliseconds",
+            "default": 7000,
+            "minimum": 1000
+        }
+    },
+    "required": ["keywords"]
+}

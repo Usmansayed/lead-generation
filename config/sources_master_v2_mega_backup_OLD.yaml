@@ -1,0 +1,2790 @@
+# MEGA Master Source Configuration - 150+ Sources
+# Version 3.0 - COMPREHENSIVE EXPANSION
+# Generated from web research + sources.md analysis
+# Focus: $1k-$50k projects from English-speaking regions
+# Last updated: 2026-02-06
+
+version: "3.0"
+total_sources: 152
+coverage_score: "Comprehensive - All major platforms and verticals"
+
+metadata:
+  target_budget: "$1,000 - $50,000"
+  target_regions: ["US", "UK", "CA", "AU", "EU", "SG", "NZ"]
+  languages: ["English", "German", "French", "Spanish", "Dutch"]
+  deployment_phases: 3
+  expected_lead_volume: "500-1000/week at full deployment"
+  expected_conversion: "8-15% overall"
+
+# ==============================================================================
+# TIER A - SUPER HIGH PRIORITY (60 sources)
+# Professional communities, direct project listings, high signal
+# ==============================================================================
+tier_a_sources:
+  
+  # ---------------------------------------------------------------------------
+  # REDDIT - HIGH-VALUE SUBREDDITS (25 sources)
+  # ---------------------------------------------------------------------------
+  
+  reddit_entrepreneur:
+    platform: reddit
+    url: https://www.reddit.com/r/Entrepreneur
+    access: public
+    tier: A
+    priority: 1
+    vertical: [general, saas, startups, business]
+    search_queries:
+      - "looking for developer"
+      - "need technical cofounder"
+      - "hire developer"
+      - "need help building"
+      - "MVP development"
+      - "looking for agency"
+      - "outsourcing development"
+      - "technical cofounder wanted"
+    discovery_method: api_search
+    crawl_frequency: hourly
+    expected_conversion: 0.15
+    monthly_volume: 80-120
+    notes: "General entrepreneurship - high volume, medium quality"
+    
+  reddit_startups:
+    platform: reddit
+    url: https://www.reddit.com/r/startups
+    access: public
+    tier: A
+    priority: 1
+    vertical: [startups, mvp, tech]
+    search_queries:
+      - "technical cofounder"
+      - "looking for developer"
+      - "MVP build"
+      - "prototype development"
+      - "need tech person"
+      - "non-technical founder"
+      - "outsourcing dev"
+    discovery_method: api_search
+    crawl_frequency: hourly
+    expected_conversion: 0.18
+    monthly_volume: 60-100
+    notes: "Startup-focused - higher quality leads"
+    
+  reddit_forhire:
+    platform: reddit
+    url: https://www.reddit.com/r/forhire
+    access: public
+    tier: A
+    priority: 1
+    vertical: [freelance, contracts, general]
+    search_queries:
+      - "[Hiring]"
+      - "developer"
+      - "web development"
+      - "app development"
+      - "full stack"
+      - "backend"
+      - "frontend"
+      - "mobile dev"
+    discovery_method: api_search
+    crawl_frequency: every_30_minutes
+    expected_conversion: 0.25
+    monthly_volume: 100-150
+    notes: "Direct hiring posts - highest Reddit conversion"
+    
+  reddit_smallbusiness:
+    platform: reddit
+    url: https://www.reddit.com/r/smallbusiness
+    access: public
+    tier: A
+    priority: 2
+    vertical: [smb, local, business]
+    search_queries:
+      - "need software"
+      - "looking for developer"
+      - "custom solution"
+      - "website development"
+      - "business software"
+      - "automation"
+    discovery_method: api_search
+    crawl_frequency: every_2_hours
+    expected_conversion: 0.12
+    monthly_volume: 40-70
+    notes: "Small business owners - good budget range"
+    
+  reddit_saas:
+    platform: reddit
+    url: https://www.reddit.com/r/SaaS
+    access: public
+    tier: A
+    priority: 1
+    vertical: [saas, startups, tech]
+    search_queries:
+      - "looking for developer"
+      - "need technical help"
+      - "building SaaS"
+      - "MVP development"
+      - "technical cofounder"
+    discovery_method: api_search
+    crawl_frequency: every_2_hours
+    expected_conversion: 0.20
+    monthly_volume: 30-50
+    notes: "SaaS builders - understand software value"
+    
+  reddit_ecommerce:
+    platform: reddit
+    url: https://www.reddit.com/r/ecommerce
+    access: public
+    tier: A
+    priority: 2
+    vertical: [ecommerce, retail]
+    search_queries:
+      - "custom development"
+      - "Shopify developer"
+      - "integration needed"
+      - "custom app"
+      - "looking for developer"
+    discovery_method: api_search
+    crawl_frequency: every_3_hours
+    expected_conversion: 0.14
+    monthly_volume: 25-45
+    notes: "E-commerce merchants - integration heavy"
+    
+  reddit_shopify:
+    platform: reddit
+    url: https://www.reddit.com/r/shopify
+    access: public
+    tier: A
+    priority: 1
+    vertical: [ecommerce, shopify]
+    search_queries:
+      - "custom app"
+      - "Shopify developer"
+      - "custom theme"
+      - "integration"
+      - "need help with"
+      - "looking for developer"
+    discovery_method: api_search
+    crawl_frequency: every_2_hours
+    expected_conversion: 0.16
+    monthly_volume: 40-60
+    notes: "Shopify merchants - frequent customization needs"
+    
+  reddit_wordpress:
+    platform: reddit
+    url: https://www.reddit.com/r/Wordpress
+    access: public
+    tier: A
+    priority: 2
+    vertical: [wordpress, cms, web]
+    search_queries:
+      - "custom plugin"
+      - "plugin development"
+      - "custom theme"
+      - "WordPress developer"
+      - "need help"
+    discovery_method: api_search
+    crawl_frequency: every_3_hours
+    expected_conversion: 0.10
+    monthly_volume: 30-50
+    notes: "WordPress users - plugin/theme customization"
+    
+  reddit_woocommerce:
+    platform: reddit
+    url: https://www.reddit.com/r/woocommerce
+    access: public
+    tier: A
+    priority: 2
+    vertical: [ecommerce, wordpress, woocommerce]
+    search_queries:
+      - "custom development"
+      - "WooCommerce developer"
+      - "integration"
+      - "custom functionality"
+      - "looking for help"
+    discovery_method: api_search
+    crawl_frequency: every_4_hours
+    expected_conversion: 0.11
+    monthly_volume: 15-25
+    notes: "WooCommerce store owners"
+    
+  reddit_indiehackers:
+    platform: reddit
+    url: https://www.reddit.com/r/indiehackers
+    access: public
+    tier: A
+    priority: 1
+    vertical: [indie, startups, bootstrapped]
+    search_queries:
+      - "looking for developer"
+      - "need technical cofounder"
+      - "solo founder"
+      - "non-technical"
+      - "building product"
+    discovery_method: api_search
+    crawl_frequency: hourly
+    expected_conversion: 0    monthly_volume: 35-55
+    notes: "Indie makers - budget conscious but understand value"
+    
+  reddit_sideproject:
+    platform: reddit
+    url: https://www.reddit.com/r/SideProject
+    access: public
+    tier: A
+    priority: 2
+    vertical: [projects, indie, hobbyist]
+    search_queries:
+      - "looking for"
+      - "need developer"
+      - "seeking help"
+      - "collaboration"
+      - "cofounder"
+    discovery_method: api_search
+    crawl_frequency: every_2_hours
+    expected_conversion: 0.12
+    monthly_volume: 20-35
+    notes: "Side projects - mix of budgets"
+    
+  reddit_webdev:
+    platform: reddit
+    url: https://www.reddit.com/r/webdev
+    access: public
+    tier: A
+    priority: 3
+    vertical: [web, development, tech]
+    search_queries:
+      - "client work"
+      - "freelance opportunity"
+      - "project opportunity"
+      - "looking for team"
+    discovery_method: api_search
+    crawl_frequency: every_4_hours
+    expected_conversion: 0.08
+    monthly_volume: 15-25
+    notes: "Developer community - occasional client posts"
+    
+  reddit_nocode:
+    platform: reddit
+    url: https://www.reddit.com/r/nocode
+    access: public
+    tier: A
+    priority: 2
+    vertical: [nocode, automation, integrations]
+    search_queries:
+      - "need custom"
+      - "too complex"
+      - "need developer"
+      - "custom solution"
+      - "beyond nocode"
+    discovery_method: api_search
+    crawl_frequency: every_3_hours
+    expected_conversion: 0.13
+    monthly_volume: 20-30
+    notes: "NoCode users hitting limits - need custom dev"
+    
+  reddit_biggerpockets:
+    platform: reddit
+    url: https://www.reddit.com/r/realestateinvesting
+    access: public
+    tier: A
+    priority: 2
+    vertical: [real_estate, property_management]
+    search_queries:
+      - "property management software"
+      - "real estate CRM"
+      - "custom solution"
+      - "need developer"
+    discovery_method: api_search
+    crawl_frequency: daily
+    expected_conversion: 0.09
+    monthly_volume: 10-20
+    notes: "Real estate investors - good budgets"
+    
+  reddit_realestate:
+    platform: reddit
+    url: https://www.reddit.com/r/RealEstate
+    access: public
+    tier: A
+    priority: 3
+    vertical: [real_estate]
+    search_queries:
+      - "software solution"
+      - "need tool"
+      - "custom development"
+      - "automation"
+    discovery_method: api_search
+    crawl_frequency: daily
+    expected_conversion: 0.07
+    monthly_volume: 5-15
+    notes: "Broader real estate community"
+    
+  reddit_restaurantowners:
+    platform: reddit
+    url: https://www.reddit.com/r/restaurantowners
+    access: public
+    tier: A
+    priority: 2
+    vertical: [restaurants, hospitality]
+    search_queries:
+      - "POS system"
+      - "online ordering"
+      - "custom solution"
+      - "need software"
+      - "reservation system"
+    discovery_method: api_search
+    crawl_frequency: daily
+    expected_conversion: 0.08
+    monthly_volume: 10-20
+    notes: "Restaurant owners - operational software needs"
+    
+  reddit_fitness:
+    platform: reddit
+    url: https://www.reddit.com/r/fitness
+    access: public
+    tier: A
+    priority: 3
+    vertical: [fitness, health, gym]
+    search_queries:
+      - "gym software"
+      - "fitness app"
+      - "booking system"
+      - "member management"
+    discovery_method: api_search
+    crawl_frequency: weekly
+    expected_conversion: 0.06
+    monthly_volume: 5-10
+    notes: "Fitness industry - niche needs"
+    
+  reddit_legaladvice:
+    platform: reddit
+    url: https://www.reddit.com/r/LawFirm
+    access: public
+    tier: A
+    priority: 3
+    vertical: [legal, professional_services]
+    search_queries:
+      - "practice management"  
+      - "case management"
+      - "legal software"
+      - "custom solution"
+    discovery_method: api_search
+    crawl_frequency: weekly
+    expected_conversion: 0.05
+    monthly_volume: 3-8
+    notes: "Legal professionals - compliance heavy"
+    
+  reddit_accounting:
+    platform: reddit
+    url: https://www.reddit.com/r/Accounting
+    access: public
+    tier: A
+    priority: 3
+    vertical: [accounting, finance]
+    search_queries:
+      - "accounting software"
+      - "custom solution"
+      - "automation"
+      - "integration"
+    discovery_method: api_search
+    crawl_frequency: weekly
+    expected_conversion: 0.06
+    monthly_volume: 3-8
+    notes: "Accountants and bookkeepers"
+    
+  reddit_freelance:
+    platform: reddit
+    url: https://www.reddit.com/r/freelance
+    access: public
+    tier: A
+    priority: 2
+    vertical: [freelance, agency, business]
+    search_queries:
+      - "need developer"
+      - "subcontract"
+      - "white label"
+      - "looking for partner"
+    discovery_method: api_search
+    crawl_frequency: every_3_hours
+    expected_conversion: 0.10
+    monthly_volume: 15-25
+    notes: "Freelancers looking to subcontract or partner"
+    
+  reddit_digitalnomad:
+    platform: reddit
+    url: https://www.reddit.com/r/digitalnomad
+    access: public
+    tier: A
+    priority: 3
+    vertical: [remote, freelance, startups]
+    search_queries:
+      - "building product"
+      - "need developer"
+      - "remote team"
+      - "hiring remote"
+    discovery_method: api_search
+    crawl_frequency: daily
+    expected_conversion: 0.08
+    monthly_volume: 8-15
+    notes: "Digital nomads and remote entrepreneurs"
+    
+  reddit_marketing:
+    platform: reddit
+    url: https://www.reddit.com/r/marketing
+    access: public
+    tier: A
+    priority: 3
+    vertical: [marketing, agencies]
+    search_queries:
+      - "marketing automation"
+      - "custom tool"
+      - "integration needed"
+      - "need developer"
+    discovery_method: api_search
+    crawl_frequency: daily
+    expected_conversion: 0.07
+    monthly_volume: 10-18
+    notes: "Marketing professionals - automation needs"
+    
+  reddit_amazonsellerr:
+    platform: reddit
+    url: https://www.reddit.com/r/AmazonSeller
+    access: public
+    tier: A
+    priority: 2
+    vertical: [ecommerce, amazon, marketplace]
+    search_queries:
+      - "inventory management"
+      - "repricing tool"
+      - "custom solution"
+      - "Amazon integration"
+    discovery_method: api_search
+    crawl_frequency: weekly
+    expected_conversion: 0.09
+    monthly_volume: 8-15
+    notes: "Amazon sellers - operations heavy"
+    
+  reddit_etsy:
+    platform: reddit
+    url: https://www.reddit.com/r/EtsySellers
+    access: public
+    tier: A
+    priority: 3
+    vertical: [ecommerce, etsy, marketplace, crafts]
+    search_queries:
+      - "inventory management"
+      - "order management"
+      - "custom tool"
+      - "integration"
+    discovery_method: api_search
+    crawl_frequency: weekly
+    expected_conversion: 0.06
+    monthly_volume: 5-12
+    notes: "Etsy sellers - smaller budgets but volume"
+    
+  reddit_construction:
+    platform: reddit
+    url: https://www.reddit.com/r/Construction
+    access: public
+    tier: A
+    priority: 3
+    vertical: [construction, trades]
+    search_queries:
+      - "project management"
+      - "estimating software"
+      - "custom solution"
+      - "job tracking"
+    discovery_method: api_search
+    crawl_frequency: weekly
+    expected_conversion: 0.07
+    monthly_volume: 5-10
+    notes: "Construction professionals"
+    
+  # ---------------------------------------------------------------------------
+  # HACKER NEWS - HIGH-VALUE SECTIONS (4 sources)
+  # ---------------------------------------------------------------------------
+  
+  hackernews_ask:
+    platform: hackernews
+    url: https://news.ycombinator.com
+    access: public
+    tier: A
+    priority: 1
+    vertical: [tech, startups, general]
+    search_queries:
+      - "Ask HN: Looking for"
+      - "Ask HN: Need"
+      - "Ask HN: Hire"
+      - "Ask HN: Developer"
+      - "Ask HN: Recommendations"
+      - "Ask HN: Who can"
+    discovery_method: algolia_api
+    crawl_frequency: hourly
+    expected_conversion: 0.22
+    monthly_volume: 30-50
+    notes: "Ask HN threads - highly technical founders"
+    api_endpoint: "https://hn.algolia.com/api/v1/search"
+    
+  hackernews_show:
+    platform: hackernews
+    url: https://news.ycombinator.com
+    access: public
+    tier: A
+    priority: 2
+    vertical: [tech, startups, products]
+    search_queries:
+      - "Show HN: Looking for"
+      - "Show HN: Need help"
+      - "Show HN: Hiring"
+    discovery_method: algolia_api
+    crawl_frequency: every_3_hours
+    expected_conversion: 0.15
+    monthly_volume: 15-25
+    notes: "Show HN - makers seeking help"
+    api_endpoint: "https://hn.algolia.com/api/v1/search"
+    
+  hackernews_whoishiring:
+    platform: hackernews
+    url: https://news.ycombinator.com
+    access: public
+    tier: A
+    priority: 1
+    vertical: [tech, jobs, freelance]
+    search_queries:
+      - "freelance"
+      - "contract"
+      - "part-time"
+      - "project-based"
+      - "consulting"
+    discovery_method: algolia_api
+    crawl_frequency: monthly
+    expected_conversion: 0.18
+    monthly_volume: 20-40
+    notes: "Who is hiring monthly thread - contract opportunities"
+    api_endpoint: "https://hn.algolia.com/api/v1/search"
+    
+  hackernews_freelance:
+    platform: hackernews
+    url: https://news.ycombinator.com
+    access: public
+    tier: A
+    priority: 1
+    vertical: [freelance, consulting]
+    search_queries:
+      - "Freelancer? Seeking Freelancer"
+      - "available for freelance"
+      - "contract work"
+    discovery_method: algolia_api
+    crawl_frequency: monthly
+    expected_conversion: 0.20
+    monthly_volume: 15-30
+    notes: "Freelancer? monthly thread"
+    api_endpoint: "https://hn.algolia.com/api/v1/search"
+    
+  # ----------------------------------------------------------------------------
+  # INDIE HACKERS - COMMUNITY SECTIONS (3 sources)
+  # ---------------------------------------------------------------------------
+  
+  indiehackers_forum:
+    platform: indiehackers
+    url: https://www.indiehackers.com
+    access: public
+    tier: A
+    priority: 1
+    vertical: [indie, startups, bootstrapped]
+    search_queries:
+      - "hiring"
+      - "looking for developer"
+      - "need help"
+      - "technical cofounder"
+      - "outsourcing"
+    discovery_method: scraper
+    crawl_frequency: every_2_hours
+    expected_conversion: 0.25
+    monthly_volume: 25-40
+    notes: "IH forum - bootstrapped founders who pay"
+    
+  indiehackers_jobs:
+    platform: indiehackers
+    url: https://www.indiehackers.com/jobs
+    access: public
+    tier: A
+    priority: 2
+    vertical: [indie, startups, jobs]
+    search_queries:
+      - "contract"
+      - "freelance"
+      - "part-time"
+      - "remote"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.18
+    monthly_volume: 10-20
+    notes: "IH job board - includes contract work"
+    
+  indiehackers_meet:
+    platform: indiehackers
+    url: https://www.indiehackers.com/meet
+    access: public
+    tier: A
+    priority: 3
+    vertical: [indie, networking, cofounder]
+    search_queries:
+      - "looking for technical"
+      - "need developer"
+      - "seeking technical cofounder"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.15
+    monthly_volume: 5-12
+    notes: "IH meet section - cofounder matching"
+    
+  # ---------------------------------------------------------------------------
+  # GITHUB - ISSUES AND DISCUSSIONS (5 sources)
+  # ---------------------------------------------------------------------------
+  
+  github_ecommerce_issues:
+    platform: github
+    url: https://github.com
+    access: public
+    tier: A
+    priority: 2
+    vertical: [opensource, ecommerce, shopify]
+    search_queries:
+      - "need help building"
+      - "looking for developer"
+      - "can someone help"
+      - "seeking maintainer"
+      - "sponsorship opportunity"
+    discovery_method: github_api
+    crawl_frequency: daily
+    expected_conversion: 0.15
+    monthly_volume: 10-20
+    notes: "E-commerce plugin/theme repos"
+    search_scope: "shopify OR woocommerce OR prestashop OR magento in:title,body type:issue"
+    
+  github_integrations_issues:
+    platform: github
+    url: https://github.com
+    access: public
+    tier: A
+    priority: 2
+    vertical: [opensource, integrations, api]
+    search_queries:
+      - "custom integration"
+      - "need developer"
+      - "help wanted"
+      - "looking for contributor"
+    discovery_method: github_api
+    crawl_frequency: daily
+    expected_conversion: 0.12
+    monthly_volume: 8-15
+    notes: "Integration-focused repos"
+    search_scope: "integration OR connector OR sync in:title,body type:issue"
+    
+  github_saas_discussions:
+    platform: github
+    url: https://github.com
+    access: public
+    tier: A
+    priority: 3
+    vertical: [opensource, saas]
+    search_queries:
+      - "looking for developer"
+      - "need maintainer"
+      - "sponsorship"
+      - "commercial support"
+    discovery_method: github_api
+    crawl_frequency: daily
+    expected_conversion: 0.10
+    monthly_volume: 6-12
+    notes: "SaaS tool discussions"
+    search_scope: "saas OR boilerplate OR starter in:name type:discussion"
+    
+  github_wordpress_issues:
+    platform: github
+    url: https://github.com
+    access: public
+    tier: A
+    priority: 2
+    vertical: [opensource, wordpress, cms]
+    search_queries:
+      - "custom development"
+      - "need developer"
+      - "help wanted"
+      - "plugin development"
+    discovery_method: github_api
+    crawl_frequency: daily
+    expected_conversion: 0.11
+    monthly_volume: 8-14
+    notes: "WordPress plugin repos"
+    search_scope: "wordpress-plugin OR wp-plugin in:topic type:issue"
+    
+  github_automation_issues:
+    platform: github
+    url: https://github.com
+    access: public
+    tier: A
+    priority: 3
+    vertical: [opensource, automation, integrations]
+    search_queries:
+      - "custom workflow"
+      - "need help"
+      - "integration needed"
+      - "looking for developer"
+    discovery_method: github_api
+    crawl_frequency: weekly
+    expected_conversion: 0.09
+    monthly_volume: 5-10
+    notes: "Automation/workflow repos"
+    search_scope: "n8n OR zapier OR automation in:topic type:issue"
+    
+  # ---------------------------------------------------------------------------
+  # PRODUCT HUNT - MAKER COMMUNITY (3 sources)
+  # ---------------------------------------------------------------------------
+  
+  producthunt_discussions:
+    platform: producthunt
+    url: https://www.producthunt.com
+    access: public
+    tier: A
+    priority: 2
+    vertical: [startups, products, tech]
+    search_queries:
+      - "looking for developer"
+      - "need technical help"
+      - "technical cofounder"
+      - "development partner"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.12
+    monthly_volume: 12-20
+    notes: "Product Hunt discussions - makers seeking devs"
+    
+  producthunt_comments:
+    platform: producthunt
+    url: https://www.producthunt.com
+    access: public
+    tier: A
+    priority: 3
+    vertical: [startups, products, feedback]
+    search_queries:
+      - "looking for"
+      - "need help with"
+      - "how do I build"
+      - "seeking developer"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.08
+    monthly_volume: 8-15
+    notes: "Comments on launches - makers asking questions"
+    
+  producthunt_upcoming:
+    platform: producthunt
+    url: https://www.producthunt.com/upcoming
+    access: public
+    tier: A
+    priority: 3
+    vertical: [startups, prelaunch]
+    search_queries:
+      - "need developer"
+      - "looking for help"
+      - "pre-launch help"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.10
+    monthly_volume: 5-10
+    notes: "Upcoming launches - pre-launch support needs"
+    
+  # ---------------------------------------------------------------------------
+  # FREELANCE MARKETPLACES - DIRECT PROJECT LISTINGS (8 sources)
+  # ---------------------------------------------------------------------------
+  
+  upwork_web_development:
+    platform: upwork
+    url: https://www.upwork.com/nx/search/jobs
+    access: public
+    tier: A
+    priority: 1
+    vertical: [web, fullstack, general]
+    search_queries:
+      - "web application"
+      - "full stack"
+      - "MVP"
+      - "custom development"
+    discovery_method: scraper
+    crawl_frequency: hourly
+    expected_conversion: 0.30
+    monthly_volume: 80-120
+    notes: "Web dev category - highest volume"
+    budget_filter: "$1000-$20000"
+    filters:
+      - "budget: $1000+"
+      - "fixed-price OR hourly: $50+"
+      - "client_history: 10+ hires OR $10k+ spent"
+      - "payment_verified: yes"
+    
+  upwork_ecommerce:
+    platform: upwork
+    url: https://www.upwork.com/nx/search/jobs
+    access: public
+    tier: A
+    priority: 1
+    vertical: [ecommerce, shopify, marketplace]
+    search_queries:
+      - "Shopify"
+      - "WooCommerce"
+      - "e-commerce"
+      - "online store"
+    discovery_method: scraper
+    crawl_frequency: hourly
+    expected_conversion: 0.28
+    monthly_volume: 50-80
+    notes: "E-commerce category"
+    budget_filter: "$1000-$20000"
+    
+  upwork_mobile:
+    platform: upwork
+    url: https://www.upwork.com/nx/search/jobs
+    access: public
+    tier: A
+    priority: 2
+    vertical: [mobile, ios, android]
+    search_queries:
+      - "mobile app"
+      - "iOS"
+      - "Android"
+      - "React Native"
+      - "Flutter"
+    discovery_method: scraper
+    crawl_frequency: every_2_hours
+    expected_conversion: 0.25
+    monthly_volume: 40-70
+    notes: "Mobile app development"
+    budget_filter: "$2000-$30000"
+    
+  freelancer_web_development:
+    platform: freelancer
+    url: https://www.freelancer.com/jobs
+    access: public
+    tier: A
+    priority: 1
+    vertical: [web, fullstack]
+    search_queries:
+      - "web application"
+      - "custom development"
+      - "full stack"
+      - "MVP development"
+    discovery_method: scraper
+    crawl_frequency: every_2_hours
+    expected_conversion: 0.25
+    monthly_volume: 60-100
+    notes: "Freelancer.com web dev"
+    budget_filter: "$1000-$20000"
+    
+  freelancer_ecommerce:
+    platform: freelancer
+    url: https://www.freelancer.com/jobs
+    access: public
+    tier: A
+    priority: 2
+    vertical: [ecommerce]
+    search_queries:
+      - "e-commerce"
+      - "online store"
+      - "Shopify"
+      - "WooCommerce"
+    discovery_method: scraper
+    crawl_frequency: every_2_hours
+    expected_conversion: 0.23
+    monthly_volume: 30-50
+    notes: "Freelancer.com e-commerce"
+    budget_filter: "$1000-$20000"
+    
+  fiverr_pro_web:
+    platform: fiverr
+    url: https://www.fiverr.com/categories/programming-tech
+    access: public
+    tier: A
+    priority: 2
+    vertical: [web, development]
+    search_queries:
+      - "custom web application"
+      - "enterprise project"
+      - "complex development"
+    discovery_method: scraper
+    crawl_frequency: every_3_hours
+    expected_conversion: 0.20
+    monthly_volume: 20-35
+    notes: "Fiverr Pro/Business tier only"
+    budget_filter: "$1000+"
+    
+  peopleperhour_web:
+    platform: peopleperhour
+    url: https://www.peopleperhour.com/freelance-jobs
+    access: public
+    tier: A
+    priority: 2
+    vertical: [web, development]
+    search_queries:
+      - "web development"
+      - "custom application"
+      - "full stack"
+    discovery_method: scraper
+    crawl_frequency: every_3_hours
+    expected_conversion: 0.22
+    monthly_volume: 25-40
+    notes: "UK-focused marketplace"
+    budget_filter: "£800-£15000"
+    
+  guru_web_development:
+    platform: guru
+    url: https://www.guru.com/d/jobs
+    access: public
+    tier: A
+    priority: 3
+    vertical: [web, development]
+    search_queries:
+      - "web application"
+      - "custom development"
+      - "software development"
+    discovery_method: scraper
+    crawl_frequency: every_4_hours
+    expected_conversion: 0.18
+    monthly_volume: 15-30
+    notes: "Guru.com marketplace"
+    budget_filter: "$1000-$20000"
+
+# ==============================================================================
+# TIER B - SECONDARY (60 sources)
+# Good signal, higher volume, more effort required
+# ==============================================================================
+tier_b_sources:
+  
+  # ---------------------------------------------------------------------------
+  # AGENCY MARKETPLACES - RFP SYSTEMS (5 sources)
+  # ---------------------------------------------------------------------------
+  
+  clutch_rfp_web_dev:
+    platform: clutch
+    url: https://clutch.co
+    access: public
+    tier: B
+    priority: 1
+    vertical: [agencies, web, mobile, ecommerce]
+    search_queries:
+      - "web development RFP"
+      - "ecommerce development"
+      - "custom software"
+      - "mobile app development"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.20
+    monthly_volume: 40-60
+    notes: "350K+ service providers, project brief system, verified reviews"
+    focuses: "B2B marketplace, agencies respond to RFPs"
+    
+  clutch_rfp_ecommerce:
+    platform: clutch
+    url: https://clutch.co/ecommerce
+    access: public
+    tier: B
+    priority: 1
+    vertical: [ecommerce, shopify, magento]
+    search_queries:
+      - "Shopify development"
+      - "Magento agency"
+      - "ecommerce platform"
+      - "online store"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.18
+    monthly_volume: 30-50
+    notes: "15K+ ecommerce agencies"
+    
+  goodfirms_directory:
+    platform: goodfirms
+    url: https://www.goodfirms.co
+    access: public
+    tier: B
+    priority: 2
+    vertical: [agencies, software, web]
+    search_queries:
+      - "software development"
+      - "web development"
+      - "app development"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.15
+    monthly_volume: 20-40
+    notes: "80K+ companies, similar to Clutch"
+    
+  designrush_agency_directory:
+    platform: designrush
+    url: https://www.designrush.com
+    access: public
+    tier: B
+    priority: 2
+    vertical: [agencies, design, web]
+    search_queries:
+      - "web development"
+      - "ecommerce design"
+      - "custom software"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.12
+    monthly_volume: 15-30
+    notes: "Agency directory + project marketplace"
+    
+  sortlist_projects:
+    platform: sortlist
+    url: https://www.sortlist.com
+    access: public
+    tier: B
+    priority: 3
+    vertical: [agencies, marketing, web]
+    search_queries:
+      - "web development"
+      - "software development"
+      - "digital agency"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.10
+    monthly_volume: 10-20
+    notes: "EU-focused agency marketplace"
+    
+  # ---------------------------------------------------------------------------
+  # DEVELOPER COMMUNITIES (8 sources)
+  # ---------------------------------------------------------------------------
+  
+  stackoverflow_jobs:
+    platform: stackoverflow
+    url: https://stackoverflow.com/jobs
+    access: public
+    tier: B
+    priority: 2
+    vertical: [tech, developers, jobs]
+    search_queries:
+      - "contract"
+      - "freelance"
+      - "remote"
+      - "consulting"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.14
+    monthly_volume: 25-40
+    notes: "24M+ developer community, job board"
+    
+  stackoverflow_collectives_google:
+    platform: stackoverflow
+    url: https://stackoverflow.com/collectives/google-cloud
+    access: public
+    tier: B
+    priority: 3
+    vertical: [cloud, gcp, tech]
+    search_queries:
+      - "need help with"
+      - "looking for expert"
+      - "consulting"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.08
+    monthly_volume: 8-15
+    notes: "Google Cloud collective - 67K members"
+    
+  stackoverflow_collectives_azure:
+    platform: stackoverflow
+    url: https://stackoverflow.com/collectives/azure
+    access: public
+    tier: B
+    priority: 3
+    vertical: [cloud, azure, tech]
+    search_queries:
+      - "need help"
+      - "looking for"
+      - "consulting"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.08
+    monthly_volume: 6-12
+    notes: "Azure collective - 30K members"
+    
+  devto_jobs:
+    platform: devto
+    url: https://dev.to/listings
+    access: public
+    tier: B
+    priority: 2
+    vertical: [tech, developers, jobs]
+    search_queries:
+      - "contract"
+      - "freelance"
+      - "consulting"
+      - "for hire"
+    discovery_method: rss
+    crawl_frequency: daily
+    expected_conversion: 0.12
+    monthly_volume: 20-35
+    notes: "3.7M developers, job listings"
+    rss_feed: "https://dev.to/listings/feed"
+    
+  devto_webdev:
+    platform: devto
+    url: https://dev.to/t/webdev
+    access: public
+    tier: B
+    priority: 3
+    vertical: [web, development, articles]
+    search_queries:
+      - "looking for help"
+      - "need developer"
+      - "hiring"
+    discovery_method: rss
+    crawl_frequency: daily
+    expected_conversion: 0.06
+    monthly_volume: 8-15
+    notes: "Web dev tag - articles and discussions"
+    rss_feed: "https://dev.to/feed/tag/webdev"
+    
+  hashnode_jobs:
+    platform: hashnode
+    url: https://hashnode.com/jobs
+    access: public
+    tier: B
+    priority: 3
+    vertical: [tech, developers] search_queries:
+      - "contract"
+      - "freelance"
+      - "consulting"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.09
+    monthly_volume: 10-18
+    notes: "Developer blogging platform with job board"
+    
+  hashnode_discussions:
+    platform: hashnode
+    url: https://hashnode.com
+    access: public
+    tier: B
+    priority: 3
+    vertical: [tech, developers, community]
+    search_queries:
+      - "looking for developer"
+      - "need help"
+      - "hiring"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.07
+    monthly_volume: 5-12
+    notes: "Hashnode community discussions"
+    
+  codeproject_jobs:
+    platform: codeproject
+    url: https://www.codeproject.com
+    access: public
+    tier: B
+    priority: 3
+    vertical: [tech, developers, .net]
+    search_queries:
+      - "contract"
+      - "freelance"
+      - "for hire"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.06
+    monthly_volume: 5-10
+    notes: "Older dev community, still active"
+    
+  # ---------------------------------------------------------------------------
+  # REMOTE JOB BOARDS (7 sources)
+  # ---------------------------------------------------------------------------
+  
+  weworkremotely_contract:
+    platform: weworkremotely
+    url: https://weworkremotely.com
+    access: public
+    tier: B
+    priority: 1
+    vertical: [remote, jobs, contract]
+    search_queries:
+      - "contract"
+      - "freelance"
+      - "consulting"
+      - "project-based"
+    discovery_method: rss
+    crawl_frequency: hourly
+    expected_conversion: 0.16
+    monthly_volume: 30-50
+    notes: "Top remote job board, good contract filter"
+    rss_feed: "https://weworkremotely.com/categories/remote-programming-jobs.rss"
+    
+  remoteok_contract:
+    platform: remoteok
+    url: https://remoteok.com
+    access: public
+    tier: B
+    priority: 1
+    vertical: [remote, jobs, contract]
+    search_queries:
+      - "contract"
+      - "freelance"
+      - "consulting"
+    discovery_method: api
+    crawl_frequency: hourly
+    expected_conversion: 0.14
+    monthly_volume: 25-45
+    notes: "Remote OK API available, good volume"
+    api_endpoint: "https://remoteok.com/api"
+    
+  flexjobs_contract:
+    platform: flexjobs
+    url: https://www.flexjobs.com
+    access: paid
+    tier: B
+    priority: 2
+    vertical: [remote, jobs, freelance]
+    search_queries:
+      - "freelance"
+      - "contract"
+      - "project-based"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.12
+    monthly_volume: 20-35
+    notes: "Paid job board, curated listings"
+    subscription_cost: "$14.95/month"
+    
+  remoteco_jobs:
+    platform: remoteco
+    url: https://remote.co/remote-jobs
+    access: public
+    tier: B
+    priority: 2
+    vertical: [remote, jobs]
+    search_queries:
+      - "developer"
+      - "engineer"
+      - "software"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.11
+    monthly_volume: 15-30
+    notes: "Remote.co job listings"
+    
+  angellist_contract:
+    platform: angellist
+    url: https://angel.co/jobs
+    access: public
+    tier: B
+    priority: 2
+    vertical: [startups, jobs, equity]
+    search_queries:
+      - "contract"
+      - "freelance"
+      - "part-time"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.13
+    monthly_volume: 20-35
+    notes: "Startup job board, includes contract"
+    
+  remoteleaf_jobs:
+    platform: remoteleaf
+    url: https://remoteleaf.com
+    access: public
+    tier: B
+    priority: 3
+    vertical: [remote, jobs]
+    search_queries:
+      - "contract"
+      - "freelance"
+      - "developer"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.09
+    monthly_volume: 10-20
+    notes: "Aggregator of remote jobs"
+    
+  remotive_jobs:
+    platform: remotive
+    url: https://remotive.com
+    access: public
+    tier: B
+    priority: 3
+    vertical: [remote, jobs, community]
+    search_queries:
+      - "contract"
+      - "developer"
+      - "engineer"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.10
+    monthly_volume: 12-22
+    notes: "Remote job board + community"
+    
+  # ---------------------------------------------------------------------------
+  # PREMIUM FREELANCE PLATFORMS (5 sources)
+  # ---------------------------------------------------------------------------
+  
+  toptal_projects:
+    platform: toptal
+    url: https://www.toptal.com
+    access: vetted_only
+    tier: B
+    priority: 1
+    vertical: [premium, enterprise, consulting]
+    search_queries:
+      - "project opportunities"
+      - "client engagements"
+    discovery_method: platform_internal
+    crawl_frequency: daily
+    expected_conversion: 0.35
+    monthly_volume: 15-30
+    notes: "Top 3% developers only - must be accepted to platform"
+    vetting_required: true
+    
+  gun_io_projects:
+    platform: gunio
+    url: https://gun.io
+    access: vetted_only
+    tier: B
+    priority: 2
+    vertical: [premium, agencies, enterprise]
+    search_queries:
+      - "project opportunities"
+    discovery_method: platform_internal
+    crawl_frequency: daily
+    expected_conversion: 0.30
+    monthly_volume: 10-20
+    notes: "Vetted freelancers, good project quality"
+    vetting_required: true
+    
+  crew_projects:
+    platform: crew
+    url: https://crew.co
+    access: vetted_only
+    tier: B
+    priority: 2
+    vertical: [premium, design, development]
+    search_queries:
+      - "project opportunities"
+    discovery_method: platform_internal
+    crawl_frequency: weekly
+    expected_conversion: 0.28
+    monthly_volume: 8-15
+    notes: "Design + dev talent network"
+    vetting_required: true
+    
+  codementor_freelance:
+    platform: codementor
+    url: https://www.codementor.io/freelance-jobs
+    access: public
+    tier: B
+    priority: 2
+    vertical: [mentoring, consulting, development]
+    search_queries:
+      - "freelance projects"
+      - "consulting"
+      - "long-term"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.14
+    monthly_volume: 15-25
+    notes: "Mentoring turned freelance platform"
+    
+  x_team_projects:
+    platform: xteam
+    url: https://x-team.com
+    access: vetted_only
+    tier: B
+    priority: 3
+    vertical: [premium, remote, teams]
+    search_queries:
+      - "project opportunities"
+    discovery_method: platform_internal
+    crawl_frequency: weekly
+    expected_conversion: 0.25
+    monthly_volume: 5-12
+    notes: "Remote dev teams, long-term engagements"
+    vetting_required: true
+    
+  # ---------------------------------------------------------------------------
+  # DESIGN COMMUNITIES (4 sources)
+  # ---------------------------------------------------------------------------
+  
+  dribbble_jobs:
+    platform: dribbble
+    url: https://dribbble.com/jobs
+    access: public
+    tier: B
+    priority: 2
+    vertical: [design, freelance, agencies]
+    search_queries:
+      - "web developer"
+      - "full stack"
+      - "frontend"
+      - "design + code"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.10
+    monthly_volume: 15-25
+    notes: "Design community, some dev roles"
+    
+  behance_jobs:
+    platform: behance
+    url: https://www.behance.net/joblist
+    access: public
+    tier: B
+    priority: 2
+    vertical: [design, creative, web]
+    search_queries:
+      - "web development"
+      - "developer"
+      - "full stack"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.09
+    monthly_volume: 10-20
+    notes: "Adobe Behance job board"
+    
+  awwwards_jobs:
+    platform: awwwards
+    url: https://www.awwwards.com/jobs
+    access: public
+    tier: B
+    priority: 3
+    vertical: [design, web, premium]
+    search_queries:
+      - "developer"
+      - "frontend"
+      - "full stack"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.08
+    monthly_volume: 5-12
+    notes: "Premium web design community"
+    
+  coroflot_jobs:
+    platform: coroflot
+    url: https://www.coroflot.com/jobs
+    access: public
+    tier: B
+    priority: 3
+    vertical: [design, creative]
+    search_queries:
+      - "web developer"
+      - "digital designer"
+      - "interactive"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.07
+    monthly_volume: 5-10
+    notes: "Creative job board"
+    
+  # ---------------------------------------------------------------------------
+  # STARTUP COMMUNITIES (5 sources)
+  # ---------------------------------------------------------------------------
+  
+  ycombinator_news_jobs:
+    platform: ycombinator
+    url: https://news.ycombinator.com/jobs
+    access: public
+    tier: B
+    priority: 1
+    vertical: [startups, tech, yc]
+    search_queries:
+      - "contract"
+      - "consulting"
+      - "freelance"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.16
+    monthly_volume: 20-35
+    notes: "YC job board separate from monthly threads"
+    
+  yc_startup_school:
+    platform: ycombinator
+    url: https://www.startupschool.org
+    access: public
+    tier: B
+    priority: 2
+    vertical: [startups, education, yc]
+    search_queries:
+      - "looking for developer"
+      - "technical cofounder"
+      - "need help"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.14
+    monthly_volume: 10-20
+    notes: "YC Startup School community forums"
+    
+  founders_network:
+    platform: foundersnetwork
+    url: https://foundersnetwork.com
+    access: private
+    tier: B
+    priority: 2
+    vertical: [startups, founders, networking]
+    search_queries:
+      - "technical help needed"
+      - "looking for developer"
+      - "CTO search"
+    discovery_method: manual
+    crawl_frequency: weekly
+    expected_conversion: 0.18
+    monthly_volume: 5-15
+    notes: "Private network - requires founder membership"
+    access_method: "Apply as founder or get invited"
+    
+  microconf_community:
+    platform: microconf
+    url: https://microconf.com
+    access: paid
+    tier: B
+    priority: 2
+    vertical: [saas, bootstrapped, indie]
+    search_queries:
+      - "looking for developer"
+      - "need technical help"
+      - "development partner"
+    discovery_method: manual
+    crawl_frequency: weekly
+    expected_conversion: 0.20
+    monthly_volume: 8-15
+    notes: "Bootstrap SaaS community - paid Slack"
+    subscription_cost: "$399/year for Connect"
+    
+  techstars_network:
+    platform: techstars
+    url: https://www.techstars.com
+    access: private
+    tier: B
+    priority: 3
+    vertical: [startups, accelerator]
+    search_queries:
+      - "technical help"
+      - "developer search"
+      - "CTO needed"
+    discovery_method: manual
+    crawl_frequency: monthly
+    expected_conversion: 0.15
+    monthly_volume: 3-8
+    notes: "Techstars alumni network - requires connection"
+    
+  # ---------------------------------------------------------------------------
+  # NO-CODE COMMUNITIES (4 sources)
+  # ---------------------------------------------------------------------------
+  
+  makerpad_community:
+    platform: makerpad
+    url: https://www.makerpad.co
+    access: paid
+    tier: B
+    priority: 2
+    vertical: [nocode, automation, indie]
+    search_queries:
+      - "need custom code"
+      - "beyond nocode"
+      - "developer needed"
+      - "too complex"
+    discovery_method: manual
+    crawl_frequency: weekly
+    expected_conversion: 0.16
+    monthly_volume: 10-18
+    notes: "NoCode users hitting complexity limits"
+    subscription_cost: "$30/month"
+    
+  nocode_makers:
+    platform: twitter
+    url: https://twitter.com/search
+    access: public
+    tier: B
+    priority: 2
+    vertical: [nocode, indie, makers]
+    search_queries:
+      - "#nocode need developer"
+      - "#nocode too complex"
+      - "#nocode help"
+    discovery_method: twitter_api
+    crawl_frequency: daily
+    expected_conversion: 0.12
+    monthly_volume: 8-15
+    notes: "NoCode community on Twitter"
+    
+  bubble_forum:
+    platform: bubble
+    url: https://forum.bubble.io
+    access: public
+    tier: B
+    priority: 2
+    vertical: [nocode, bubble, web_apps]
+    search_queries:
+      - "custom plugin"
+      - "need developer"
+      - "API integration"
+      - "too complex"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.14
+    monthly_volume: 12-20
+    notes: "Bubble.io forum - plugin development needs"
+    
+  webflow_forum:
+    platform: webflow
+    url: https://forum.webflow.com
+    access: public
+    tier: B
+    priority: 3
+    vertical: [nocode, webflow, web_design]
+    search_queries:
+      - "custom code"
+      - "JavaScript help"
+      - "API integration"
+      - "need developer"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.11
+    monthly_volume: 8-15
+    notes: "Webflow forum - custom code needs"
+    
+  # ---------------------------------------------------------------------------
+  # PRODUCT LAUNCH PLATFORMS (4 sources)
+  # ---------------------------------------------------------------------------
+  
+  betalist_upcoming:
+    platform: betalist
+    url: https://betalist.com
+    access: public
+    tier: B
+    priority: 2
+    vertical: [startups, beta, launches]
+    search_queries:
+      - "looking for developer"
+      - "beta testers"
+      - "technical help"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.10
+    monthly_volume: 8-15
+    notes: "Early-stage startup launches"
+    
+  launching_next:
+    platform: launchingnext
+    url: https://www.launchingnext.com
+    access: public
+    tier: B
+    priority: 3
+    vertical: [startups, launches]
+    search_queries:
+      - "looking for"
+      - "need help"
+      - "seeking developer"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.08
+    monthly_volume: 5-10
+    notes: "Upcoming startup launches"
+    
+  betapage:
+    platform: betapage
+    url: https://betapage.co
+    access: public
+    tier: B
+    priority: 3
+    vertical: [startups, beta]
+    search_queries:
+      - "technical help"
+      - "developer wanted"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.07
+    monthly_volume: 3-8
+    notes: "Beta stage startups"
+    
+  prelaunch_fyi:
+    platform: prelaunch
+    url: https://prelaunch.fyi
+    access: public
+    tier: B
+    priority: 3
+    vertical: [startups, prelaunch]
+    search_queries:
+      - "need technical"
+      - "looking for developer"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.06
+    monthly_volume: 2-6
+    notes: "Pre-launch startup directory"
+    
+  # ---------------------------------------------------------------------------
+  # CRAIGSLIST - TOP 10 US CITIES (10 sources)
+  # ---------------------------------------------------------------------------
+  
+  craigslist_sf_bay:
+    platform: craigslist
+    url: https://sfbay.craigslist.org/search/cpg
+    access: public
+    tier: B
+    priority: 2
+    vertical: [local, classifieds, gigs]
+    search_queries:
+      - "web developer"
+      - "app development"
+      - "software"
+      - "Shopify"
+    discovery_method: rss
+    crawl_frequency: hourly
+    expected_conversion: 0.12
+    monthly_volume: 30-50
+    notes: "SF Bay Area - highest tech density"
+    rss_feed: "https://sfbay.craigslist.org/search/cpg?format=rss"
+    
+  craigslist_nyc:
+    platform: craigslist
+    url: https://newyork.craigslist.org/search/cpg
+    access: public
+    tier: B
+    priority: 2
+    vertical: [local, classifieds, gigs]
+    search_queries:
+      - "web developer"
+      - "app development"
+      - "software"
+    discovery_method: rss
+    crawl_frequency: hourly
+    expected_conversion: 0.11
+    monthly_volume: 25-45
+    notes: "New York City"
+    rss_feed: "https://newyork.craigslist.org/search/cpg?format=rss"
+    
+  craigslist_la:
+    platform: craigslist
+    url: https://losangeles.craigslist.org/search/cpg
+    access: public
+    tier: B
+    priority: 2
+    vertical: [local, classifieds, gigs]
+    search_queries:
+      - "web developer"
+      - "app development"
+      - "software"
+    discovery_method: rss
+    crawl_frequency: every_2_hours
+    expected_conversion: 0.10
+    monthly_volume: 20-35
+    notes: "Los Angeles"
+    rss_feed: "https://losangeles.craigslist.org/search/cpg?format=rss"
+    
+  craigslist_chicago:
+    platform: craigslist
+    url: https://chicago.craigslist.org/search/cpg
+    access: public
+    tier: B
+    priority: 3
+    vertical: [local, classifieds, gigs]
+    search_queries:
+      - "web developer"
+      - "software"
+    discovery_method: rss
+    crawl_frequency: every_2_hours
+    expected_conversion: 0.09
+    monthly_volume: 15-28
+    notes: "Chicago"
+    rss_feed: "https://chicago.craigslist.org/search/cpg?format=rss"
+    
+  craigslist_seattle:
+    platform: craigslist
+    url: https://seattle.craigslist.org/search/cpg
+    access: public
+    tier: B
+    priority: 2
+    vertical: [local, classifieds, gigs]
+    search_queries:
+      - "web developer"
+      - "software"
+      - "app"
+    discovery_method: rss
+    crawl_frequency: every_2_hours
+    expected_conversion: 0.10
+    monthly_volume: 18-30
+    notes: "Seattle - good tech market"
+    rss_feed: "https://seattle.craigslist.org/search/cpg?format=rss"
+    
+  craigslist_boston:
+    platform: craigslist
+    url: https://boston.craigslist.org/search/cpg
+    access: public
+    tier: B
+    priority: 3
+    vertical: [local, classifieds, gigs]
+    search_queries:
+      - "web developer"
+      - "software"
+    discovery_method: rss
+    crawl_frequency: every_3_hours
+    expected_conversion: 0.09
+    monthly_volume: 12-22
+    notes: "Boston"
+    rss_feed: "https://boston.craigslist.org/search/cpg?format=rss"
+    
+  craigslist_austin:
+    platform: craigslist
+    url: https://austin.craigslist.org/search/cpg
+    access: public
+    tier: B
+    priority: 2
+    vertical: [local, classifieds, gigs]
+    search_queries:
+      - "web developer"
+      - "software"
+      - "app"
+    discovery_method: rss
+    crawl_frequency: every_3_hours
+    expected_conversion: 0.10
+    monthly_volume: 15-25
+    notes: "Austin - growing tech scene"
+    rss_feed: "https://austin.craigslist.org/search/cpg?format=rss"
+    
+  craigslist_denver:
+    platform: craigslist
+    url: https://denver.craigslist.org/search/cpg
+    access: public
+    tier: B
+    priority: 3
+    vertical: [local, classifieds, gigs]
+    search_queries:
+      - "web developer"
+      - "software"
+    discovery_method: rss
+    crawl_frequency: every_4_hours
+    expected_conversion: 0.08
+    monthly_volume: 10-18
+    notes: "Denver"
+    rss_feed: "https://denver.craigslist.org/search/cpg?format=rss"
+    
+  craigslist_portland:
+    platform: craigslist
+    url: https://portland.craigslist.org/search/cpg
+    access: public
+    tier: B
+    priority: 3
+    vertical: [local, classifieds, gigs]
+    search_queries:
+      - "web developer"
+      - "software"
+    discovery_method: rss
+    crawl_frequency: every_4_hours
+    expected_conversion: 0.08
+    monthly_volume: 10-18
+    notes: "Portland"
+    rss_feed: "https://portland.craigslist.org/search/cpg?format=rss"
+    
+  craigslist_miami:
+    platform: craigslist
+    url: https://miami.craigslist.org/search/cpg
+    access: public
+    tier: B
+    priority: 3
+    vertical: [local, classifieds, gigs]
+    search_queries:
+      - "web developer"
+      - "software"
+    discovery_method: rss
+    crawl_frequency: every_4_hours
+    expected_conversion: 0.07
+    monthly_volume: 8-15
+    notes: "Miami"
+    rss_feed: "https://miami.craigslist.org/search/cpg?format=rss"
+
+# ==============================================================================
+# TIER C - LONG-TAIL (32 sources)
+# Lower conversion but niche opportunities, specialized verticals
+# ==============================================================================
+tier_c_sources:
+  
+  # ---------------------------------------------------------------------------
+  # INTERNATIONAL CLASSIFIEDS (5 sources)
+  # ---------------------------------------------------------------------------
+  
+  gumtree_uk:
+    platform: gumtree
+    url: https://www.gumtree.com/jobs/computing-it
+    access: public
+    tier: C
+    priority: 3
+    vertical: [local, uk, classifieds]
+    search_queries:
+      - "web developer"
+      - "software"
+      - "app development"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.07
+    monthly_volume: 15-25
+    notes: "UK version of Craigslist"
+    
+  gumtree_au:
+    platform: gumtree
+    url: https://www.gumtree.com.au/jobs/computing-it
+    access: public
+    tier: C
+    priority: 3
+    vertical: [local, au, classifieds]
+    search_queries:
+      - "web developer"
+      - "software"
+      - "app"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.07
+    monthly_volume: 12-20
+    notes: "Australia classifieds"
+    
+  olx_india:
+    platform: olx
+    url: https://www.olx.in
+    access: public
+    tier: C
+    priority: 3
+    vertical: [local, india, classifieds]
+    search_queries:
+      - "web development"
+      - "software development"
+      - "app development"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.05
+    monthly_volume: 10-18
+    notes: "India classifieds - lower budgets"
+    
+  kijiji_canada:
+    platform: kijiji
+    url: https://www.kijiji.ca
+    access: public
+    tier: C
+    priority: 3
+    vertical: [local, canada, classifieds]
+    search_queries:
+      - "web developer"
+      - "software"
+      - "app"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.08
+    monthly_volume: 12-20
+    notes: "Canada classifieds (eBay owned)"
+    
+  leboncoin_france:
+    platform: leboncoin
+    url: https://www.leboncoin.fr
+    access: public
+    tier: C
+    priority: 3
+    vertical: [local, france, classifieds]
+    search_queries:
+      - "développeur web"
+      - "développement logiciel"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.06
+    monthly_volume: 8-15
+    notes: "France classifieds - French language"
+    
+  # ---------------------------------------------------------------------------
+  # REVIEW SITES (5 sources)
+  # ---------------------------------------------------------------------------
+  
+  g2_negative_reviews:
+    platform: g2
+    url: https://www.g2.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [reviews, saas, software]
+    search_queries:
+      - "need custom integration"
+      - "missing features"
+      - "looking for alternative"
+      - "need developer"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.09
+    monthly_volume: 10-18
+    notes: "G2 reviews - users seeking customization"
+    search_focus: "negative reviews + integration complaints"
+    
+  capterra_reviews:
+    platform: capterra
+    url: https://www.capterra.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [reviews, business_software]
+    search_queries:
+      - "custom development"
+      - "integration needed"
+      - "need help"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.08
+    monthly_volume: 8-15
+    notes: "Capterra reviews - integration complaints"
+    
+  trustpilot_business:
+    platform: trustpilot
+    url: https://www.trustpilot.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [reviews, general]
+    search_queries:
+      - "custom solution"
+      - "integration"
+      - "developer needed"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.06
+    monthly_volume: 5-12
+    notes: "Trustpilot reviews - pain points"
+    
+  yelp_business_reviews:
+    platform: yelp
+    url: https://www.yelp.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [reviews, local_business]
+    search_queries:
+      - "need better system"
+      - "software problems"
+      - "need developer"
+    discovery_method: scraper
+    crawl_frequency: monthly
+    expected_conversion: 0.05
+    monthly_volume: 3-8
+    notes: "Yelp reviews - operational pain points"
+    
+  softwareadvice_reviews:
+    platform: softwareadvice
+    url: https://www.softwareadvice.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [reviews, business_software]
+    search_queries:
+      - "custom development"
+      - "integration"
+      - "need help"
+    discovery_method: scraper
+    crawl_frequency: monthly
+    expected_conversion: 0.07
+    monthly_volume: 5-10
+    notes: "Software Advice - Gartner property"
+    
+  # ---------------------------------------------------------------------------
+  # SERVICE MARKETPLACES (5 sources)
+  # ---------------------------------------------------------------------------
+  
+  bark_uk:
+    platform: bark
+    url: https://www.bark.com/en/gb/services/web-development
+    access: paid
+    tier: C
+    priority: 2
+    vertical: [marketplace, leads, uk]
+    search_queries:
+      - "web development leads"
+      - "app development leads"
+    discovery_method: platform_internal
+    crawl_frequency: daily
+    expected_conversion: 0.15
+    monthly_volume: 20-40
+    notes: "Lead generation marketplace - pay per lead"
+    cost_model: "£5-15 per lead"
+    
+  thumbtack_us:
+    platform: thumbtack
+    url: https://www.thumbtack.com
+    access: paid
+    tier: C
+    priority: 2
+    vertical: [marketplace, leads, us]
+    search_queries:
+      - "web development"
+      - "software development"
+    discovery_method: platform_internal
+    crawl_frequency: daily
+    expected_conversion: 0.14
+    monthly_volume: 15-30
+    notes: "US lead marketplace - pay per lead"
+    cost_model: "$8-20 per lead"
+    
+  99designs_dev_projects:
+    platform: 99designs
+    url: https://99designs.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [design, marketplace]
+    search_queries:
+      - "development"
+      - "coding"
+      - "web app"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.08
+    monthly_volume: 5-12
+    notes: "Design-focused but some dev work"
+    
+  codeable_wordpress:
+    platform: codeable
+    url: https://codeable.io
+    access: vetted_only
+    tier: C
+    priority: 2
+    vertical: [wordpress, premium]
+    search_queries:
+      - "WordPress projects"
+    discovery_method: platform_internal
+    crawl_frequency: daily
+    expected_conversion: 0.22
+    monthly_volume: 15-25
+    notes: "WordPress-only, vetted developers"
+    vetting_required: true
+    
+  folyo_design_dev:
+    platform: folyo
+    url: https://www.folyo.me
+    access: vetted_only
+    tier: C
+    priority: 3
+    vertical: [design, development, freelance]
+    search_queries:
+      - "project opportunities"
+    discovery_method: platform_internal
+    crawl_frequency: weekly
+    expected_conversion: 0.18
+    monthly_volume: 8-15
+    notes: "Curated freelance marketplace"
+    vetting_required: true
+    
+  # ---------------------------------------------------------------------------
+  # VERTICAL-SPECIFIC FORUMS (10 sources)
+  # ---------------------------------------------------------------------------
+  
+  shopify_community:
+    platform: shopify
+    url: https://community.shopify.com
+    access: public
+    tier: C
+    priority: 2
+    vertical: [ecommerce, shopify]
+    search_queries:
+      - "custom app"
+      - "developer needed"
+      - "integration help"
+      - "custom theme"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.12
+    monthly_volume: 25-40
+    notes: "Official Shopify community"
+    
+  woocommerce_forums:
+    platform: wordpress
+    url: https://wordpress.org/support/plugin/woocommerce
+    access: public
+    tier: C
+    priority: 2
+    vertical: [ecommerce, woocommerce, wordpress]
+    search_queries:
+      - "custom development"
+      - "need developer"
+      - "custom functionality"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.10
+    monthly_volume: 20-35
+    notes: "WooCommerce support forums"
+    
+  magento_forums:
+    platform: magento
+    url: https://community.magento.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [ecommerce, magento]
+    search_queries:
+      - "custom development"
+      - "Magento developer"
+      - "extension development"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.11
+    monthly_volume: 12-20
+    notes: "Magento community forums"
+    
+  bigcommerce_forum:
+    platform: bigcommerce
+    url: https://support.bigcommerce.com/s/group
+    access: public
+    tier: C
+    priority: 3
+    vertical: [ecommerce, bigcommerce]
+    search_queries:
+      - "custom app"
+      - "developer needed"
+      - "integration"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.09
+    monthly_volume: 8-15
+    notes: "BigCommerce community"
+    
+  ecommercefuel_forum:
+    platform: ecommercefuel
+    url: https://www.ecommercefuel.com/community
+    access: paid
+    tier: C
+    priority: 2
+    vertical: [ecommerce, community]
+    search_queries:
+      - "developer recommendation"
+      - "custom development"
+      - "integration needed"
+    discovery_method: manual
+    crawl_frequency: weekly
+    expected_conversion: 0.16
+    monthly_volume: 10-18
+    notes: "Private 7-figure+ ecommerce community"
+    subscription_cost: "$99/month"
+    
+  webmasterworld:
+    platform: webmasterworld
+    url: https://www.webmasterworld.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [seo, webmaster, development]
+    search_queries:
+      - "need developer"
+      - "looking for help"
+      - "custom solution"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.07
+    monthly_volume: 5-12
+    notes: "Old-school webmaster forum"
+    
+  warrior_forum:
+    platform: warriorforum
+    url: https://www.warriorforum.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [marketing, im, development]
+    search_queries:
+      - "developer needed"
+      - "custom tool"
+      - "software development"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.08
+    monthly_volume: 8-15
+    notes: "Internet marketing forum"
+    
+  digitalpoint_forum:
+    platform: digitalpoint
+    url: https://www forums.digitalpoint.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [marketing, development, business]
+    search_queries:
+      - "developer wanted"
+      - "custom development"
+      - "need help"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.07
+    monthly_volume: 5-10
+    notes: "Digital marketing + dev forum"
+    
+  contractortalk_forum:
+    platform: contractortalk
+    url: https://www.contractortalk.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [construction, trades]
+    search_queries:
+      - "software solution"
+      - "need app"
+      - "custom tool"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.06
+    monthly_volume: 3-8
+    notes: "Construction industry forum"
+    
+  restaurantowner_forum:
+    platform: restaurantowner
+    url: https://www.restaurantowner.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [restaurants, hospitality]
+    search_queries:
+      - "POS system"
+      - "online ordering"
+      - "custom solution"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.06
+    monthly_volume: 3-8
+    notes: "Restaurant owner community"
+    
+  # ---------------------------------------------------------------------------
+  # SOCIAL MEDIA & WILDCARDS (7 sources)
+  # ---------------------------------------------------------------------------
+  
+  linkedin_public_posts:
+    platform: linkedin
+    url: https://www.linkedin.com
+    access: public
+    tier: C
+    priority: 2
+    vertical: [business, professional, general]
+    search_queries:
+      - "looking for developer"
+      - "need technical help"
+      - "hiring developer"
+      - "technical cofounder"
+      - "outsourcing development"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.10
+    monthly_volume: 30-50
+    notes: "PUBLIC posts only - very risky to scrape"
+    risk_level: "HIGH - use sparingly"
+    
+  twitter_advanced_search:
+    platform: twitter
+    url: https://twitter.com/search-advanced
+    access: public
+    tier: C
+    priority: 2
+    vertical: [tech, startups, general]
+    search_queries:
+      - "#devwanted"
+      - "#forhire"
+      - "#hiring developer"
+      - "looking for developer"
+      - "need technical cofounder"
+    discovery_method: twitter_api
+    crawl_frequency: hourly
+    expected_conversion: 0.09
+    monthly_volume: 20-35
+    notes: "Twitter X API - paid tiers required"
+    api_cost: "$100+/month for API access"
+    
+  quora_business_questions:
+    platform: quora
+    url: https://www.quora.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [business, tech, startups]
+    search_queries:
+      - "how to find developer"
+      - "how to build app"
+      - "developer recommendations"
+      - "outsourcing development"
+    discovery_method: scraper
+    crawl_frequency: daily
+    expected_conversion: 0.07
+    monthly_volume: 15-25
+    notes: "Quora questions - educational intent"
+    
+  medium_entrepreneur_tags:
+    platform: medium
+    url: https://medium.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [startups, business, tech]
+    search_queries:
+      - "#entrepreneur"
+      - "#startup"
+      - "#solofounder"
+      - "looking for developer"
+    discovery_method: rss
+    crawl_frequency: daily
+    expected_conversion: 0.06
+    monthly_volume: 10-18
+    notes: "Medium articles + comments"
+    rss_feed: "https://medium.com/feed/tag/entrepreneur"
+    
+  instagram_business_hashtags:
+    platform: instagram
+    url: https://www.instagram.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [business, entrepreneur, ecommerce]
+    search_queries:
+      - "#smallbusinessowner"
+      - "#entrepreneur"
+      - "#ecommerce"
+      - "#startuplife"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.04
+    monthly_volume: 5-12
+    notes: "Instagram posts/comments - low conversion"
+    risk_level: "HIGH - difficult to scrape"
+    
+  tiktok_business_hashtags:
+    platform: tiktok
+    url: https://www.tiktok.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [business, entrepreneur]
+    search_queries:
+      - "#smallbusiness"
+      - "#entrepreneur"
+      - "#startuplife"
+    discovery_method: scraper
+    crawl_frequency: weekly
+    expected_conversion: 0.03
+    monthly_volume: 3-8
+    notes: "TikTok - very experimental"
+    risk_level: "HIGH"
+    
+  youtube_comments:
+    platform: youtube
+    url: https://www.youtube.com
+    access: public
+    tier: C
+    priority: 3
+    vertical: [business, tech, startups]
+    search_queries:
+      - "entrepreneur channels"
+      - "startup channels"
+      - "business channels"
+    discovery_method: youtube_api
+    crawl_frequency: weekly
+    expected_conversion: 0.04
+    monthly_volume: 5-10
+    notes: "Comments on business/tech videos"
+    api_required: true
+
+# ==============================================================================
+# PLATFORM CONFIGURATIONS
+# ==============================================================================
+platform_configs:
+  reddit:
+    api_endpoint: "https://oauth.reddit.com"
+    rate_limit: 60  # requests per minute
+    auth_required: true
+    auth_type: "OAuth2"
+    search_endpoint: "/search"
+    best_practices:
+      - "Use OAuth not scraping"
+      - "Respect 60/min limit"
+      - "Search by subreddit + keywords"
+      - "Monitor new & hot feeds"
+      - "Track post flairs"
+    
+  hackernews:
+    api_endpoint: "https://hn.algolia.com/api/v1"
+    rate_limit: 10000  # per hour
+    auth_required: false
+    search_endpoint: "/search"
+    best_practices:
+      - "Use Algolia API"
+      - "Very generous rate limits"
+      - "Search Ask HN + Show HN"
+      - "Monitor monthly threads"
+    
+  github:
+    api_endpoint: "https://api.github.com"
+    rate_limit: 5000  # per hour with auth
+    auth_required: true  # for higher limits
+    auth_type: "Personal Access Token"
+    search_endpoint: "/search/issues"
+    best_practices:
+      - "Use authenticated requests"
+      - "Search issues + discussions"
+      - "Filter by repo stars/activity"
+      - "Focus on active projects"
+    
+  upwork:
+    scraping_required: true
+    rate_limit: 10  # requests per minute
+    proxy_recommended: true
+    rotating_proxies: true
+    best_practices:
+      - "Use residential proxies"
+      - "Rotate user agents"
+      - "Respect rate limits"
+      - "Focus on fixed-price $1k+"
+      - "Filter by client history"
+      - "Track RSS if available"
+    
+  linkedin:
+    scraping_required: true
+    rate_limit: 5  # requests per minute
+    proxy_required: true
+    risk_level: "high"
+    best_practices:
+      - "Very careful scraping"
+      - "Use official sales navigator if possible"
+      - "Focus on public posts only"
+      - "Rotate proxies aggressively"
+      - "Monitor for blocks"
+
+# ==============================================================================
+# DISCOVERY STRATEGIES
+# ==============================================================================
+discovery_strategies:
+  api_search:
+    description: "Use official platform APIs"
+    platforms: [reddit, hackernews, github, twitter]
+    cost: "Low - free tier usually sufficient"
+    reliability: "High - official APIs"
+    scalability: "Excellent"
+    
+  scraper:
+    description: "Respectful HTML scraping"
+    platforms: [upwork, linkedin, facebook, craigslist, indiehackers, producthunt]
+    cost: "Medium - proxy costs + development"
+    reliability: "Medium - may break on UI changes"
+    scalability: "Good with infrastructure"
+    requires_proxy: true
+    proxy_type: "Residential rotating"
+    
+  rss:
+    description: "RSS/Atom feed monitoring"
+    platforms: [reddit, hackernews, medium, devto]
+    cost: "Very low - minimal infrastructure"
+    reliability: "High - stable format"
+    scalability: "Excellent"
+    
+  manual:
+    description: "Manual monitoring for private communities"
+    platforms: [facebook_private, slack, discord]
+    cost: "High - requires human time"
+    reliability: "Depends on access"
+    scalability: "Poor - not scalable"
+    timeline: "Phase 3 only"
+
+# ==============================================================================
+# DEPLOYMENT PHASES
+# ==============================================================================
+deployment_phases:
+  phase_1_weeks_1_2:
+    focus: "Highest ROI, lowest friction"
+    timeline: "Weeks 1-2"
+    source_count: 25
+    sources:
+      - reddit_entrepreneur
+      - reddit_startups
+      - reddit_forhire
+      - reddit_shopify
+      - reddit_saas
+      - reddit_smallbusiness
+      - hackernews_ask
+      - hackernews_whoishiring
+      - indiehackers_forum
+      - github_ecommerce_issues
+      - producthunt_discussions
+      - upwork_web_development
+      - upwork_ecommerce
+      - freelancer_web_development
+    expected_results:
+      leads_per_week: "50-100"
+      conversion_rate: "15-25%"
+      cost_per_lead: "$1-3"
+      qualified_leads: "10-20/week"
+    infrastructure_needed:
+      - "Reddit OAuth setup"
+      - "GitHub API token"
+      - "Basic scraper (Upwork/Freelancer)"
+      - "Crawlee + Bright Data proxies"
+    
+  phase_2_weeks_3_8:
+    focus: "Expand coverage + secondary platforms"
+    timeline: "Weeks 3-8"
+    source_count: 45  # +20 from phase 1
+    additional_sources:
+      - linkedin_posts
+      - twitter_search
+      - quora_questions
+      - stackoverflow_jobs
+      - devto_jobs
+      - craigslist_top_10_cities
+      - shopify_community
+      - woocommerce_forums
+      - biggerpockets
+      - vertical_reddit_subs  # 10 more
+      - upwork_mobile
+      - freelancer_ecommerce
+    expected_results:
+      leads_per_week: "150-250"
+      conversion_rate: "10-18%"
+      cost_per_lead: "$1.50-4"
+      qualified_leads: "25-40/week"
+    infrastructure_needed:
+      - "LinkedIn scraper (careful)"
+      - "Twitter API access"
+      - "Expanded proxy network"
+      - "More worker capacity"
+    
+  phase_3_weeks_8_plus:
+    focus: "Long-tail + private communities"
+    timeline: "Weeks 8+"
+    source_count: 82  # +37 from phase 2
+    additional_sources:
+      - facebook_groups  # 15 groups after manual join
+      - slack_communities  # 5 communities
+      - discord_servers  # 5 servers
+      - vertical_forums  # 20+ industry forums
+      - local_classifieds  # Gumtree, OLX, etc.
+      - review_sites  # G2, Trustpilot, Capterra
+      - niche_job_boards  # 10+ specialized boards
+    expected_results:
+      leads_per_week: "300-500"
+      conversion_rate: "8-15%"
+      cost_per_lead: "$2-5"
+      qualified_leads: "40-70/week"
+    infrastructure_needed:
+      - "Facebook scraper (high risk)"
+      - "Manual community management"
+      - "Dedicated VA for private groups"
+      - "Enhanced proxy infrastructure"
+
+# ==============================================================================
+# BUDGET & COST ESTIMATES
+# ==============================================================================
+cost_breakdown:
+  phase_1:
+    proxies: "$100-200/month (Bright Data or similar)"
+    infrastructure: "$50-100/month (cloud computing)"
+    apis: "$0-50/month (mostly free tiers)"
+    total_monthly: "$150-350"
+    cost_per_lead: "$1-3"
+    
+  phase_2:
+    proxies: "$300-500/month"
+    infrastructure: "$150-300/month"
+    apis: "$50-100/month"
+    total_monthly: "$500-900"
+    cost_per_lead: "$1.50-4"
+    
+  phase_3:
+    proxies: "$500-800/month"
+    infrastructure: "$300-500/month"
+    apis: "$100-200/month"
+    va_support: "$400-800/month (part-time VA)"
+    total_monthly: "$1300-2300"
+    cost_per_lead: "$2-5"
+
+# ==============================================================================
+# TARGET METRICS
+# ==============================================================================
+success_metrics:
+  phase_1:
+    weekly_leads: 50-100
+    qualified_rate: "15-25%"
+    qualified_leads: 10-20
+    cost_per_qualified: "$5-15"
+    response_rate: "30-50%"
+    
+  phase_2:
+    weekly_leads: 150-250
+    qualified_rate: "10-18%"
+    qualified_leads: 25-40
+    cost_per_qualified: "$7-20"
+    response_rate: "25-40%"
+    
+  phase_3:
+    weekly_leads: 300-500
+    qualified_rate: "8-15%"
+    qualified_leads: 40-70
+    cost_per_qualified: "$10-25"
+    response_rate: "20-35%"
+    
+  conversion_goals:
+    lead_to_conversation: "30-50%"
+    conversation_to_proposal: "40-60%"
+    proposal_to_contract: "20-40%"
+    overall_lead_to_contract: "2-8%"
+
+# ==============================================================================
+# NOTES & BEST PRACTICES
+# ==============================================================================
+notes: |
+  COMPREHENSIVE SOURCE COVERAGE:
+  - 152 total sources across all major platforms
+  - Organized into 3 tiers (A/B/C) by signal quality
+  - 3-phase deployment over 8+ weeks
+  - Expected 300-500 leads/week at full deployment
+  
+  PLATFORM DIVERSITY:
+  - 25 Reddit subreddits (highest volume)
+  - 4 Hacker News sections (highest quality)
+  - 3 Indie Hackers sections (best conversion)
+  - 5 GitHub search scopes
+  - 3 Product Hunt sections
+  - 8 freelance marketplaces
+  - 60 secondary platforms (LinkedIn, Twitter, forums, etc.)
+  - 32 long-tail sources (local, niche, private)
+  
+  VERTICAL COVERAGE:
+  - E-commerce (Shopify, WooCommerce, general)
+  - SaaS/Startups (indie hackers, bootstrapped)
+  - Real estate & property management
+  - Restaurants & hospitality
+  - Healthcare & clinics
+  - Legal & professional services
+  - Accounting & finance
+  - Construction & trades
+  - Marketing agencies
+  - General SMBs
+  
+  GEOGRAPHIC FOCUS:
+  - Primary: US, UK, CA, AU
+  - Secondary: EU (English-speaking), SG, NZ
+  - Budget range: $1k-$50k (sweet spot: $5k-$20k)
+  
+  RECOMMENDED APPROACH:
+  1. Start with 15 Phase 1 sources (weeks 1-2)
+  2. Validate conversion rates and cost per lead
+  3. Optimize scoring model based on real data
+  4. Expand to Phase 2 (weeks 3-8) if metrics good
+  5. Add Phase 3 (weeks 8+) for scale
+  
+  COST OPTIMIZATION:
+  - Use APIs where available (Reddit, HN, GitHub)  
+  - Scrape responsibly with proxies (Upwork, LinkedIn)
+  - Monitor RSS feeds (Reddit, Medium, blogs)
+  - Manual for private (Facebook, Slack - Phase 3 only)
+  
+  QUALITY CONTROL:
+  - Track source → qualified lead conversion
+  - Promote high-performers to higher frequency
+  - Demote/pause low-performers
+  - Continuous A/B testing of search queries
+  - Weekly source performance review
+  
+  COMPLIANCE:
+  - Respect robots.txt
+  - Honor rate limits
+  - Use official APIs when available
+  - Residential proxies for scraping
+  - No aggressive scraping of private communities
+  - GDPR/CCPA compliant data handling
+  - Clear opt-out mechanisms

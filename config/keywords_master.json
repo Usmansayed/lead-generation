@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Master keyword map by intent category. Versioned; editable without code deployment.",
+  "version": "1.0",
+  "intent_categories": {
+    "business_launch": [
+      "just launched",
+      "now open",
+      "starting my",
+      "launching soon",
+      "soft launch",
+      "grand opening",
+      "we just launched",
+      "officially launched"
+    ],
+    "software_need": [
+      "need developer",
+      "looking for dev",
+      "building app",
+      "need help building",
+      "looking for someone to build",
+      "need technical cofounder",
+      "hire developer",
+      "seeking engineer",
+      "need a team",
+      "looking for team",
+      "MVP development",
+      "custom software",
+      "build an app",
+      "create an app",
+      "need built",
+      "who can build",
+      "recommend a developer",
+      "looking for agency"
+    ],
+    "hiring_signal": [
+      "hiring",
+      "looking for team",
+      "we're hiring",
+      "join our team",
+      "remote position",
+      "contract position",
+      "freelance",
+      "contractor",
+      "consultant"
+    ],
+    "problem_signal": [
+      "struggling with",
+      "need help with",
+      "can't find",
+      "having trouble",
+      "looking for recommendations",
+      "anyone know",
+      "who can help",
+      "recommendations for",
+      "suggest a",
+      "need advice"
+    ]
+  }
+}

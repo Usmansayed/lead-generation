@@ -1,0 +1,50 @@
+{
+    "title": "GitHub Lead Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keywords": {
+            "title": "Keywords to Search For",
+            "type": "array",
+            "description": "Lead generation keywords to search GitHub for",
+            "editor": "stringList",
+            "placeholderKey": "keyword",
+            "placeholderValue": "e.g., looking for developer"
+        },
+        "searchTypes": {
+            "title": "Search Types",
+            "type": "array",
+            "description": "Types of GitHub content to search (issues, discussions, repos)",
+            "default": ["issues", "discussions"],
+            "editor": "json",
+            "items": {
+                "type": "string"
+            }
+        },
+        "maxResultsPerQuery": {
+            "title": "Max Results Per Query",
+            "type": "integer",
+            "description": "Maximum results to fetch per search query",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 100
+        },
+        "minDelayMs": {
+            "title": "Minimum Delay (ms)",
+            "type": "integer",
+            "description": "Minimum delay between requests in milliseconds",
+            "default": 2000,
+            "minimum": 500,
+            "maximum": 10000
+        },
+        "maxDelayMs": {
+            "title": "Maximum Delay (ms)",
+            "type": "integer",
+            "description": "Maximum delay between requests in milliseconds",
+            "default": 5000,
+            "minimum": 1000,
+            "maximum": 20000
+        }
+    },
+    "required": ["keywords"]
+}

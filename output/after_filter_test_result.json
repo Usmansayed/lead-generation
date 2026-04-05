@@ -1,0 +1,38 @@
+{
+  "lead": {
+    "id": "60db0466dd3464d19bf496e30fc45b9c0407180bbf6f3dcf78bb4eed8e95a057",
+    "platform": "reddit",
+    "post_url": "https://www.reddit.com/r/SideProject/comments/1r3psn4/i_built_a_free_triangle_of_talent_assessment/",
+    "post_text_preview": "I built a free \"Triangle of Talent\" assessment based on Shaan Puri's framework\n\nShaan Puri shared this framework on My First Million - your talent level depends on two things: how good you are at finding the right problems and how good you are at solving them. Your overall level is capped by whichev",
+    "author_handle": "usamaejazch"
+  },
+  "full_post_fetch": {
+    "from_cache": false,
+    "full_post_text_length": 1184,
+    "full_post_text_preview": "Skip to main content Go to SideProject r/SideProject \u2022 usamaejazch I built a free \"Triangle of Talent\" assessment based on Shaan Puri's framework Shaan Puri shared this framework on My First Million - your talent level depends on two things: how good you are at finding the right problems and how good you are at solving them. Your overall level is capped by whichever is weaker. I turned it into a quick 12-question quiz that scores you on both axes and places you at one of 5 levels (from \"Useless\""
+  },
+  "research": {
+    "business_type": "default",
+    "business_size": "small",
+    "has_website": false,
+    "suggested_offers": [
+      "website",
+      "booking or scheduling",
+      "CRM or operations"
+    ],
+    "should_skip_email": false
+  },
+  "profile_fetch": {
+    "from_cache": false,
+    "profile_text_length": 77,
+    "profile_text_preview": "{'text': '', 'content': '', 'url': 'https://www.reddit.com/user/usamaejazch'}"
+  },
+  "contact": "test-recipient@example.com",
+  "email_payload": {
+    "subject": "Your Triangle of Talent quiz on r/SideProject",
+    "bodyText": "Hey there,\n\nJust took your 'Triangle of Talent' quiz from your r/SideProject post \u2013 really cool concept and the scenario-based questions were well done! It's awesome to see someone turn a framework like Shaan Puri's into a practical, free tool.\n\nWe build custom software and websites for businesses, often helping founders like you bring ideas to life or streamline their operations. If you ever think about expanding Nuraworks with more tools, or need a hand with the backend to manage user feedback or future features, we'd be happy to chat.\n\nNo pressure at all, just thought I'd reach out.\n\nBest,\n[Your Agency Name]",
+    "bodyHtml": "<p>Hey there,</p><p>Just took your 'Triangle of Talent' quiz from your r/SideProject post \u2013 really cool concept and the scenario-based questions were well done! It's awesome to see someone turn a framework like Shaan Puri's into a practical, free tool.</p><p>We build custom software and websites for businesses, often helping founders like you bring ideas to life or streamline their operations. If you ever think about expanding Nuraworks with more tools, or need a hand with the backend to manage user feedback or future features, we'd be happy to chat.</p><p>No pressure at all, just thought I'd reach out.</p><p>Best,<br>[Your Agency Name]</p>"
+  },
+  "_full_post_text": "Skip to main content Go to SideProject r/SideProject \u2022 usamaejazch I built a free \"Triangle of Talent\" assessment based on Shaan Puri's framework Shaan Puri shared this framework on My First Million - your talent level depends on two things: how good you are at finding the right problems and how good you are at solving them. Your overall level is capped by whichever is weaker. I turned it into a quick 12-question quiz that scores you on both axes and places you at one of 5 levels (from \"Useless\" to \"Superstar\"). https://nuraworks.com/tools/triangle-of-talent No signup, no email, just take it and see where you land. Would love feedback on the questions - I tried to make them scenario-based rather than generic \"rate yourself\" stuff. Read more Share New to Reddit? Create your account and connect with a world of communities. Continue with Email Continue With Phone Number By continuing, you agree to our User Agreement and acknowledge that you understand the Privacy Policy . Public Anyone can view, post, and comment to this community 0 0 Reddit Rules Privacy Policy User Agreement Accessibility Reddit, Inc. \u00a9 2026. All rights reserved. Expand Navigation Collapse Navigation",
+  "_profile_text": "{'text': '', 'content': '', 'url': 'https://www.reddit.com/user/usamaejazch'}"
+}

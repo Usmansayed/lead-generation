@@ -1,0 +1,146 @@
+{
+  "reddit-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 32,
+    "high_quality": 27,
+    "run_id": "y69cKQHt5aOBoDP5l",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "hackernews-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 39,
+    "high_quality": 11,
+    "run_id": "9JiOhTck4DfzHjIl7",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "freelancer-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 53,
+    "high_quality": 16,
+    "run_id": "PdCQEMJ5eMmUlepax",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "github-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 200,
+    "high_quality": 95,
+    "run_id": "WUR8iGtGtHfOyCTI8",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "stackoverflow-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 44,
+    "high_quality": 22,
+    "run_id": "dI9dyaiXJ2q8dQg0f",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "devto-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 103,
+    "high_quality": 34,
+    "run_id": "iNvF8a87IoGvoXc6o",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "medium-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 12,
+    "high_quality": 5,
+    "run_id": "x0hTMiBcKl2anqBbt",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "indiehackers-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 15,
+    "high_quality": 1,
+    "run_id": "qfaa6AVsSM3Ht500D",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "producthunt-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 15,
+    "high_quality": 0,
+    "run_id": "udjnvVIKYewEYdsRo",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "linkedin-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 15,
+    "high_quality": 1,
+    "run_id": "ZdeCJkc4djQJW25wi",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "twitter-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 15,
+    "high_quality": 6,
+    "run_id": "aFEgx2Z7uyGWahaLt",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "instagram-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 13,
+    "high_quality": 13,
+    "run_id": "eTsDQfY2XUngt2GWO",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "facebook-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 12,
+    "high_quality": 12,
+    "run_id": "kKnCDgytc6kN2EM8S",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "quora-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 15,
+    "high_quality": 4,
+    "run_id": "HJeIxg51Lc16PnaMM",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "upwork-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 11,
+    "high_quality": 1,
+    "run_id": "LuakMKXL0gnKCiUj2",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  },
+  "angellist-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads_found": 4,
+    "high_quality": 0,
+    "run_id": "M2VnmfyiseYoTLSzX",
+    "log_tail": "",
+    "error": null,
+    "sample_count": 3
+  }
+}

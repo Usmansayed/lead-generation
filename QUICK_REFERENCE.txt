@@ -1,0 +1,110 @@
+================================================================================
+MEDIUM.COM SCRAPING - QUICK REFERENCE
+================================================================================
+
+WORKING CSS SELECTORS
+================================================================================
+
+SELECTOR                    | EXTRACTS           | CODE EXAMPLE
+----------------------------|-------------------|--------------------------------
+article                     | Article container | soup.find_all("article")
+article h2                  | Article title     | article.find("h2").get_text()
+h2.parent                   | Article URL       | h2.parent.get("href")
+article h3                  | Preview text      | article.find("h3").get_text()
+a[href*="/@"]               | Author link       | article.find("a", href=lambda x: x and "/@" in x)
+
+CRITICAL DISCOVERY
+================================================================================
+URLs are NOT inside <h2> tags!
+URLs are in the h2's PARENT <a> tag
+
+WRONG:   h2.find("a")["href"]
+CORRECT: h2.parent.get("href")
+
+MINIMAL WORKING CODE
+================================================================================
+from selenium import webdriver
+from bs4 import BeautifulSoup
+import time
+
+driver = webdriver.Chrome()
+driver.get("https://medium.com/search?q=startup+hiring")
+time.sleep(15)  # MUST wait for Cloudflare
+
+soup = BeautifulSoup(driver.page_source, "html.parser")
+
+for article in soup.find_all("article"):
+    h2 = article.find("h2")
+    if h2 and h2.parent.name == "a":
+        print("Title:", h2.get_text(strip=True))
+        print("URL:", "https://medium.com" + h2.parent["href"])
+
+driver.quit()
+
+HTML STRUCTURE
+================================================================================
+<article data-testid="post-preview">
+  <div>
+    <a href="/publication/article-slug">    ← URL is here
+      <h2>Article Title</h2>                ← Title is here
+    </a>
+    <h3>Preview text...</h3>                ← Preview is here
+    <a href="/@username">Author Name</a>    ← Author is here
+  </div>
+</article>
+
+REQUIREMENTS
+================================================================================
+- Selenium (pip install selenium)
+- BeautifulSoup4 (pip install beautifulsoup4)
+- ChromeDriver (must be installed)
+- 15+ second wait time for Cloudflare challenge
+
+FILES TO USE
+================================================================================
+medium_scraper_fixed.py     - Production-ready script
+medium_articles.json        - Sample output
+MEDIUM_FINDINGS.txt         - Detailed documentation
+
+QUICK TEST
+================================================================================
+python medium_scraper_fixed.py
+
+Output: medium_articles.json with extracted articles
+
+PAGINATION (for >10 articles)
+================================================================================
+Medium search doesn't use URL parameters for pagination.
+Requires JavaScript interaction to load more results.
+Consider using Selenium scroll actions or API alternatives.
+
+API ALTERNATIVES
+================================================================================
+1. RapidAPI Medium API - https://rapidapi.com/medium
+2. Medium GraphQL - https://medium.com/_/graphql (unofficial)
+3. RSS Feeds - https://medium.com/feed/@username
+
+TROUBLESHOOTING
+================================================================================
+Issue: 403 Forbidden
+Fix: Use Selenium, not requests
+
+Issue: No articles found  
+Fix: Increase wait time (try 20+ seconds)
+
+Issue: URLs are None
+Fix: Use h2.parent.get("href"), not h2.find("a")
+
+NOTES
+================================================================================
+- Cloudflare protection is active (Selenium required)
+- Class names may change (use tag-based selectors)
+- Add delays between requests (10-20 seconds)
+- Respect rate limits and ToS
+- Consider using proxies for scale
+
+================================================================================
+Location: C:\Users\usman\Music\lead-generation\
+Status: TESTED AND WORKING
+Date: 2026-02-09
+================================================================================

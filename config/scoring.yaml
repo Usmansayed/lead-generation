@@ -1,0 +1,55 @@
+# Scoring Configuration
+
+# Scoring weights (must sum to 1.0)
+weights:
+  commercial_intent: 0.30
+  urgency: 0.25
+  clarity: 0.20
+  contact_quality: 0.15
+  business_context: 0.10
+
+# Tier thresholds
+thresholds:
+  hot: 80        # Immediate notification
+  qualified: 60  # Daily digest
+  warm: 40       # Weekly review
+  cold: 0        # Archive
+
+# Urgency level scoring
+urgency_scores:
+  immediate: 90
+  high: 70
+  medium: 45
+  low: 20
+  unknown: 30
+
+# Business stage scoring
+business_stage_scores:
+  established: 25
+  growing: 20
+  early_revenue: 15
+  pre_revenue: 10
+  idea: 5
+  unknown: 5
+
+# Author role scoring
+author_role_scores:
+  founder: 25
+  ceo: 25
+  cto: 20
+  operations: 15
+  manager: 15
+  technical_lead: 10
+  developer: 5
+  other: 5
+
+# Time decay (score reduction over time)
+time_decay:
+  enabled: true
+  thresholds:
+    - days: 30
+      multiplier: 0.70  # 30% penalty
+    - days: 14
+      multiplier: 0.85  # 15% penalty
+    - days: 7
+      multiplier: 0.95  # 5% penalty

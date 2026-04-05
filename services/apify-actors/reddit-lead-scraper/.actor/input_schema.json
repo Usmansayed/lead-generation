@@ -1,0 +1,75 @@
+{
+    "title": "Reddit Lead Scraper - Production Grade",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "subreddits": {
+            "title": "Subreddits",
+            "type": "array",
+            "description": "List of subreddits to scrape (e.g., Entrepreneur, startups, forhire)",
+            "default": ["Entrepreneur", "startups", "forhire"],
+            "prefill": ["Entrepreneur", "startups", "forhire"],
+            "editor": "stringList"
+        },
+        "keywords": {
+            "title": "Search Keywords",
+            "type": "array",
+            "description": "Keywords to search for in posts",
+            "default": ["looking for developer", "need technical cofounder", "hire developer"],
+            "prefill": ["looking for developer", "need technical cofounder", "hire developer"],
+            "editor": "stringList"
+        },
+        "maxPosts": {
+            "title": "Maximum Posts",
+            "type": "integer",
+            "description": "Maximum number of posts to scrape per subreddit",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 1000
+        },
+        "sortBy": {
+            "title": "Sort By",
+            "type": "string",
+            "description": "How to sort posts",
+            "default": "new",
+            "enum": ["hot", "new", "top", "rising"],
+            "enumTitles": ["Hot", "New", "Top", "Rising"]
+        },
+        "timeFilter": {
+            "title": "Time Filter",
+            "type": "string",
+            "description": "Time filter for posts (for top/controversial sorting)",
+            "default": "week",
+            "enum": ["hour", "day", "week", "month", "year", "all"],
+            "enumTitles": ["Past Hour", "Past Day", "Past Week", "Past Month", "Past Year", "All Time"]
+        },
+        "after_utc": {
+            "title": "Only posts after (UTC)",
+            "type": "integer",
+            "description": "Retention: only output posts with created_utc > this (Unix timestamp). Pipeline sets from last run.",
+            "default": null
+        },
+        "useApifyProxy": {
+            "title": "Use Apify Proxy",
+            "type": "boolean",
+            "description": "Enable Apify proxy to avoid IP blocks (recommended for production)",
+            "default": false
+        },
+        "minDelayMs": {
+            "title": "Minimum Delay (ms)",
+            "type": "integer",
+            "description": "Minimum delay between requests in milliseconds (rate limiting)",
+            "default": 1000,
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "maxDelayMs": {
+            "title": "Maximum Delay (ms)",
+            "type": "integer",
+            "description": "Maximum delay between requests in milliseconds (rate limiting)",
+            "default": 3000,
+            "minimum": 0,
+            "maximum": 10000
+        }
+    }
+}

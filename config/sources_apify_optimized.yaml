@@ -1,0 +1,412 @@
+# APIFY-POWERED Lead Generation Sources
+# Version 4.0 - STREAMLINED FOR APIFY ACTORS
+# Focus: Top 15 platforms with multiple high-value sources
+# Target: $1k-$50k projects from English-speaking regions
+# Last updated: 2026-02-08
+
+version: "4.0"
+total_platforms: 15
+coverage_score: "Optimized - Top platforms with highest ROI"
+
+metadata:
+  target_budget: "$1,000 - $50,000"
+  target_regions: ["US", "UK", "CA", "AU", "EU", "SG", "NZ"]
+  languages: ["English"]
+  expected_lead_volume: "400-800/week at full deployment"
+  expected_conversion: "10-18% overall"
+  apify_enabled: true
+
+# ==============================================================================
+# TOP 15 PLATFORMS FOR B2B LEAD GENERATION
+# ==============================================================================
+
+# PLATFORM 1: LINKEDIN - Professional networking, business announcements
+# PLATFORM 2: X (TWITTER) - Real-time startup announcements, #buildinpublic
+# PLATFORM 3: REDDIT - Multiple high-value communities (7 subreddits)
+# PLATFORM 4: HACKER NEWS - Tech founders, highest quality leads
+# PLATFORM 5: INDIE HACKERS - Bootstrapped founders, high conversion
+# PLATFORM 6: PRODUCT HUNT - Product launches, makers needing help
+# PLATFORM 7: UPWORK - Direct project listings with budgets
+# PLATFORM 8: GITHUB - Open source projects, issues
+# PLATFORM 9: FACEBOOK - Business groups, entrepreneur communities
+# PLATFORM 10: INSTAGRAM - Business owners sharing journey
+# PLATFORM 11: FREELANCER.COM - Project marketplace
+# PLATFORM 12: ANGELLIST - Startup ecosystem, funding announcements
+# PLATFORM 13: QUORA - Business questions, seeking recommendations
+# PLATFORM 14: DISCORD - Tech and startup communities
+# PLATFORM 15: STACK OVERFLOW - Developer communities, job board
+
+# ==============================================================================
+# APIFY ACTOR CONFIGURATIONS
+# Build custom actors using these scrapers:
+# - Web Scraper (Puppeteer/Playwright/Cheerio)
+# - BeautifulSoup Scraper
+# - JSDOM Scraper
+# ==============================================================================
+
+apify_actors:
+  web_scraper:
+    actor_id: "apify/web-scraper"
+    use_for:
+      - LinkedIn
+      - Twitter/X
+      - Upwork
+      - Freelancer
+      - AngelList
+      - Quora
+      - Stack Overflow
+    cost: "$1-4 per 1000 results"
+
+  puppeteer_scraper:
+    actor_id: "apify/puppeteer-scraper"
+    use_for:
+      - Facebook Groups
+      - Instagram
+      - Product Hunt
+      - Indie Hackers
+    cost: "$2-5 per 1000 results"
+
+  cheerio_scraper:
+    actor_id: "apify/cheerio-scraper"
+    use_for:
+      - Reddit
+      - Hacker News
+      - GitHub
+    cost: "$0.30-1 per 1000 results"
+
+# ==============================================================================
+# PLATFORM SOURCES
+# ==============================================================================
+
+platforms:
+
+  # LINKEDIN
+  linkedin:
+    priority: high
+    sources:
+      - name: "LinkedIn Posts - Developer Search"
+        url: "https://www.linkedin.com/search/results/content/"
+        keywords:
+          - "looking for developer"
+          - "hiring developer"
+          - "need technical help"
+          - "technical cofounder"
+          - "MVP development"
+        frequency: hourly
+        expected_conversion: 0.14
+        monthly_volume: 50-80
+
+  # X (TWITTER)
+  twitter:
+    priority: high
+    sources:
+      - name: "Twitter Startup Announcements"
+        url: "https://twitter.com/search"
+        keywords:
+          - "#buildinpublic"
+          - "#startup looking for developer"
+          - "#indiehacker need help"
+          - "launching soon need developer"
+          - "technical cofounder wanted"
+        frequency: hourly
+        expected_conversion: 0.12
+        monthly_volume: 40-70
+
+  # REDDIT (7 HIGH-VALUE SUBREDDITS)
+  reddit:
+    priority: high
+    sources:
+      - name: "r/Entrepreneur"
+        url: "https://www.reddit.com/r/Entrepreneur"
+        keywords: ["looking for developer", "need technical cofounder", "MVP development"]
+        frequency: hourly
+        conversion: 0.15
+        volume: 80-120
+
+      - name: "r/startups"
+        url: "https://www.reddit.com/r/startups"
+        keywords: ["technical cofounder", "MVP build", "prototype development"]
+        frequency: hourly
+        conversion: 0.18
+        volume: 60-100
+
+      - name: "r/forhire"
+        url: "https://www.reddit.com/r/forhire"
+        keywords: ["[Hiring]", "developer", "web development", "app development"]
+        frequency: every_30_minutes
+        conversion: 0.25
+        volume: 100-150
+
+      - name: "r/SaaS"
+        url: "https://www.reddit.com/r/SaaS"
+        keywords: ["looking for developer", "building SaaS", "MVP development"]
+        frequency: every_2_hours
+        conversion: 0.20
+        volume: 30-50
+
+      - name: "r/smallbusiness"
+        url: "https://www.reddit.com/r/smallbusiness"
+        keywords: ["need software", "looking for developer", "custom solution"]
+        frequency: every_2_hours
+        conversion: 0.12
+        volume: 40-70
+
+      - name: "r/shopify"
+        url: "https://www.reddit.com/r/shopify"
+        keywords: ["custom app", "Shopify developer", "integration"]
+        frequency: every_2_hours
+        conversion: 0.16
+        volume: 40-60
+
+      - name: "r/indiehackers"
+        url: "https://www.reddit.com/r/indiehackers"
+        keywords: ["looking for developer", "solo founder", "building product"]
+        frequency: hourly
+        conversion: 0.20
+        volume: 35-55
+
+  # HACKER NEWS
+  hackernews:
+    priority: high
+    sources:
+      - name: "Ask HN Threads"
+        url: "https://news.ycombinator.com"
+        keywords: ["Ask HN: Looking for", "Ask HN: Hire", "Ask HN: Developer"]
+        frequency: hourly
+        conversion: 0.22
+        volume: 30-50
+
+      - name: "Who is Hiring Thread"
+        url: "https://news.ycombinator.com"
+        keywords: ["freelance", "contract", "consulting"]
+        frequency: monthly
+        conversion: 0.18
+        volume: 20-40
+
+  # INDIE HACKERS
+  indiehackers:
+    priority: high
+    sources:
+      - name: "Forum"
+        url: "https://www.indiehackers.com"
+        keywords: ["hiring", "looking for developer", "technical cofounder"]
+        frequency: every_2_hours
+        conversion: 0.25
+        volume: 25-40
+
+      - name: "Jobs Board"
+        url: "https://www.indiehackers.com/jobs"
+        keywords: ["contract", "freelance", "part-time"]
+        frequency: daily
+        conversion: 0.18
+        volume: 10-20
+
+  # PRODUCT HUNT
+  producthunt:
+    priority: medium
+    sources:
+      - name: "Discussions"
+        url: "https://www.producthunt.com"
+        keywords: ["looking for developer", "need technical help", "technical cofounder"]
+        frequency: daily
+        conversion: 0.12
+        volume: 12-20
+
+      - name: "Upcoming Launches"
+        url: "https://www.producthunt.com/upcoming"
+        keywords: ["need developer", "pre-launch help"]
+        frequency: weekly
+        conversion: 0.10
+        volume: 5-10
+
+  # UPWORK
+  upwork:
+    priority: high
+    sources:
+      - name: "Web Development Jobs"
+        url: "https://www.upwork.com/nx/search/jobs"
+        keywords: ["web application", "full stack", "MVP", "custom development"]
+        budget_filter: "$1000-$20000"
+        frequency: hourly
+        conversion: 0.30
+        volume: 80-120
+
+      - name: "E-commerce Jobs"
+        url: "https://www.upwork.com/nx/search/jobs"
+        keywords: ["Shopify", "WooCommerce", "e-commerce", "online store"]
+        budget_filter: "$1000-$20000"
+        frequency: hourly
+        conversion: 0.28
+        volume: 50-80
+
+      - name: "Mobile App Jobs"
+        url: "https://www.upwork.com/nx/search/jobs"
+        keywords: ["mobile app", "iOS", "Android", "React Native"]
+        budget_filter: "$2000-$30000"
+        frequency: every_2_hours
+        conversion: 0.25
+        volume: 40-70
+
+  # GITHUB
+  github:
+    priority: medium
+    sources:
+      - name: "Issues & Discussions"
+        url: "https://github.com"
+        keywords: ["need help building", "looking for developer", "help wanted"]
+        frequency: daily
+        conversion: 0.15
+        volume: 25-40
+
+  # FACEBOOK
+  facebook:
+    priority: medium
+    sources:
+      - name: "Business Groups"
+        target_groups: ["Entrepreneur Community", "Startup Grind", "Small Business Owners"]
+        keywords: ["looking for developer", "need technical help", "MVP development"]
+        frequency: every_4_hours
+        conversion: 0.10
+        volume: 30-50
+
+  # INSTAGRAM
+  instagram:
+    priority: low
+    sources:
+      - name: "Business Hashtags"
+        hashtags: ["#smallbusinessowner", "#entrepreneur", "#ecommerce", "#startuplife"]
+        frequency: daily
+        conversion: 0.08
+        volume: 20-40
+
+  # FREELANCER.COM
+  freelancer:
+    priority: high
+    sources:
+      - name: "Web Development"
+        url: "https://www.freelancer.com/jobs"
+        keywords: ["web application", "custom development", "MVP development"]
+        budget_filter: "$1000-$20000"
+        frequency: every_2_hours
+        conversion: 0.25
+        volume: 60-100
+
+      - name: "E-commerce"
+        url: "https://www.freelancer.com/jobs"
+        keywords: ["e-commerce", "Shopify", "WooCommerce"]
+        budget_filter: "$1000-$20000"
+        frequency: every_2_hours
+        conversion: 0.23
+        volume: 30-50
+
+  # ANGELLIST
+  angellist:
+    priority: medium
+    sources:
+      - name: "Startup Jobs"
+        url: "https://angel.co/jobs"
+        keywords: ["contract", "freelance", "developer"]
+        frequency: daily
+        conversion: 0.13
+        volume: 20-35
+
+  # QUORA
+  quora:
+    priority: medium
+    sources:
+      - name: "Business Questions"
+        url: "https://www.quora.com"
+        keywords: ["how to find developer", "developer recommendations", "outsourcing development"]
+        frequency: daily
+        conversion: 0.09
+        volume: 25-40
+
+  # DISCORD
+  discord:
+    priority: medium
+    sources:
+      - name: "Startup Communities"
+        servers: ["Indie Hackers", "YC Startup School", "SaaS Community"]
+        keywords: ["looking for developer", "need technical help", "hiring"]
+        frequency: daily
+        conversion: 0.15
+        volume: 20-35
+        notes: "Manual monitoring required"
+
+  # STACK OVERFLOW
+  stackoverflow:
+    priority: medium
+    sources:
+      - name: "Jobs Board"
+        url: "https://stackoverflow.com/jobs"
+        keywords: ["contract", "freelance", "remote", "consulting"]
+        frequency: daily
+        conversion: 0.14
+        volume: 25-40
+
+# ==============================================================================
+# DEPLOYMENT PHASES
+# ==============================================================================
+
+deployment_phases:
+  phase_1_week_1:
+    focus: "Top 5 platforms - Highest ROI"
+    platforms: [reddit, hackernews, indiehackers, upwork, freelancer]
+    expected_leads: "100-150/week"
+    apify_cost: "$50-100/week"
+
+  phase_2_week_2_4:
+    focus: "Add social media platforms"
+    platforms: [linkedin, twitter, producthunt, github, angellist]
+    expected_leads: "250-400/week"
+    apify_cost: "$100-200/week"
+
+  phase_3_week_4_plus:
+    focus: "Complete coverage"
+    platforms: [facebook, instagram, quora, discord, stackoverflow]
+    expected_leads: "400-800/week"
+    apify_cost: "$150-300/week"
+
+# ==============================================================================
+# COST ESTIMATES
+# ==============================================================================
+
+cost_breakdown:
+  apify_subscription:
+    starter: "$49/month - Good for phase 1"
+    team: "$499/month - Needed for phase 2-3"
+
+  estimated_monthly_costs:
+    phase_1: "$200-400/month"
+    phase_2: "$500-800/month"
+    phase_3: "$800-1200/month"
+
+  cost_per_lead:
+    phase_1: "$1.50-3/lead"
+    phase_2: "$1.25-2.50/lead"
+    phase_3: "$1-2/lead"
+
+# ==============================================================================
+# NOTES
+# ==============================================================================
+
+notes: |
+  MAJOR CHANGES FROM v3.0:
+  - Reduced from 152 sources to 15 platforms
+  - Removed low-quality platforms (Craigslist, TikTok, YouTube, etc.)
+  - Focused on where people announce new ventures and software needs
+  - Apify-powered scraping with professional anti-bot handling
+  - No more custom Crawlee code needed
+
+  PLATFORM SELECTION:
+  - All major social media (LinkedIn, Twitter, Facebook, Instagram)
+  - Top tech communities (Reddit, HN, IH, PH, GitHub)
+  - Best freelance marketplaces (Upwork, Freelancer)
+  - Startup ecosystem (AngelList, Discord communities)
+  - Q&A and developer platforms (Quora, Stack Overflow)
+
+  BUILD CUSTOM ACTORS FOR:
+  - Each platform needs its own Apify actor
+  - Use Web Scraper, Puppeteer, or Cheerio depending on complexity
+  - Configure with platform-specific selectors and anti-bot measures
+  - Set up scheduling and data storage

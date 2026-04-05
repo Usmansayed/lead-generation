@@ -1,0 +1,15 @@
+{
+  "title": "LinkedIn Post Downloader Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "urls": {
+      "title": "LinkedIn post URLs",
+      "type": "array",
+      "description": "List of LinkedIn post URLs (e.g. https://www.linkedin.com/posts/... or .../feed/update/urn:li:activity:...)",
+      "editor": "requestListUrls",
+      "prefill": ["https://www.linkedin.com/posts/username_activity-1234567890-AbCd"]
+    }
+  },
+  "required": ["urls"]
+}

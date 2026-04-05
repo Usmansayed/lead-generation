@@ -1,0 +1,14 @@
+{
+  "platform": "medium",
+  "source": "Medium",
+  "url": "https://medium.com/@speedcraft21/a-single-missing-index-cost-my-startup-140k-in-aws-bills-d02ed51a5a62?source=search_post---------7-----------------------------------",
+  "title": "A Single Missing Index Cost My Startup $140K in AWS Bills",
+  "content_preview": "The query ran fine at 1,000 users. At 10,000, our database turned into a money incinerator. One EXPLAIN showed why.",
+  "author": "",
+  "scraped_at": "2026-02-09T15:25:33.087085",
+  "matched_keywords": [
+    "startup"
+  ],
+  "quality_score": 25,
+  "lead_category": "low_priority"
+}

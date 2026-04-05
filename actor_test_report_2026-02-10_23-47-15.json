@@ -1,0 +1,156 @@
+{
+  "timestamp": "2026-02-10_23-47-15",
+  "total_actors": 15,
+  "results": [
+    {
+      "actor": "Reddit Lead Scraper",
+      "id": "reddit-lead-scraper",
+      "category": "Freelance Platforms",
+      "status": "FAILED",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "Input schema error - subreddits field required",
+      "note": null
+    },
+    {
+      "actor": "HackerNews Lead Scraper",
+      "id": "hackernews-lead-scraper",
+      "category": "Freelance Platforms",
+      "status": "WORKING",
+      "leads": 1,
+      "quality_leads": 0,
+      "error": null,
+      "note": "Low quality scores (10.15/100)"
+    },
+    {
+      "actor": "Indie Hackers Lead Scraper",
+      "id": "indiehackers-lead-scraper",
+      "category": "Freelance Platforms",
+      "status": "FAILED",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "HTML structure changed - selectors not finding content",
+      "note": null
+    },
+    {
+      "actor": "Upwork Lead Scraper",
+      "id": "upwork-lead-scraper",
+      "category": "Freelance Platforms",
+      "status": "BLOCKED",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "Timeout - strong anti-bot protection",
+      "note": null
+    },
+    {
+      "actor": "Freelancer Lead Scraper",
+      "id": "freelancer-lead-scraper",
+      "category": "Freelance Platforms",
+      "status": "NO_MATCHES",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "Found 40 jobs but none matched keywords",
+      "note": null
+    },
+    {
+      "actor": "Product Hunt Lead Scraper",
+      "id": "producthunt-lead-scraper",
+      "category": "Social & Job Platforms",
+      "status": "FAILED",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "Found 57 products but extraction logic failed",
+      "note": null
+    },
+    {
+      "actor": "LinkedIn Lead Scraper",
+      "id": "linkedin-lead-scraper",
+      "category": "Social & Job Platforms",
+      "status": "AUTH_REQUIRED",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "LinkedIn authentication wall",
+      "note": null
+    },
+    {
+      "actor": "Twitter/X Lead Scraper",
+      "id": "twitter-lead-scraper",
+      "category": "Social & Job Platforms",
+      "status": "AUTH_REQUIRED",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "Twitter/X authentication wall",
+      "note": null
+    },
+    {
+      "actor": "AngelList Lead Scraper",
+      "id": "angellist-lead-scraper",
+      "category": "Social & Job Platforms",
+      "status": "BLOCKED",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "403 Forbidden - anti-bot protection",
+      "note": null
+    },
+    {
+      "actor": "GitHub Lead Scraper",
+      "id": "github-lead-scraper",
+      "category": "Social & Job Platforms",
+      "status": "NO_MATCHES",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "Found 85 items but none matched keywords",
+      "note": null
+    },
+    {
+      "actor": "Stack Overflow Lead Scraper",
+      "id": "stackoverflow-lead-scraper",
+      "category": "Developer & Content Platforms",
+      "status": "NO_MATCHES",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "Processed 20 questions but none matched",
+      "note": null
+    },
+    {
+      "actor": "Dev.to Lead Scraper",
+      "id": "devto-lead-scraper",
+      "category": "Developer & Content Platforms",
+      "status": "WORKING",
+      "leads": 1,
+      "quality_leads": 1,
+      "error": null,
+      "note": "Production ready (55/100 quality)"
+    },
+    {
+      "actor": "Craigslist Lead Scraper",
+      "id": "craigslist-lead-scraper",
+      "category": "Developer & Content Platforms",
+      "status": "BLOCKED",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "403 Forbidden on RSS feeds",
+      "note": null
+    },
+    {
+      "actor": "Medium Lead Scraper",
+      "id": "medium-lead-scraper",
+      "category": "Developer & Content Platforms",
+      "status": "WORKING",
+      "leads": 10,
+      "quality_leads": 0,
+      "error": null,
+      "note": "Production ready (25-35/100 quality)"
+    },
+    {
+      "actor": "Quora Lead Scraper",
+      "id": "quora-lead-scraper",
+      "category": "Developer & Content Platforms",
+      "status": "AUTH_REQUIRED",
+      "leads": 0,
+      "quality_leads": 0,
+      "error": "Session cookies required by design",
+      "note": null
+    }
+  ]
+}

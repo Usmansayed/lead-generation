@@ -1,0 +1,71 @@
+﻿
+[1m[96m================================================================================[0m
+[1m[96m                     APIFY ACTORS TEST - 15 DEPLOYED ACTORS                     [0m
+[1m[96m================================================================================[0m
+
+[96mTest Date: 2026-02-10 23:46:47[0m
+[96mTotal Actors: 15[0m
+python : Traceback 
+(most recent call 
+last):
+At line:1 char:1
++ python test_deplo
+yed_actors.py 2>&1 
+| Out-File 
+-FilePath 
+actor_test_o ...
++ ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+    + CategoryInfo 
+             : No  
+  tSpecified: (T   
+ raceback (most    
+ recent call l    
+ast)::String)     
+[], RemoteExce    
+ption
+    + FullyQualifi 
+   edErrorId : Na  
+  tiveCommandErr   
+ or
+ 
+  File "C:\Users\us
+man\Music\lead-gene
+ration\test_deploye
+d_actors.py", line 
+438, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\us
+man\Music\lead-gene
+ration\test_deploye
+d_actors.py", line 
+397, in main
+    print(f"\n{Colo
+rs.YELLOW}\u26a0\uf
+e0f  {token_or_erro
+r}{Colors.END}")
+    ~~~~~^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
+^^^^^^
+  File "C:\Users\us
+man\Miniconda3\Lib\
+encodings\cp1252.py
+", line 19, in 
+encode
+    return codecs.c
+harmap_encode(input
+,self.errors,encodi
+ng_table)[0]
+           ~~~~~~~~
+~~~~~~~~~~~~~^^^^^^
+^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^
+UnicodeEncodeError:
+ 'charmap' codec 
+can't encode 
+characters in 
+position 7-8: 
+character maps to 
+<undefined>

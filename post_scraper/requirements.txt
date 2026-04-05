@@ -1,0 +1,9 @@
+# post_scraper: content ingestion pipeline for social media posts
+yt-dlp>=2024.1.0
+# Optional: for the test web UI (server.py)
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+# Optional: for LinkedIn when yt-dlp fails (set APIFY_TOKEN)
+apify-client>=1.5.0
+# Optional: most reliable LinkedIn – Playwright + network interception + cookies (then: playwright install chromium)
+playwright>=1.40.0

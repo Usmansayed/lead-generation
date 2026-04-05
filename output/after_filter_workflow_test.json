@@ -1,0 +1,53 @@
+{
+  "lead_source": "db_raw_posts",
+  "lead": {
+    "id": "aff27af15e353e865394f8eeda914a2e6f37e181970e6c5e595af4a3a5879987",
+    "platform": "reddit",
+    "post_id": "1r31f2z",
+    "post_url": "https://www.reddit.com/r/Entrepreneur/comments/1r31f2z/the_deadline_is_15th_february_2026_help/",
+    "post_text": "The deadline is 15th February 2026, Help\n\nHey everyone, I'm Victoria, 22F\nplease please please give me an internship or even a job, I'll work for free, any job, any position, I am currently pursuing Bachelor's of computer applications, my college has made this mandatory that every student have to do an internship in their last semester, I am in my last semester, going through a very rough phase in life, i would be very grateful if anyone can provide me some opportunity, the deadline is 15th febr",
+    "author": {
+      "name": "Successful_Work6285",
+      "handle": "Successful_Work6285",
+      "profile_url": "https://www.reddit.com/user/Successful_Work6285"
+    },
+    "status": "ai_rejected"
+  },
+  "step1_full_post_fetch": {
+    "from_cache": true,
+    "full_post_text_length": 677,
+    "full_post_text": "Skip to main content Go to Entrepreneur r/Entrepreneur \u2022 [deleted] The deadline is 15th February 2026, Help Sorry, this post was deleted by the person who originally posted it. Share New to Reddit? Create your account and connect with a world of communities. Continue with Email Continue With Phone Number By continuing, you agree to our User Agreement and acknowledge that you understand the Privacy Policy . Check out The Official r/Entrepreneur Podcast Public Anyone can view, post, and comment to this community 0 0 Reddit Rules Privacy Policy User Agreement Your Privacy Choices Accessibility Reddit, Inc. \u00a9 2026. All rights reserved. Expand Navigation Collapse Navigation"
+  },
+  "step2_research": {
+    "business_type": "default",
+    "business_size": "small",
+    "has_website": false,
+    "suggested_offers": [
+      "website",
+      "booking or scheduling",
+      "CRM or operations"
+    ],
+    "should_skip_email": false
+  },
+  "step3_profile_fetch": {
+    "from_cache": true,
+    "profile_url": "https://www.reddit.com/user/Successful_Work6285",
+    "profile_text_length": 68,
+    "profile_text": "Skip to main content This user has deleted their account. Go to home"
+  },
+  "step4_web_research": {
+    "has_web_search_config": true,
+    "web_context_length": 0,
+    "web_context": ""
+  },
+  "step5_contact": {
+    "method": "profile",
+    "value": "https://www.reddit.com/user/Successful_Work6285"
+  },
+  "step6_email": {
+    "has_llm_config": true,
+    "subject": "Quick note about your r/Entrepreneur post",
+    "bodyText": "Hey there,\nI saw your post on r/Entrepreneur about needing help with a February 2026 deadline. I also noticed the post and your profile have since been deleted, so I hope you found what you needed!\n\nAt Scubiee, we build custom tools and sites for businesses, often helping founders get their online presence sorted or streamline operations to meet important dates. If you're still looking for a hand with a website or a system to manage things, we might be able to help.\n\nNo pressure at all, but if you ever want to explore options, you can find us at scubiee.com or reach out to team@scubiee.com. Just here if it's useful.",
+    "bodyHtml": "<p>Hey there,</p><p>I saw your post on r/Entrepreneur about needing help with a February 2026 deadline. I also noticed the post and your profile have since been deleted, so I hope you found what you needed!</p><p>At Scubiee, we build custom tools and sites for businesses, often helping founders get their online presence sorted or streamline operations to meet important dates. If you're still looking for a hand with a website or a system to manage things, we might be able to help.</p><p>No pressure at all, but if you ever want to explore options, you can find us at scubiee.com or reach out to team@scubiee.com. Just here if it's useful.</p>"
+  }
+}

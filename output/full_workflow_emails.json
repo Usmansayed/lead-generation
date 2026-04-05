@@ -1,0 +1,35 @@
+{
+  "count": 2,
+  "emails": [
+    {
+      "lead_id": "53271d2ecd3c4c4b9512ebf3e54f68ded80e70a6314e5f66ab82f5fb79d5f4b6",
+      "platform": "reddit",
+      "post_url": "https://www.reddit.com/r/startups/comments/1ram2wn/how_to_improve_your_startups_marketing_i_will_not/",
+      "author_handle": "chiseyuki",
+      "contact": {
+        "method": "profile",
+        "value": "https://www.reddit.com/user/chiseyuki"
+      },
+      "email": {
+        "subject": "Loved your marketing insights on r/startups!",
+        "bodyText": "Hey chiseyuki,\n\nJust read your post on r/startups about improving startup marketing \u2013 really insightful stuff. Your systematic approach, from browsing websites like a customer to leveraging algorithms and Pinterest for the 'mood,' is super sharp. As a fellow 'marketing nerd,' I totally get how those algorithms feel like they're reading your mind!\n\nYou mentioned tracking insights and stats from Instagram and TikTok to figure out content reach. We often build custom dashboards for founders that pull all that data into one place, making it super easy to spot trends and share with clients. Could be a neat way to streamline your reporting and strategy discussions.\n\nNo pressure at all, but if you ever want to chat about how that might look, feel free to hit us up at team@scubiee.com or scubiee.com.\n\nCheers,",
+        "bodyHtml": "<p>Hey chiseyuki,</p><p>Just read your post on r/startups about improving startup marketing \u2013 really insightful stuff. Your systematic approach, from browsing websites like a customer to leveraging algorithms and Pinterest for the 'mood,' is super sharp. As a fellow 'marketing nerd,' I totally get how those algorithms feel like they're reading your mind!</p><p>You mentioned tracking insights and stats from Instagram and TikTok to figure out content reach. We often build custom dashboards for founders that pull all that data into one place, making it super easy to spot trends and share with clients. Could be a neat way to streamline your reporting and strategy discussions.</p><p>No pressure at all, but if you ever want to chat about how that might look, feel free to hit us up at team@scubiee.com or scubiee.com.</p><p>Cheers,</p>"
+      }
+    },
+    {
+      "lead_id": "8a5bce0fa989796f161760c0b171bc8295f29710f61ac67ccab31c80c3e57820",
+      "platform": "reddit",
+      "post_url": "https://www.reddit.com/r/startups/comments/1raiuwh/are_wishlists_actually_useful_i_will_not_promote/",
+      "author_handle": "Wrong-Material-7435",
+      "contact": {
+        "method": "profile",
+        "value": "https://www.reddit.com/user/Wrong-Material-7435"
+      },
+      "email": {
+        "subject": "Quick thought on your wishlist post",
+        "bodyText": "Hey Wrong-Material-7435,\n\nSaw your post on r/startups about wishlists and launching next week \u2013 totally get where you're coming from on vanity metrics vs. real users. It's tough to cut through the noise and figure out what truly matters for validation.\n\nSince you're launching so soon, getting a clear picture of who's engaging post-launch is key. We often help founders set up simple, effective sites that aren't just pretty faces, but also tools to genuinely track early user behavior. Or, if you\u2019re thinking about managing those first real users, a custom internal dashboard can make a huge difference in understanding what\u2019s working (or not).\n\nNo pressure at all, just thought I'd reach out. If you ever want to chat through how a solid site or a simple internal tool could help you focus on those real users, feel free to ping us at team@scubiee.com or check out scubiee.com.\n\nCheers,",
+        "bodyHtml": "<p>Hey Wrong-Material-7435,</p><p>Saw your post on r/startups about wishlists and launching next week \u2013 totally get where you're coming from on vanity metrics vs. real users. It's tough to cut through the noise and figure out what truly matters for validation.</p><p>Since you're launching so soon, getting a clear picture of who's engaging post-launch is key. We often help founders set up simple, effective sites that aren't just pretty faces, but also tools to genuinely track early user behavior. Or, if you\u2019re thinking about managing those first real users, a custom internal dashboard can make a huge difference in understanding what\u2019s working (or not).</p><p>No pressure at all, just thought I'd reach out. If you ever want to chat through how a solid site or a simple internal tool could help you focus on those real users, feel free to ping us at <a href=\"mailto:team@scubiee.com\">team@scubiee.com</a> or check out <a href=\"https://scubiee.com\">scubiee.com</a>.</p><p>Cheers,</p>"
+      }
+    }
+  ]
+}

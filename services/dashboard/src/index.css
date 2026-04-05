@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark black theme */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0 100%;
+    --secondary: 0 0% 11%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 11%;
+    --muted-foreground: 0 0% 58%;
+    --accent: 0 0% 11%;
+    --accent-foreground: 0 0% 98%;
+    --border: 0 0% 14%;
+    --input: 0 0% 14%;
+    --ring: 217 91% 60%;
+    --radius: 0.5rem;
+    --sidebar: 0 0% 3%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-border: 0 0% 10%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Interactive tables */
+.table-row-hover tbody tr {
+  @apply transition-colors duration-150 cursor-pointer;
+}
+.table-row-hover tbody tr:hover {
+  @apply bg-muted/40;
+}
+
+/* Chart theme - black dashboard */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: hsl(0 0% 18%);
+  stroke-opacity: 0.6;
+}
+.recharts-text {
+  fill: hsl(0 0% 58%);
+  font-size: 12px;
+}
+.recharts-legend-item-text {
+  fill: hsl(0 0% 88%);
+  font-size: 12px;
+}
+.recharts-tooltip-wrapper {
+  outline: none;
+}

@@ -1,0 +1,118 @@
+﻿
+=== Deploying linkedin-lead-scraper ===
+python : Traceback 
+(most recent call 
+last):
+At line:1 char:1
++ python 
+deploy_actors.py > 
+deploy_output.txt 
+2>&1; Write-Output 
+"DONE"
++ ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+    + CategoryInfo 
+             : No  
+  tSpecified: (T   
+ raceback (most    
+ recent call l    
+ast)::String)     
+[], RemoteExce    
+ption
+    + FullyQualifi 
+   edErrorId : Na  
+  tiveCommandErr   
+ or
+ 
+  File "C:\Users\us
+man\Music\lead-gene
+ration\deploy_actor
+s.py", line 18, in 
+<module>
+    result = 
+subprocess.run(
+        ['apify', 
+'push'],
+    ...<3 lines>...
+        
+timeout=300,
+    )
+  File "C:\Users\us
+man\Miniconda3\Lib\
+subprocess.py", 
+line 554, in run
+    with 
+Popen(*popenargs, 
+**kwargs) as 
+process:
+         ~~~~~^^^^^
+^^^^^^^^^^^^^^^^^
+  File "C:\Users\us
+man\Miniconda3\Lib\
+subprocess.py", 
+line 1039, in 
+__init__
+    self._execute_c
+hild(args, 
+executable, 
+preexec_fn, 
+close_fds,
+    ~~~~~~~~~~~~~~~
+~~~~^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
+^^^^^^^
+                   
+     pass_fds, 
+cwd, env,
+                   
+     
+^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                   
+     gid, gids, 
+uid, umask,
+                   
+     ^^^^^^^^^^^^^^
+^^^^^^^^
+                   
+     
+start_new_session, 
+process_group)
+                   
+     ^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\us
+man\Miniconda3\Lib\
+subprocess.py", 
+line 1554, in 
+_execute_child
+    hp, ht, pid, 
+tid = _winapi.Creat
+eProcess(executable
+, args,
+                   
+    ~~~~~~~~~~~~~~~
+~~~~~~^^^^^^^^^^^^^
+^^^^^
+                   
+          # no 
+special security
+                   
+          ^^^^^^^^^
+^^^^^^^^^^^^
+    ...<4 lines>...
+                   
+          cwd,
+                   
+          ^^^^
+                   
+          
+startupinfo)
+                   
+          
+^^^^^^^^^^^^
+FileNotFoundError: 
+[WinError 2] The 
+system cannot find 
+the file specified

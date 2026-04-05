@@ -1,0 +1,54 @@
+services:
+  # MongoDB - primary database
+  mongo:
+    image: mongo:7
+    container_name: lead_discovery_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis - for caching and queues
+  redis:
+    image: redis:7-alpine
+    container_name: lead_discovery_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # Crawlee - Node.js crawler service
+  crawlee:
+    build:
+      context: ./services/crawlee
+      dockerfile: Dockerfile
+    container_name: lead_discovery_crawlee
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/lead_discovery
+      - REDIS_URL=redis://redis:6379/0
+      - GOOGLE1=${GOOGLE1}
+      - GOOGLE2=${GOOGLE2}
+      - GOOGLE3=${GOOGLE3}
+    volumes:
+      - ./services/crawlee:/app
+      - ./config:/app/config:ro
+      - /app/node_modules
+    depends_on:
+      mongo:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  mongo_data:
+  redis_data:

@@ -62,7 +62,7 @@ flowchart TB
         API[FastAPI Backend]
     end
 
-    subgraph DB[(MongoDB)]
+    subgraph DB["MongoDB"]
         RP[raw_posts]
         QL[qualified_leads]
         EQ[email_queue]

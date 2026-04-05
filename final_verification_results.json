@@ -1,0 +1,92 @@
+{
+  "linkedin-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 15,
+    "hq": 0,
+    "datasetId": "jaFLi078lSTeK3Grq"
+  },
+  "twitter-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 0,
+    "hq": 0,
+    "datasetId": "Xo0X4HMXbF1hgewzm"
+  },
+  "quora-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 0,
+    "hq": 0,
+    "datasetId": "fWJCUP089Rmy8q6nN"
+  },
+  "upwork-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 0,
+    "hq": 0,
+    "datasetId": "EnISQ0RA6Td1BrCBg"
+  },
+  "craigslist-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 0,
+    "hq": 0,
+    "datasetId": "tR6ArXHCJf4o0b8Lf"
+  },
+  "indiehackers-lead-scraper": {
+    "status": "FAILED",
+    "leads": 0,
+    "hq": 0,
+    "datasetId": "zHs31o9g5VwI7zDn8"
+  },
+  "stackoverflow-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 5,
+    "hq": 2,
+    "datasetId": "C1EDmbM1CHFUPaHc8"
+  },
+  "hackernews-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 19,
+    "hq": 13,
+    "datasetId": "6IV6HquKOoguHTjrt"
+  },
+  "github-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 50,
+    "hq": 4,
+    "datasetId": "W8dUOIJEjRro8zCQS"
+  },
+  "devto-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 32,
+    "hq": 29,
+    "datasetId": "KaNp6X2vzBhFFTsGb"
+  },
+  "freelancer-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 20,
+    "hq": 3,
+    "datasetId": "EQkxHkGbA0IhhTpq9"
+  },
+  "reddit-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 5,
+    "hq": 5,
+    "datasetId": "OeCqRYeWm8gkjRPhm"
+  },
+  "medium-lead-scraper": {
+    "status": "FAILED",
+    "leads": 0,
+    "hq": 0,
+    "datasetId": "HYfQBFsximZkzLaqh"
+  },
+  "producthunt-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 15,
+    "hq": 0,
+    "datasetId": "Sg6FkKiehaLuo8r45"
+  },
+  "angellist-lead-scraper": {
+    "status": "SUCCEEDED",
+    "leads": 1,
+    "hq": 0,
+    "datasetId": "jI3JDpoXVw6pkte5B"
+  }
+}

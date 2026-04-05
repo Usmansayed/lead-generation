@@ -1,0 +1,11 @@
+# Media output (downloaded files)
+media/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.env
+.venv/
+venv/

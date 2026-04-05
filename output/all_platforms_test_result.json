@@ -1,0 +1,200 @@
+{
+  "run_at": "2026-02-14T16:09:13.366035+00:00",
+  "platforms_tested": 5,
+  "success_count": 5,
+  "results": [
+    {
+      "platform": "reddit",
+      "post_url": "https://www.reddit.com/r/SideProject/comments/1r3psn4/i_built_a_free_triangle_of_talent_assessment/",
+      "success": true,
+      "error": null,
+      "full_post_fetch": {
+        "from_cache": true,
+        "length": 1184,
+        "preview": "Skip to main content Go to SideProject r/SideProject \u2022 usamaejazch I built a free \"Triangle of Talent\" assessment based on Shaan Puri's framework Shaan Puri shared this framework on My First Million - your talent level depends on two things: how good you are at finding the right problems and how goo"
+      },
+      "research": {
+        "business_type": "default",
+        "business_size": "small",
+        "has_website": false,
+        "suggested_offers": [
+          "website",
+          "booking or scheduling",
+          "CRM or operations"
+        ],
+        "should_skip_email": false
+      },
+      "profile_fetch": {
+        "from_cache": true,
+        "profile_url": "https://www.reddit.com/user/usamaejazch",
+        "profile_text_length": 77,
+        "profile_text_preview": "{'text': '', 'content': '', 'url': 'https://www.reddit.com/user/usamaejazch'}"
+      },
+      "contact": {
+        "method": "profile",
+        "value": "https://www.reddit.com/user/usamaejazch"
+      },
+      "email": {
+        "subject": "Quick note on your Triangle of Talent quiz",
+        "bodyText": "Hey usamaejazch,\n\nJust took your 'Triangle of Talent' quiz on r/SideProject \u2013 really impressive how you turned Shaan Puri's framework into such an engaging and useful tool. The scenario-based questions were spot on.\n\nIf you're looking to expand Nuraworks beyond the assessment, maybe adding a more robust service offering or streamlining how people can book consultations, we build custom websites and software that help businesses manage their operations.\n\nHappy to connect if you ever want to explore ideas.",
+        "bodyHtml": "<p>Hey usamaejazch,</p><p>Just took your 'Triangle of Talent' quiz on r/SideProject \u2013 really impressive how you turned Shaan Puri's framework into such an engaging and useful tool. The scenario-based questions were spot on.</p><p>If you're looking to expand Nuraworks beyond the assessment, maybe adding a more robust service offering or streamlining how people can book consultations, we build custom websites and software that help businesses manage their operations.</p><p>Happy to connect if you ever want to explore ideas.</p>"
+      }
+    },
+    {
+      "platform": "twitter",
+      "post_url": "https://twitter.com/PythonTip/status/1849876543210123456",
+      "success": true,
+      "error": null,
+      "full_post_fetch": {
+        "from_cache": true,
+        "length": 493,
+        "preview": "JavaScript is not available. We\u2019ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center. Help Center Terms of Service Privacy Policy Cookie Policy Imprint A"
+      },
+      "research": {
+        "business_type": "default",
+        "business_size": "small",
+        "has_website": false,
+        "suggested_offers": [
+          "website",
+          "booking or scheduling",
+          "CRM or operations"
+        ],
+        "should_skip_email": false
+      },
+      "profile_fetch": {
+        "from_cache": true,
+        "profile_url": "https://twitter.com/PythonTip",
+        "profile_text_length": 493,
+        "profile_text_preview": "JavaScript is not available. We\u2019ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of suppor"
+      },
+      "contact": {
+        "method": "profile",
+        "value": "https://twitter.com/PythonTip"
+      },
+      "email": {
+        "subject": "Quick thought on your X.com post, Python Tip",
+        "bodyText": "Hey Python Tip,\n\nSaw your post about the \"JavaScript is not available\" error on X.com \u2013 totally get how frustrating those tech hiccups can be, especially when you're trying to get things done.\n\nAs a \"Python Tip,\" you're clearly deep in the tech world. If you ever need a hand with a professional website to showcase your expertise, or even a custom app to streamline your own operations, that's exactly what we do for businesses.\n\nHappy to chat briefly if it's ever on your radar.",
+        "bodyHtml": "<p>Hey Python Tip,</p><p>Saw your post about the \"JavaScript is not available\" error on X.com \u2013 totally get how frustrating those tech hiccups can be, especially when you're trying to get things done.</p><p>As a \"Python Tip,\" you're clearly deep in the tech world. If you ever need a hand with a professional website to showcase your expertise, or even a custom app to streamline your own operations, that's exactly what we do for businesses.</p><p>Happy to chat briefly if it's ever on your radar.</p>"
+      }
+    },
+    {
+      "platform": "instagram",
+      "post_url": "https://www.instagram.com/p/C5abc123/",
+      "success": true,
+      "error": null,
+      "full_post_fetch": {
+        "from_cache": false,
+        "length": 0,
+        "preview": ""
+      },
+      "research": {
+        "business_type": "cafe",
+        "business_size": "medium_plus",
+        "has_website": false,
+        "suggested_offers": [
+          "website",
+          "online ordering",
+          "POS",
+          "loyalty or ordering app"
+        ],
+        "should_skip_email": false
+      },
+      "profile_fetch": {
+        "from_cache": false,
+        "profile_url": "https://www.instagram.com/example_cafe/",
+        "profile_text_length": 0,
+        "profile_text_preview": ""
+      },
+      "contact": {
+        "method": "profile",
+        "value": "https://www.instagram.com/example_cafe/"
+      },
+      "email": {
+        "subject": "Congrats on Example Cafe's Grand Opening!",
+        "bodyText": "Hey there!\n\nSaw your post about the grand opening of Example Cafe this weekend \u2013 huge congrats! That's awesome.\n\nAs you get things going, we often help new cafes like yours set up simple online ordering or even a small loyalty app. It can really help get those first few customers coming back and make things smoother.\n\nNo pressure at all, but if that's ever on your radar, happy to chat for 10 minutes about how it works. Either way, best of luck with the opening!\n\nCheers,\n[Your Name/Agency Name]",
+        "bodyHtml": "<p>Hey there!</p><p>Saw your post about the grand opening of Example Cafe this weekend \u2013 huge congrats! That's awesome.</p><p>As you get things going, we often help new cafes like yours set up simple online ordering or even a small loyalty app. It can really help get those first few customers coming back and make things smoother.</p><p>No pressure at all, but if that's ever on your radar, happy to chat for 10 minutes about how it works. Either way, best of luck with the opening!</p><p>Cheers,<br>[Your Name/Agency Name]</p>"
+      }
+    },
+    {
+      "platform": "facebook",
+      "post_url": "https://www.facebook.com/share/p/1234567890/",
+      "success": true,
+      "error": null,
+      "full_post_fetch": {
+        "from_cache": false,
+        "length": 0,
+        "preview": ""
+      },
+      "research": {
+        "business_type": "default",
+        "business_size": "small",
+        "has_website": false,
+        "suggested_offers": [
+          "website",
+          "booking or scheduling",
+          "CRM or operations"
+        ],
+        "should_skip_email": false
+      },
+      "profile_fetch": {
+        "from_cache": false,
+        "profile_url": "https://www.facebook.com/examplelaw",
+        "profile_text_length": 0,
+        "profile_text_preview": ""
+      },
+      "contact": {
+        "method": "profile",
+        "value": "https://www.facebook.com/examplelaw"
+      },
+      "email": {
+        "subject": "Congrats on the new practice!",
+        "bodyText": "Hey Example Law team, just saw your post on Facebook about opening your new law practice \u2013 congrats, that's awesome news! Setting up a new firm can be a lot, and having a solid online presence is huge for reaching clients today. We help businesses like yours get professional websites and systems to manage things smoothly, whether it's setting up client consultations or keeping operations organized. If you ever want to chat about how tech can make things easier as you grow, let me know. Happy to share some quick ideas.",
+        "bodyHtml": "<p>Hey Example Law team, just saw your post on Facebook about opening your new law practice \u2013 congrats, that's awesome news!</p><p>Setting up a new firm can be a lot, and having a solid online presence is huge for reaching clients today. We help businesses like yours get professional websites and systems to manage things smoothly, whether it's setting up client consultations or keeping operations organized.</p><p>If you ever want to chat about how tech can make things easier as you grow, let me know. Happy to share some quick ideas.</p>"
+      }
+    },
+    {
+      "platform": "linkedin",
+      "post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7123456789/",
+      "success": true,
+      "error": null,
+      "full_post_fetch": {
+        "from_cache": false,
+        "length": 425,
+        "preview": "Not you? Remove photo Email or phone number Password Show Remember me First name Last name Agree & Join LinkedIn By clicking Continue, you agree to LinkedIn\u2019s User Agreement , Privacy Policy , and Cookie Policy . By clicking Agree & Join or Continue, you agree to the LinkedIn User Agreement , Privac"
+      },
+      "research": {
+        "business_type": "consulting_firm",
+        "business_size": "small",
+        "has_website": false,
+        "suggested_offers": [
+          "website",
+          "CRM and proposal tools",
+          "scheduling"
+        ],
+        "should_skip_email": false
+      },
+      "profile_fetch": {
+        "from_cache": false,
+        "profile_url": "https://www.linkedin.com/in/john-doe/",
+        "profile_text_length": 0,
+        "profile_text_preview": ""
+      },
+      "contact": {
+        "method": "profile",
+        "value": "https://www.linkedin.com/in/john-doe/"
+      },
+      "email": {
+        "subject": "Quick thought on your LinkedIn post",
+        "bodyText": "Hi John,\n\nSaw your recent LinkedIn post with the sign-up screenshot \u2013 made me chuckle a bit!\n\nGiven you're with a consulting firm, I imagine you're often dealing with client onboarding and proposals. We often help firms like yours streamline things with custom CRM and proposal tools.\n\nHappy to share a few quick ideas if it's ever useful.\n\nBest,\n[Your Name]",
+        "bodyHtml": "<p>Hi John,</p><p>Saw your recent LinkedIn post with the sign-up screenshot \u2013 made me chuckle a bit!</p><p>Given you're with a consulting firm, I imagine you're often dealing with client onboarding and proposals. We often help firms like yours streamline things with custom CRM and proposal tools.</p><p>Happy to share a few quick ideas if it's ever useful.</p><p>Best,<br>[Your Name]</p>"
+      }
+    }
+  ],
+  "platform_notes": {
+    "reddit": "Full post and profile often work with residential proxy. Pipeline uses post_text when fetch empty.",
+    "twitter": "Post/profile may return JS-disabled page (HTML only). Pipeline still uses lead.post_text for research and email.",
+    "instagram": "Often returns login wall or 0 content without auth. Use lead.post_text; contact = profile URL for DM.",
+    "facebook": "Fake or invalid URLs return 400. Real posts may need auth. Contact = profile URL.",
+    "linkedin": "Often returns 999/502 (anti-scrape). Use lead.post_text; contact = profile URL."
+  }
+}

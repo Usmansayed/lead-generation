@@ -1,0 +1,25 @@
+# Static rule-based scoring (before AI). See leadGeneration-project.md §5.
+# Only leads with staticScore >= minimum_threshold go to AI (Bedrock). Higher = fewer leads, less cost.
+# 0 = send ALL raw to AI (expensive). 4 = slightly looser. 5–8 = stricter, fewer credits.
+minimum_threshold: 4
+
+rules:
+  # Intent keyword categories (from keywords_master.json intent_categories)
+  business_launch: 3
+  software_need: 4
+  hiring_signal: 3
+  problem_signal: 2
+
+  # Contact / quality signals
+  contains_email: 3
+  has_website: -1
+
+  # Platform weights (B2B signal strength)
+  platform_linkedin: 2
+  platform_twitter: 1
+  platform_reddit: 1
+  platform_facebook: 0
+  platform_instagram: 0
+
+  # Optional: engagement (if present in raw)
+  has_engagement: 1

@@ -1,0 +1,412 @@
+[
+  {
+    "id": "cal-01",
+    "post_text": "We just launched our new cafe downtown! Grand opening this weekend. Come by for coffee and pastries. So excited to open our doors.",
+    "platform": "reddit",
+    "expected_should_pass": true,
+    "note": "Announcement: just launched, grand opening"
+  },
+  {
+    "id": "cal-02",
+    "post_text": "Looking for a developer to build our MVP. We have a fixed budget and need someone who can deliver. Prefer React and Node. DM for details.",
+    "platform": "reddit",
+    "expected_should_pass": true,
+    "note": "High intent: need developer, fixed budget, MVP"
+  },
+  {
+    "id": "cal-03",
+    "post_text": "Learning to code and just finished a beginner tutorial. Any course recommendation for Python? Want to get into web dev.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: learning, course recommendation"
+  },
+  {
+    "id": "cal-04",
+    "post_text": "Hire me! I'm a full-stack developer. Check out my portfolio at portfolio.dev. Seeking opportunities in startups. Available now.",
+    "platform": "linkedin",
+    "expected_should_pass": false,
+    "note": "Negative: job-seeking, hire me, my portfolio"
+  },
+  {
+    "id": "cal-05",
+    "post_text": "Our company needs a vendor for custom software. We need to automate our workflow and scale operations. Looking for proposals by end of month.",
+    "platform": "linkedin",
+    "expected_should_pass": true,
+    "note": "High/medium: vendor, custom software, we need, proposals"
+  },
+  {
+    "id": "cal-06",
+    "post_text": "Side project for fun - building a small game on weekends. Just experimenting with Unity. No budget, open source contributors wanted!",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: side project, for fun, open source, no budget"
+  },
+  {
+    "id": "cal-07",
+    "post_text": "Proud to announce we opened our new restaurant last week. Soft launch was a success. Now open for business - reservations available.",
+    "platform": "instagram",
+    "expected_should_pass": true,
+    "note": "Announcement: proud to announce, opened, soft launch, open for business"
+  },
+  {
+    "id": "cal-08",
+    "post_text": "Need to hire a contractor for our office renovation. Looking for recommendations for a reliable team. Budget is set. Deadline in 6 weeks.",
+    "platform": "twitter",
+    "expected_should_pass": true,
+    "note": "Need to hire, contractor, recommendations, budget, deadline"
+  },
+  {
+    "id": "cal-09",
+    "post_text": "Bootcamp graduate here. Just got my certification. Newbie question about how to learn React. Where do I start?",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: bootcamp, certification, how to learn, newbie"
+  },
+  {
+    "id": "cal-10",
+    "post_text": "We're live! Our new business is officially open. We launched our e-commerce store last night. Thanks to everyone who supported us.",
+    "platform": "facebook",
+    "expected_should_pass": true,
+    "note": "Announcement: we're live, new business, launched"
+  },
+  {
+    "id": "cal-11",
+    "post_text": "Open source project - contributors wanted. Community project, no budget. Volunteer only. Check out our repo.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: open source, contributors wanted, volunteer, no budget"
+  },
+  {
+    "id": "cal-12",
+    "post_text": "Seeking a developer to build our app. We have a fixed price project in mind. Need someone who can integrate with our API. ASAP.",
+    "platform": "linkedin",
+    "expected_should_pass": true,
+    "note": "Seeking, developer, build, fixed price, integrate, ASAP"
+  },
+  {
+    "id": "cal-13",
+    "post_text": "Test post please ignore. asdf asdf testing.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: test post, please ignore, asdf"
+  },
+  {
+    "id": "cal-14",
+    "post_text": "Unpopular opinion but does anyone else think the startup scene is overhyped? Change my view. Discuss.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: unpopular opinion, change my view, discuss"
+  },
+  {
+    "id": "cal-15",
+    "post_text": "Just launched our new shop! Opening day was amazing. We're now open for business and taking orders. Thank you all for the support.",
+    "platform": "instagram",
+    "expected_should_pass": true,
+    "note": "Announcement: just launched, open for business"
+  },
+  {
+    "id": "cal-16",
+    "post_text": "I am available for freelance work. My resume is attached. Looking for work in web development. Check out my work at myportfolio.com.",
+    "platform": "linkedin",
+    "expected_should_pass": false,
+    "note": "Negative: i am available, my resume, looking for work, check out my work"
+  },
+  {
+    "id": "cal-17",
+    "post_text": "Our business needs to migrate to the cloud. We need someone who can deploy and optimize. Looking for an agency with experience. Quote welcome.",
+    "platform": "twitter",
+    "expected_should_pass": true,
+    "note": "Our business needs, migrate, deploy, agency, quote"
+  },
+  {
+    "id": "cal-18",
+    "post_text": "Weekend project - practicing Python for fun. Just a hobby. Not looking for anything serious. Playing around with APIs.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: weekend project, for fun, hobby, practicing, playing around"
+  },
+  {
+    "id": "cal-19",
+    "post_text": "Grand opening this Saturday! We opened our doors last month and now opening a second location. New store, same great service.",
+    "platform": "facebook",
+    "expected_should_pass": true,
+    "note": "Grand opening, opened, opening second location"
+  },
+  {
+    "id": "cal-20",
+    "post_text": "According to a recent study shows that small businesses are growing. Report: experts say the economy is improving. Bloomberg.",
+    "platform": "twitter",
+    "expected_should_pass": false,
+    "note": "Negative: according to, study shows, report, experts say, bloomberg - news style"
+  },
+  {
+    "id": "cal-21",
+    "post_text": "Need recommendations for a developer who can build our internal tool. We have budget and need it by launch. Who can help?",
+    "platform": "reddit",
+    "expected_should_pass": true,
+    "note": "Recommendations, developer, build, budget, launch, who can help"
+  },
+  {
+    "id": "cal-22",
+    "post_text": "Rant: So frustrated with our current vendor. Worst experience ever. Never again. Terrible service. Complaint filed.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: rant, frustrated, worst experience, complaint"
+  },
+  {
+    "id": "cal-23",
+    "post_text": "We started my business three months ago. New venture in consulting. Now open for business and seeking our first clients. Excited to announce.",
+    "platform": "linkedin",
+    "expected_should_pass": true,
+    "note": "Started business, new venture, open for business, seeking clients, announce"
+  },
+  {
+    "id": "cal-24",
+    "post_text": "Link in bio for our merch! Use my code SAVE20. Swipe up to buy. Limited time offer. DM for price. Follow for more.",
+    "platform": "instagram",
+    "expected_should_pass": false,
+    "note": "Negative: link in bio, use my code, swipe up, dm for price, follow for more"
+  },
+  {
+    "id": "cal-25",
+    "post_text": "Looking for a technical cofounder. We have a solid idea and need someone to build the product. Early stage startup. Full time hire.",
+    "platform": "reddit",
+    "expected_should_pass": true,
+    "note": "Technical cofounder, build, early stage, full time hire"
+  },
+  {
+    "id": "cal-26",
+    "post_text": "My cat just learned to code. Video game review. Movie review. Book review. Recipe for success. Fitness tips. Gym update.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: my cat, video game, movie review, recipe, fitness, gym - not business"
+  },
+  {
+    "id": "cal-27",
+    "post_text": "We need to hire a freelancer to create our website. Our company is growing and we need a professional site. Get a quote from us.",
+    "platform": "linkedin",
+    "expected_should_pass": true,
+    "note": "Need to hire, freelancer, create, our company, get a quote"
+  },
+  {
+    "id": "cal-28",
+    "post_text": "Submit your resume to careers@company.com. Apply at careers page. Applications to jobs@us. Send resume to apply.",
+    "platform": "linkedin",
+    "expected_should_pass": false,
+    "note": "Negative: generic job listing - submit resume, apply at careers"
+  },
+  {
+    "id": "cal-29",
+    "post_text": "Soft launch complete. We're live and our new store is now open. Opening our doors to customers this week. Thanks everyone!",
+    "platform": "facebook",
+    "expected_should_pass": true,
+    "note": "Soft launch, we're live, new store, opening our doors"
+  },
+  {
+    "id": "cal-30",
+    "post_text": "Our website is now live. We just launched our new website. Check out our website. Brand-new website is up. Visit our website.",
+    "platform": "twitter",
+    "expected_should_pass": false,
+    "note": "Negative: already has website - not a lead for build me a site"
+  },
+  {
+    "id": "cal-31",
+    "post_text": "Software company here - we build software solutions. Our platform launched. Our API is live. SaaS product. Integrations available.",
+    "platform": "linkedin",
+    "expected_should_pass": false,
+    "note": "Negative: software company, we build software, our platform, SaaS - they build software"
+  },
+  {
+    "id": "cal-32",
+    "post_text": "Need someone to build our app. We have a fixed budget. Looking for a team to develop and deploy. Urgent deadline. Send proposal.",
+    "platform": "reddit",
+    "expected_should_pass": true,
+    "note": "Need someone to build, fixed budget, team, develop, deploy, urgent, proposal"
+  },
+  {
+    "id": "cal-33",
+    "post_text": "Hot take. Thoughts? Can we all agree? Why is no one talking about this? Viral post. Meme. Just me or am I the only one.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: hot take, thoughts, viral, meme - off topic"
+  },
+  {
+    "id": "cal-34",
+    "post_text": "Started my business last year. New cafe opening soon. We're opening our doors in the fall. Excited to announce our grand opening weekend.",
+    "platform": "instagram",
+    "expected_should_pass": true,
+    "note": "Started business, new cafe, opening soon, opening our doors, grand opening"
+  },
+  {
+    "id": "cal-35",
+    "post_text": "We need to automate our workflow. Our business needs a developer to integrate with our systems. Revenue is growing. Need by Q2.",
+    "platform": "linkedin",
+    "expected_should_pass": true,
+    "note": "We need, automate, our business needs, integrate, need by"
+  },
+  {
+    "id": "cal-36",
+    "post_text": "Join the server! Java IP: play.gg Bedrock IP: play.gg Port 19132. Log into the server. Minecraft server opening.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: gaming server - join server, java ip, bedrock ip, minecraft"
+  },
+  {
+    "id": "cal-37",
+    "post_text": "Recommend a developer? We need to build an app. Our company has budget. Looking for recommendations for a reliable contractor.",
+    "platform": "twitter",
+    "expected_should_pass": true,
+    "note": "Recommend developer, we need, build app, recommendations, contractor"
+  },
+  {
+    "id": "cal-38",
+    "post_text": "[deleted]",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: [deleted] low quality"
+  },
+  {
+    "id": "cal-39",
+    "post_text": "New venture - we opened our restaurant last week. Now open for business. Proud to announce. Grand opening celebration this weekend.",
+    "platform": "facebook",
+    "expected_should_pass": true,
+    "note": "New venture, opened, open for business, proud to announce, grand opening"
+  },
+  {
+    "id": "cal-40",
+    "post_text": "Personal portfolio site. Practicing coding. Experimenting with React. Just a hobby. Side project for learning. No clients.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: personal portfolio, practicing, experimenting, hobby, side project"
+  },
+  {
+    "id": "cal-41",
+    "post_text": "Who can build our MVP? We need a developer to get it built. Fixed budget. Request for proposal. Time sensitive. Launching next month.",
+    "platform": "linkedin",
+    "expected_should_pass": true,
+    "note": "Who can build, need developer, get it built, RFP, time sensitive, launching"
+  },
+  {
+    "id": "cal-42",
+    "post_text": "Random question but anyone else think this? Off topic but. Not related but. Dae. Just me or.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: random question, off topic, not related - off topic"
+  },
+  {
+    "id": "cal-43",
+    "post_text": "We launched our new product line. Just launched our new collection. Our new product launch was a success. New range available.",
+    "platform": "instagram",
+    "expected_should_pass": false,
+    "note": "Edge: product/collection launch (e-commerce) - may be filtered by product_launch negative"
+  },
+  {
+    "id": "cal-44",
+    "post_text": "Need help building our internal tool. Our team needs a contractor. We have a budget. Looking for someone to implement and deploy.",
+    "platform": "reddit",
+    "expected_should_pass": true,
+    "note": "Need help building, our team needs, contractor, budget, implement, deploy"
+  },
+  {
+    "id": "cal-45",
+    "post_text": "Opening our new location next month. We just opened our doors. First day open was great. Now serving customers. Officially open.",
+    "platform": "twitter",
+    "expected_should_pass": true,
+    "note": "Opening new location, opened our doors, first day open, now serving, officially open"
+  },
+  {
+    "id": "cal-46",
+    "post_text": "Short.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: below minimum word count"
+  },
+  {
+    "id": "cal-47",
+    "post_text": "Seeking a team to develop our custom software. We need to scale our operations. Have a budget for this. Need estimates. ASAP.",
+    "platform": "linkedin",
+    "expected_should_pass": true,
+    "note": "Seeking team, develop, custom software, we need, scale, budget, estimates, ASAP"
+  },
+  {
+    "id": "cal-48",
+    "post_text": "Non-profit looking for volunteer developers. Community project. No budget. Open source. Contributors wanted. OSS project.",
+    "platform": "reddit",
+    "expected_should_pass": false,
+    "note": "Negative: non-profit, volunteer, community project, no budget, open source"
+  },
+  {
+    "id": "cal-49",
+    "post_text": "Our new store is now open. We're live! Opening day was amazing. New business in town. Open for business. Come visit us.",
+    "platform": "facebook",
+    "expected_should_pass": true,
+    "note": "New store, now open, we're live, new business, open for business"
+  },
+  {
+    "id": "cal-50",
+    "post_text": "Hiring engineer for our tech team. We need a developer to build and integrate. Remote position. Full time hire. Send proposal.",
+    "platform": "linkedin",
+    "expected_should_pass": true,
+    "note": "Hiring engineer, tech team, need developer, build, integrate, remote, proposal"
+  },
+  {"id": "cal-51", "post_text": "We need a freelancer to build our landing page. Budget is ready. Need it before launch. Can anyone recommend a good developer?", "platform": "reddit", "expected_should_pass": true, "note": "We need, freelancer, build, budget, launch, recommend developer"},
+  {"id": "cal-52", "post_text": "Just opened our doors! New bakery in the neighborhood. Grand opening weekend. Now open for business. Come say hi.", "platform": "instagram", "expected_should_pass": true, "note": "Announcement: opened our doors, new bakery, grand opening, open for business"},
+  {"id": "cal-53", "post_text": "Looking for work as a developer. I am available for contract. My portfolio link below. Hire me for your next project.", "platform": "twitter", "expected_should_pass": false, "note": "Negative: looking for work, i am available, my portfolio, hire me"},
+  {"id": "cal-54", "post_text": "Our startup needs to build an app. We have a budget and need someone who can develop and deploy. Launching in Q3. Send proposal.", "platform": "linkedin", "expected_should_pass": true, "note": "Our startup needs, build app, budget, develop, deploy, launching, proposal"},
+  {"id": "cal-55", "post_text": "Beginner here. How to learn JavaScript? Course recommendation needed. Just learning the basics. Tutorial suggestions?", "platform": "reddit", "expected_should_pass": false, "note": "Negative: beginner, how to learn, course recommendation, just learning"},
+  {"id": "cal-56", "post_text": "Excited to announce we are live! New store opening this Friday. We opened our doors to the public. Now serving customers.", "platform": "facebook", "expected_should_pass": true, "note": "Announcement: excited to announce, we are live, opening, opened our doors"},
+  {"id": "cal-57", "post_text": "We build software for enterprises. Our platform and API. SaaS company. Integrations with Salesforce. Powered by AI.", "platform": "linkedin", "expected_should_pass": false, "note": "Negative: we build software, our platform, SaaS, software company"},
+  {"id": "cal-58", "post_text": "Need someone who can build our internal dashboard. We need to automate reporting. Have a budget. Looking for a contractor. ASAP.", "platform": "reddit", "expected_should_pass": true, "note": "Need someone, build, we need, automate, budget, contractor, ASAP"},
+  {"id": "cal-59", "post_text": "Weekend warrior here. Side project for fun. Just experimenting with React. No clients. Hobby only. Playing around.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: weekend warrior, side project, for fun, experimenting, hobby"},
+  {"id": "cal-60", "post_text": "New restaurant opening soon. We're opening our doors next month. Soft opening weekend. Proud to announce. Now accepting reservations.", "platform": "twitter", "expected_should_pass": true, "note": "Announcement: opening soon, opening our doors, soft opening, proud to announce"},
+  {"id": "cal-61", "post_text": "Apply at careers@startup.com. Submit your resume. Applications to jobs@company. Send resume to apply.", "platform": "linkedin", "expected_should_pass": false, "note": "Negative: generic job listing - apply at careers, submit resume"},
+  {"id": "cal-62", "post_text": "Who can help us build our MVP? Need a technical cofounder or developer. Early stage. We have budget. Get a quote.", "platform": "reddit", "expected_should_pass": true, "note": "Who can help, build, MVP, technical cofounder, need, budget, quote"},
+  {"id": "cal-63", "post_text": "Breaking: Reuters reports economy growing. According to study shows. Experts say. The company said. Bloomberg. CNN.", "platform": "twitter", "expected_should_pass": false, "note": "Negative: breaking, reuters, according to, study shows, experts say - news"},
+  {"id": "cal-64", "post_text": "We just launched! New venture. Our new business is now open. Opening day was great. Thanks for the support.", "platform": "instagram", "expected_should_pass": true, "note": "Announcement: just launched, new venture, new business, now open"},
+  {"id": "cal-65", "post_text": "Seeking opportunities. Check out my work. I am available. My resume attached. Hire me for your team. Looking for work.", "platform": "linkedin", "expected_should_pass": false, "note": "Negative: seeking opportunities, check out my work, hire me, looking for work"},
+  {"id": "cal-66", "post_text": "Need recommendations for an agency to build our e-commerce site. We need to scale. Budget set. Deadline end of month. Quote welcome.", "platform": "reddit", "expected_should_pass": true, "note": "Recommendations, agency, build, we need, scale, budget, deadline, quote"},
+  {"id": "cal-67", "post_text": "For fun project. No budget. Volunteer contributors. Open source. OSS. Community project. Non-profit. Free project.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: for fun, no budget, volunteer, open source, non-profit"},
+  {"id": "cal-68", "post_text": "Our company is hiring a developer to build and deploy our new app. Full time. Remote. We need someone to integrate with our systems.", "platform": "linkedin", "expected_should_pass": true, "note": "Hiring developer, build, deploy, we need, integrate"},
+  {"id": "cal-69", "post_text": "Hot take. Change my view. Unpopular opinion. Does anyone else. Thoughts? Discuss. Why is no one talking.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: hot take, change my view, unpopular opinion, discuss"},
+  {"id": "cal-70", "post_text": "Grand opening this week! We opened a second location. New store now open. Opening our doors. Come visit. Open for business.", "platform": "facebook", "expected_should_pass": true, "note": "Grand opening, opened second location, now open, opening our doors"},
+  {"id": "cal-71", "post_text": "Visit our website for more. Our website is live. Check out our website. Brand-new website. Launched our website last week.", "platform": "twitter", "expected_should_pass": false, "note": "Negative: already has website - visit/check out/launched our website"},
+  {"id": "cal-72", "post_text": "Need help with our app. We need a developer to create and deploy. Have budget. Looking for recommendations. Who can build?", "platform": "reddit", "expected_should_pass": true, "note": "Need help, we need, developer, create, deploy, budget, recommendations"},
+  {"id": "cal-73", "post_text": "Use code SAVE20. Link in bio. Swipe up. Affiliate link. DM for price. Use my code. Limited time offer. Message for details.", "platform": "instagram", "expected_should_pass": false, "note": "Negative: use code, link in bio, swipe up, affiliate, dm for price"},
+  {"id": "cal-74", "post_text": "Started my business six months ago. New cafe. We're live. Now open for business. Opening our doors. Excited to announce.", "platform": "linkedin", "expected_should_pass": true, "note": "Started business, new cafe, we're live, open for business, announce"},
+  {"id": "cal-75", "post_text": "[removed]", "platform": "reddit", "expected_should_pass": false, "note": "Negative: [removed] low quality"},
+  {"id": "cal-76", "post_text": "Looking for a team to develop our product. We need to scale operations. Fixed budget. Need by Q4. Send proposal. RFP.", "platform": "linkedin", "expected_should_pass": true, "note": "Looking for team, develop, we need, scale, fixed budget, proposal, RFP"},
+  {"id": "cal-77", "post_text": "Minecraft server. Join the server. Java IP. Bedrock IP. Log into the server. Port 19132.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: minecraft, join server, gaming"},
+  {"id": "cal-78", "post_text": "New shop opening in the spring. We're opening our doors. First day open. Now serving. Officially open. Grand opening.", "platform": "instagram", "expected_should_pass": true, "note": "Announcement: new shop, opening, opening our doors, grand opening"},
+  {"id": "cal-79", "post_text": "So frustrated. Rant. Venting. Worst experience. I hate this. Terrible service. Never again. Complaint.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: rant, venting, frustrated, complaint"},
+  {"id": "cal-80", "post_text": "We need to hire someone to build our integration. Our business needs a contractor. Budget ready. Urgent. Quote welcome.", "platform": "twitter", "expected_should_pass": true, "note": "Need to hire, build, our business needs, contractor, budget, quote"},
+  {"id": "cal-81", "post_text": "Software solutions provider. We build software. Our platform. Launched our app. Our product launch. Built right into your workflow.", "platform": "linkedin", "expected_should_pass": false, "note": "Negative: software solutions, we build software, our platform"},
+  {"id": "cal-82", "post_text": "Need a developer to get our MVP built. We have a fixed price project. Who can develop? Request for proposal. Time sensitive.", "platform": "reddit", "expected_should_pass": true, "note": "Need developer, MVP built, fixed price, who can develop, RFP"},
+  {"id": "cal-83", "post_text": "Random question. Off topic but. Not related but. Dae. Just me or. Anyone else think. Petition to.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: random question, off topic, dae - off topic"},
+  {"id": "cal-84", "post_text": "We opened our doors yesterday. New business in town. Now open. Open for business. Soft launch success. Come see us.", "platform": "facebook", "expected_should_pass": true, "note": "Opened our doors, new business, now open, open for business, soft launch"},
+  {"id": "cal-85", "post_text": "Just launched our new product. Our new product launch. Just launched our new line. New range. New collection.", "platform": "twitter", "expected_should_pass": false, "note": "Negative: product/collection launch e-commerce not business opening"},
+  {"id": "cal-86", "post_text": "Need to hire a freelancer for our website redesign. Our company needs a professional. Get a quote. We have budget. ASAP.", "platform": "linkedin", "expected_should_pass": true, "note": "Need to hire, freelancer, our company needs, quote, budget"},
+  {"id": "cal-87", "post_text": "Practicing coding. Experimenting with Python. Just a hobby. Personal portfolio. Side project for learning. Beginner.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: practicing, experimenting, hobby, personal portfolio, side project"},
+  {"id": "cal-88", "post_text": "Proud to announce our grand opening. We're live. New store. Now open for business. Opening our doors. Thank you all.", "platform": "instagram", "expected_should_pass": true, "note": "Announcement: proud to announce, grand opening, we're live, now open"},
+  {"id": "cal-89", "post_text": "Test test. Ignore this. Please ignore. asdf. Test post.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: test post, ignore, asdf"},
+  {"id": "cal-90", "post_text": "Our business needs someone to automate and optimize. We need a developer. Have a budget. Need estimates. Launching soon.", "platform": "linkedin", "expected_should_pass": true, "note": "Our business needs, automate, we need developer, budget, launching"},
+  {"id": "cal-91", "post_text": "We need someone to implement our CRM. Our company needs a consultant. Budget approved. Need by next quarter. Send proposal.", "platform": "reddit", "expected_should_pass": true, "note": "We need, implement, our company needs, consultant, budget, proposal"},
+  {"id": "cal-92", "post_text": "Certification complete. Bootcamp graduate. Just learning. Newbie question. How to learn. Course recommendation. Tutorial.", "platform": "linkedin", "expected_should_pass": false, "note": "Negative: certification, bootcamp, just learning, how to learn"},
+  {"id": "cal-93", "post_text": "Opening our doors next week. New venture. We're live. Now open for business. First day open. Grand opening celebration.", "platform": "twitter", "expected_should_pass": true, "note": "Announcement: opening our doors, new venture, we're live, grand opening"},
+  {"id": "cal-94", "post_text": "We are a SaaS company. Our software. Our application. Our platform. Integrations. Powered by. Built right into your.", "platform": "linkedin", "expected_should_pass": false, "note": "Negative: SaaS, our software, our platform - product company"},
+  {"id": "cal-95", "post_text": "Looking for someone to build our tool. We need to automate. Have a budget. Recommend a developer. Who can help? Quote welcome.", "platform": "reddit", "expected_should_pass": true, "note": "Looking for someone to build, we need, automate, recommend developer"},
+  {"id": "cal-96", "post_text": "Apply at jobs@. Submit application to. Send resume to. Applications to careers. Submit your resume. Apply at careers.", "platform": "twitter", "expected_should_pass": false, "note": "Negative: generic job listing"},
+  {"id": "cal-97", "post_text": "New business opening in fall. We opened our doors. Now serving. Officially open. Open for business. Soft launch done.", "platform": "facebook", "expected_should_pass": true, "note": "Announcement: new business, opened our doors, open for business"},
+  {"id": "cal-98", "post_text": "Available for contract. Hire me. My portfolio. Seeking opportunities. I am available. Looking for work. Check out my work.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: hire me, my portfolio, seeking opportunities, looking for work"},
+  {"id": "cal-99", "post_text": "Need a team to develop our platform. We need to scale. Fixed budget. RFP. Request for proposal. Need estimates. Urgent.", "platform": "linkedin", "expected_should_pass": true, "note": "Need team, develop, we need, scale, RFP, urgent"},
+  {"id": "cal-100", "post_text": "Viral. Meme. Shitpost. Hot take. Change my view. Unpopular opinion. Thoughts? Discuss. Petition to. Can we all agree.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: viral, meme, off topic"},
+  {"id": "cal-101", "post_text": "Just opened! New store. We launched. Grand opening. Now open for business. Opening our doors. Come visit us. Thank you.", "platform": "instagram", "expected_should_pass": true, "note": "Announcement: just opened, we launched, grand opening"},
+  {"id": "cal-102", "post_text": "Our website is now live. Visit our website. Check out our website. Launched our website. Official website. Website is live.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: already has website"},
+  {"id": "cal-103", "post_text": "We need a freelancer to build our dashboard. Our business needs someone. Budget set. Get a quote. Need by launch. ASAP.", "platform": "twitter", "expected_should_pass": true, "note": "We need, freelancer, build, our business needs, quote"},
+  {"id": "cal-104", "post_text": "Hobby project. For fun. Weekend warrior. Side project. Practicing. Experimenting. Playing around. No clients. Personal.", "platform": "reddit", "expected_should_pass": false, "note": "Negative: hobby, for fun, side project"},
+  {"id": "cal-105", "post_text": "Started my business last month. New cafe. We're live. Open for business. Opening our doors. Proud to announce. Excited.", "platform": "linkedin", "expected_should_pass": true, "note": "Started business, new cafe, we're live, open for business"},
+  {"id": "cal-106", "post_text": "Report: Study shows. According to. Experts say. Reuters. Bloomberg. Breaking. The company said. Research shows.", "platform": "twitter", "expected_should_pass": false, "note": "Negative: news style"},
+  {"id": "cal-107", "post_text": "Need recommendations for a contractor to build our app. We need to deploy. Budget ready. Deadline soon. Quote welcome. Who can build?", "platform": "reddit", "expected_should_pass": true, "note": "Recommendations, contractor, build, we need, deploy, quote"},
+  {"id": "cal-108", "post_text": "Open source. OSS. Volunteer. Contributors wanted. Non-profit. Community project. No budget. Free project.", "platform": "linkedin", "expected_should_pass": false, "note": "Negative: open source, volunteer, no budget"},
+  {"id": "cal-109", "post_text": "We opened a second location. New store now open. Grand opening. Opening our doors. Open for business. Now serving. Come see us.", "platform": "facebook", "expected_should_pass": true, "note": "Announcement: opened second location, grand opening"},
+  {"id": "cal-110", "post_text": "Need to hire an engineer to build and deploy. Our company needs to integrate. We have budget. Send proposal. Time sensitive.", "platform": "linkedin", "expected_should_pass": true, "note": "Need to hire, engineer, build, deploy, our company needs"}
+]

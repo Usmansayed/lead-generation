@@ -1,0 +1,12 @@
+{
+  "actorSpecification": 1,
+  "name": "linkedin-post-downloader",
+  "title": "LinkedIn Post Downloader",
+  "description": "Download LinkedIn post videos and metadata via Playwright + network interception (Crawlee). Captures media.licdn.com, .mp4, .m3u8 and extracts post text, author, hashtags, etc.",
+  "version": "0.1.0",
+  "meta": {
+    "templateId": "js-crawlee-playwright-chrome"
+  },
+  "input": "./INPUT_SCHEMA.json",
+  "dockerfile": "./Dockerfile"
+}

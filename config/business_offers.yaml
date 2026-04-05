@@ -1,0 +1,71 @@
+# What software/services to offer by business type (for hyper-personalized email).
+# Used after full fetch + business research. Target every type of shop and business, not just cafe/restaurant.
+# If they already have a website but are medium+ or a firm/shop, offer these instead of "build a website".
+
+version: "1.0"
+description: "Map business type -> typical software needs. Medium+ or non-cafe/restaurant with website still get pitched these."
+
+# Types we treat as "small + only needed a website" -> skip if they already have website
+small_website_only_types:
+  - "small_cafe"
+  - "small_restaurant"
+  - "small_food_truck"
+
+# For each business type: list of services/software to pitch (in order of relevance)
+offers_by_type:
+  cafe:
+    - "website"
+    - "online ordering"
+    - "POS"
+    - "loyalty or ordering app"
+  restaurant:
+    - "website"
+    - "online ordering and reservations"
+    - "POS and kitchen display"
+    - "delivery integration"
+  retail:
+    - "website"
+    - "e-commerce"
+    - "inventory and POS"
+    - "multi-location management"
+  shop:
+    - "website"
+    - "online store"
+    - "inventory"
+  law_firm:
+    - "website"
+    - "client portal and CRM"
+    - "document management"
+    - "scheduling and intake"
+  consulting_firm:
+    - "website"
+    - "CRM and proposal tools"
+    - "scheduling"
+  architecture_firm:
+    - "website"
+    - "project and client management"
+    - "portfolio and proposals"
+  salon:
+    - "website"
+    - "online booking"
+    - "POS and loyalty"
+  gym:
+    - "website"
+    - "booking and class scheduling"
+    - "membership and payments"
+  medical_practice:
+    - "website"
+    - "patient portal and scheduling"
+    - "HIPAA-compliant tools"
+  real_estate:
+    - "website"
+    - "listing and CRM"
+    - "scheduling and lead capture"
+  auto_dealership:
+    - "website"
+    - "inventory and CRM"
+    - "scheduling test drives"
+  default:
+    - "website"
+    - "booking or scheduling"
+    - "CRM or operations"

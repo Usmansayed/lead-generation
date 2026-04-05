@@ -1,0 +1,356 @@
+# Search & Fetch Strategy — Single source of truth for WHAT we scrape
+# TARGET: Non-technical business owners — ANY type of business: law firm, architecture firm, consulting firm,
+#         small business (retail, service, professional, etc.). Not just restaurant/cafe/local. Exclude:
+#         very technical businesses and large MNCs. We focus on ALL 5 platforms (LinkedIn, Twitter, Instagram, Facebook, Reddit).
+# Goals: (1) All platforms equally (2) Any business type, not just local/restaurant (3) Latest first (4) No re-scraping (5) High volume.
+
+version: "1.2"
+description: "Any business type (firms, small biz). All 5 platforms. Avoid tech/CS builders and large MNCs."
+
+# Keywords: use large map when present (config/keywords_map.yaml). Else themes below.
+keywords_source: keywords_map.yaml
+
+# For these platforms use physical_opening_first theme only (grand opening, now open, etc.)
+# to avoid product/website/app launches and surface real local/physical business openings.
+physical_first_platforms:
+  - instagram
+  - facebook
+
+# ---------------------------------------------------------------------------
+# THEMES (fallback when keywords_map.yaml is missing; else ignored for search)
+# Order = priority. Weight used when sampling.
+# ---------------------------------------------------------------------------
+themes:
+  announcement_launch:
+    weight: 8
+    description: "New business, opening, launch — any type: firm, practice, shop, service. We pitch software/website after."
+    seed_phrases:
+      - "just launched"
+      - "we just launched"
+      - "officially launched"
+      - "soft launch"
+      - "grand opening"
+      - "we opened"
+      - "opened our"
+      - "just opened"
+      - "now open"
+      - "open for business"
+      - "new business"
+      - "started my business"
+      - "starting my business"
+      - "we started"
+      - "just started"
+      - "new venture"
+      - "new firm"
+      - "opened our practice"
+      - "launching our firm"
+      - "new practice"
+      - "opened our office"
+      - "proud to announce our firm"
+      - "announcing our practice"
+      - "new law firm"
+      - "new architecture firm"
+      - "new consulting firm"
+      - "new cafe"
+      - "new restaurant"
+      - "new shop"
+      - "new store"
+      - "launched our"
+      - "launched my"
+      - "we're live"
+      - "we are live"
+      - "went live"
+      - "opening our"
+      - "our grand opening"
+      - "new journey"
+      - "proud to announce"
+      - "excited to announce"
+      - "soft opening"
+      - "opening day"
+      - "first day open"
+      - "now serving"
+      - "now accepting"
+      # Business-type variants (any business — retail, service, professional)
+      - "opened our doors"
+      - "opening weekend"
+      - "grand opening weekend"
+      - "new location"
+      - "second location"
+      - "now open in"
+      # Long-tail / conversational
+      - "so excited to finally open"
+      - "after months of preparation"
+      - "we are officially open"
+      - "come see us at"
+      - "soft launch this week"
+      - "grand opening this weekend"
+      - "launching next week"
+      - "just went live with"
+      - "we just went live"
+      - "opened last week"
+      - "opened yesterday"
+      - "first week in business"
+      - "new business alert"
+      - "introducing our new"
+      - "we are pleased to announce"
+
+  # International / multilingual — same intent, many regions (fetch worldwide)
+  international_launch:
+    weight: 6
+    description: "New business/opening in Spanish, Portuguese, French, German, Hindi, Arabic, etc."
+    seed_phrases:
+      # Spanish (Spain, Latin America)
+      - "nuevo negocio"
+      - "abrimos"
+      - "ya estamos abiertos"
+      - "gran inauguración"
+      - "inauguración"
+      - "acabamos de abrir"
+      - "nueva empresa"
+      - "empezamos"
+      # Portuguese (Brazil, Portugal)
+      - "novo negócio"
+      - "abrimos"
+      - "inauguração"
+      - "grande abertura"
+      - "acabamos de abrir"
+      - "nova empresa"
+      # French
+      - "nouvelle entreprise"
+      - "ouverture"
+      - "grande ouverture"
+      - "nous avons ouvert"
+      - "lancement"
+      # German
+      - "neues geschäft"
+      - "eröffnung"
+      - "wir haben eröffnet"
+      - "neu eröffnet"
+      # Hindi/English India
+      - "new business"
+      - "just opened"
+      - "grand opening"
+      # Arabic (common Latin translit / English in Gulf)
+      - "grand opening"
+      - "now open"
+      # Dutch
+      - "nieuw bedrijf"
+      - "geopend"
+      - "grand opening"
+      # Italian
+      - "nuova attività"
+      - "apertura"
+      - "abbiamo aperto"
+      # Turkish
+      - "yeni iş"
+      - "açıldı"
+      - "açılış"
+      # Indonesian
+      - "bisnis baru"
+      - "grand opening"
+      - "sudah buka"
+      # Global English (UK, AU, IN, etc.)
+      - "opening weekend"
+      - "now trading"
+      - "now open"
+
+  need_developer:
+    weight: 2
+    description: "Explicit request for dev/software — secondary source."
+    seed_phrases:
+      - "looking for developer"
+      - "need a developer"
+      - "hire developer"
+      - "need technical cofounder"
+      - "looking for technical cofounder"
+      - "need help building"
+      - "MVP development"
+      - "need MVP built"
+      - "looking for agency"
+      - "need custom software"
+      - "hire engineer"
+
+# ---------------------------------------------------------------------------
+# PLATFORM-SPECIFIC EXPANSIONS (add to search set per platform)
+# Use these in addition to seed_phrases when building queries.
+# ---------------------------------------------------------------------------
+# All 5 platforms get broad business coverage: firms, practice, small business, openings (any type).
+platform_expansions:
+  twitter:
+    hashtags:
+      - "#smallbusiness"
+      - "#newbusiness"
+      - "#grandopening"
+      - "#grandopeningweekend"
+      - "#smallbiz"
+      - "#entrepreneur"
+      - "#nowopen"
+      - "#openforbusiness"
+      - "#launch"
+      - "#localbusiness"
+      - "#supportlocal"
+      - "#lawfirm"
+      - "#consulting"
+      - "#architecture"
+      - "#smallbizowner"
+    phrase_additions:
+      - "opened today"
+      - "opening today"
+      - "launch day"
+      - "new firm"
+      - "opened our practice"
+      - "new practice"
+
+  instagram:
+    hashtags:
+      - "grandopening"
+      - "newbusiness"
+      - "smallbusiness"
+      - "openforbusiness"
+      - "nowopen"
+      - "grandopeningweekend"
+      - "softopening"
+      - "localshop"
+      - "supportlocal"
+      - "grandopening"
+      - "newfirm"
+      - "smallbiz"
+    phrase_additions:
+      - "grand opening"
+      - "now open"
+      - "open for business"
+      - "new firm"
+      - "new business"
+
+  facebook:
+    phrase_additions:
+      - "grand opening"
+      - "we're open"
+      - "now open"
+      - "open for business"
+      - "new business"
+      - "come visit us"
+      - "opening weekend"
+      - "new firm"
+      - "opened our practice"
+      - "new practice"
+      - "opened our office"
+
+  linkedin:
+    phrase_additions:
+      - "proud to announce"
+      - "excited to share"
+      - "launching today"
+      - "new venture"
+      - "new chapter"
+      - "new firm"
+      - "opened our practice"
+      - "launching our firm"
+      - "new practice"
+      - "opened our office"
+      - "we are pleased to announce"
+      - "announcing our practice"
+
+  reddit:
+    phrase_additions:
+      - "just launched"
+      - "we launched"
+      - "first week open"
+      - "opening day"
+      - "new business owner"
+      - "new firm"
+      - "opened our practice"
+      - "new practice"
+      - "opened our office"
+
+# ---------------------------------------------------------------------------
+# REDDIT: Any business type — small business, firms (law, architecture, consulting), retail, service.
+# NOT tech/CS/indie builders ("I built this app"). NOT large MNCs.
+# ---------------------------------------------------------------------------
+reddit_sources:
+  # Any small business / business owners — retail, service, professional
+  business_owners:
+    - smallbusiness
+    - SweatyStartup
+    - Entrepreneur
+    - Etsy
+    - EtsySellers
+    - shopify
+    - ecommerce
+  # Professional services: law, consulting, architecture, accounting (small firms)
+  professional_services:
+    - LawFirm
+    - consulting
+    - smallbusiness
+    - Entrepreneur
+    - Accounting
+    - Construction
+    - marketing
+  # Local / physical: restaurants, bars, retail, cleaning (one of many business types)
+  local_business:
+    - smallbusiness
+    - SweatyStartup
+    - restaurant_owners
+    - BarOwners
+    - Etsy
+    - EtsySellers
+    - shopify
+  sellers_retail:
+    - Etsy
+    - EtsySellers
+    - shopify
+    - ecommerce
+    - FulfillmentByAmazon
+    - smallbusiness
+  uk:
+    - UKBusiness
+    - smallbusiness
+    - Entrepreneur
+  india:
+    - indianstartups
+    - smallbusiness
+    - Entrepreneur
+  australia:
+    - AusFinance
+    - smallbusiness
+    - Entrepreneur
+  canada:
+    - PersonalFinanceCanada
+    - smallbusiness
+    - Entrepreneur
+  europe:
+    - smallbusiness
+    - Entrepreneur
+  startups_optional:
+    - startups
+    - Entrepreneur
+    - smallbusiness
+
+reddit_active_groups:
+  - business_owners
+  - professional_services
+  - local_business
+  - sellers_retail
+  - uk
+  - india
+  - australia
+  - canada
+  - europe
+
+# ---------------------------------------------------------------------------
+# LIMITS — high volume so enough posts pass the strict filter (global + latest)
+# ---------------------------------------------------------------------------
+limits:
+  max_search_terms_per_platform:
+    linkedin: 35
+    twitter: 40
+    instagram: 40
+    facebook: 35
+    reddit: 40
+  max_subreddits: 25
+  # Latest first: "new" sort; "day" = last 24h (no re-scrape), "week" = last 7 days
+  reddit_sort: "new"
+  reddit_time_filter: "day"
+  announcement_term_ratio: 0.8
+  # Pass "since" to actors that support it (from last run) to avoid re-fetching same posts
+  use_since_from_state: true

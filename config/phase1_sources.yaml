@@ -1,0 +1,56 @@
+# Phase 1: 5 platforms — LinkedIn, Twitter, Instagram, Facebook, Reddit (all treated equally)
+# TARGET: 100+ leads in <1 min per platform where possible (Crawlee high concurrency).
+# Efficiency: maxResults 120; timeout 90–120s; 1024–2048 MB.
+
+version: "1.3"
+phase: 1
+platforms: [linkedin, twitter, instagram, facebook, reddit]
+
+actors:
+  linkedin:
+    folder: linkedin-lead-scraper
+    input:
+      keywords: ["just launched", "new business", "grand opening", "new firm", "opened our practice", "new venture", "proud to announce", "new location", "launching our firm", "hiring", "now hiring", "open for business"]
+      maxResults: 120
+    timeout_secs: 120
+    memory_mbytes: 2048
+
+  twitter:
+    folder: twitter-lead-scraper
+    input:
+      keywords: ["just launched", "new business", "#smallbusiness", "#grandopening", "#nowopen", "open for business", "new firm", "opened our practice", "#lawfirm", "#consulting", "hiring developer", "we are hiring"]
+      maxResults: 120
+      useProxy: true
+    timeout_secs: 120
+    memory_mbytes: 2048
+
+  instagram:
+    folder: instagram-lead-scraper
+    input:
+      keywords: ["grand opening", "now open", "new business", "smallbusiness", "open for business", "new firm", "new business", "just launched", "grand opening"]
+      maxResults: 120
+      useProxy: true
+    timeout_secs: 120
+    memory_mbytes: 2048
+
+  facebook:
+    folder: facebook-lead-scraper
+    input:
+      keywords: ["grand opening", "we opened", "now open", "new business", "open for business", "come visit us", "new firm", "opened our practice", "new practice", "just launched"]
+      maxResults: 120
+      useProxy: true
+    timeout_secs: 120
+    memory_mbytes: 2048
+
+  reddit:
+    folder: reddit-lead-scraper
+    input:
+      subreddits: ["smallbusiness", "SweatyStartup", "Entrepreneur", "Etsy", "EtsySellers", "shopify", "ecommerce", "LawFirm", "consulting"]
+      keywords: ["just launched", "new business", "grand opening", "we opened", "open for business", "new location", "opening weekend", "new firm", "opened our practice", "new practice"]
+      maxPosts: 100
+      sortBy: "new"
+      timeFilter: "day"
+    timeout_secs: 120
+    memory_mbytes: 1024
+
+max_post_age_hours: 72

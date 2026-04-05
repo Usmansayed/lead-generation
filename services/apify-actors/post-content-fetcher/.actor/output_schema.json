@@ -1,0 +1,1 @@
+{"actorOutputSchemaVersion":1,"title":"Output","properties":{"overview":{"type":"string","title":"Overview","template":"{{links.apiDefaultDatasetUrl}}/items?view=overview"}}}

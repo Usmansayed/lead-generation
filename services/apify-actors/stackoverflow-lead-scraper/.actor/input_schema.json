@@ -1,0 +1,56 @@
+{
+    "title": "Stack Overflow Lead Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keywords": {
+            "title": "Keywords to Search For",
+            "type": "array",
+            "description": "Lead generation keywords to filter questions",
+            "editor": "stringList",
+            "placeholderKey": "keyword",
+            "placeholderValue": "e.g., freelance developer"
+        },
+        "tags": {
+            "title": "Stack Overflow Tags",
+            "type": "array",
+            "description": "Tags to search (e.g., freelance, job, hiring)",
+            "default": ["freelance", "job", "hiring"],
+            "editor": "json",
+            "items": {
+                "type": "string"
+            }
+        },
+        "includeBounties": {
+            "title": "Include Bounty Questions",
+            "type": "boolean",
+            "description": "Include questions with bounties",
+            "default": true
+        },
+        "maxQuestions": {
+            "title": "Maximum Questions",
+            "type": "integer",
+            "description": "Maximum number of questions to scrape",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 500
+        },
+        "minDelayMs": {
+            "title": "Minimum Delay (ms)",
+            "type": "integer",
+            "description": "Minimum delay between requests in milliseconds",
+            "default": 2000,
+            "minimum": 500,
+            "maximum": 10000
+        },
+        "maxDelayMs": {
+            "title": "Maximum Delay (ms)",
+            "type": "integer",
+            "description": "Maximum delay between requests in milliseconds",
+            "default": 5000,
+            "minimum": 1000,
+            "maximum": 20000
+        }
+    },
+    "required": ["keywords"]
+}

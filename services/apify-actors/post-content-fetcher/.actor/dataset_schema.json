@@ -1,0 +1,1 @@
+{"actorSpecification":1,"fields":{},"views":{"overview":{"title":"Overview","transformation":{"fields":["url","text"]},"display":{"component":"table","properties":{"url":{"label":"URL","format":"link"},"text":{"label":"Text","format":"text"}}}}}}
